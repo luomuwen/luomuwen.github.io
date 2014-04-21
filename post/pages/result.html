@@ -1,0 +1,2883 @@
+<html>
+<head>
+<style type="text/css">
+#tables
+  {
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  width:100%;
+  border-collapse:collapse;
+  }
+
+#tables td, #tables th 
+  {
+  font-size:1em;
+  border:1px solid #98bf21;
+  padding:3px 7px 2px 7px;
+  }
+
+#tables th 
+  {
+  font-size:1.1em;
+  text-align:left;
+  padding-top:5px;
+  padding-bottom:4px;
+  background-color:#A7C942;
+  color:#ffffff;
+  }
+
+#tables tr.alt td 
+  {
+  color:#000000;
+  background-color:#EAF2D3;
+  }
+</style>
+</head>
+<body>
+<table id="tables">
+<tr>
+<th>No</th>
+<th>field1</th>
+</tr>
+    <tr>
+<td>  1  </td>
+<td>  DROP TABLE PB_CSTINF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  2  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  3  </td>
+<td>  CREATE TABLE PB_CSTINF ( PIF_CSTNO           VARCHAR(10)     NOT NULL, PIF_ACCNO           VARCHAR(30)     NOT NULL, PIF_AREACODE        VARCHAR(6), PIF_CSTTYP          CHAR(1)         NOT NULL, PIF_CERTTYP         CHAR(1), PIF_NAMECN          VARCHAR(30), PIF_NAMEEN          VARCHAR(30), PIF_ALIAS           VARCHAR(30), PIF_PASSWORD        VARCHAR(60), PIF_LOVENAME        VARCHAR(30), PIF_SEX             CHAR(1)         NOT NULL, PIF_BIRTHDAY        VARCHAR(10), PIF_CTFTYP          CHAR(2)         NOT NULL, PIF_CTFNO           VARCHAR(30)     NOT NULL, PIF_MOBILE          VARCHAR(20), PIF_ADDRESS         VARCHAR(60), PIF_PHONE           VARCHAR(20), PIF_FAX             VARCHAR(20), PIF_ZIPCODE         VARCHAR(6), PIF_EMAIL           VARCHAR(60), PIF_EMPLOYEE        CHAR(1), PIF_STT             CHAR(1)         NOT NULL, PIF_LASTLGNTIM      VARCHAR(14), PIF_LASTLGNIP       VARCHAR(20), PIF_OPENTYP         CHAR(1), PIF_OPENTELLER      VARCHAR(10), PIF_OPENBRANCHNO    VARCHAR(6), PIF_OPENNETNO       VARCHAR(6), PIF_OPENDATE        VARCHAR(8), PIF_CHGTELLER       VARCHAR(10), PIF_CHGBRANCHNO     VARCHAR(6), PIF_CHGNETNO        VARCHAR(6), PIF_LASTCHGTIM      VARCHAR(14), PIF_RESERVE1        VARCHAR(30), PIF_RESERVE2        VARCHAR(30), PIF_RESERVE3        VARCHAR(30), PIF_RESERVE4        VARCHAR(30), UNIQUE(PIF_ACCNO), CONSTRAINT PB_CSTINF_PK01 PRIMARY KEY (PIF_CSTNO) ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  4  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  5  </td>
+<td>  DROP TABLE PB_WODEINF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  6  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  7  </td>
+<td>  CREATE TABLE PB_WODEINF ( PWI_CORENO          VARCHAR(13), PWI_CUSTLEVEL     	VARCHAR(2) , PWI_CARDNO	    	VARCHAR(19)     NOT NULL, PWI_ACCNO     		VARCHAR(21), PWI_SIGNNO     		VARCHAR(13), PWI_STATE     		VARCHAR(1)     	NOT NULL, PWI_AUTOFLAG     	VARCHAR(1), PWI_FAMINO     		VARCHAR(13), PWI_PMNO     		VARCHAR(7), PWI_CMNO    		VARCHAR(7), PWI_ADDFLAG     	VARCHAR(2), PWI_SENDFLAG     	VARCHAR(1), PWI_PRTDATE     	VARCHAR(1), PWI_PRTDAY     		VARCHAR(2), PWI_PRDNO     		VARCHAR(8), CONSTRAINT PB_CSTINF_PK01 PRIMARY KEY (PWI_CARDNO) ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  8  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  9  </td>
+<td>  DROP TABLE PB_CSTINF_CLOSE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  10  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  11  </td>
+<td>  CREATE TABLE PB_CSTINF_CLOSE ( PIFC_CSTNO           VARCHAR(10)     NOT NULL, PIFC_ACCNO           VARCHAR(30)     NOT NULL, PIFC_AREACODE        VARCHAR(6), PIFC_CSTTYP          CHAR(1)         NOT NULL, PIFC_CERTTYP         CHAR(1), PIFC_NAMECN          VARCHAR(30), PIFC_NAMEEN          VARCHAR(30), PIFC_ALIAS           VARCHAR(30), PIFC_PASSWORD        VARCHAR(60), PIFC_LOVENAME        VARCHAR(30), PIFC_SEX             CHAR(1)         NOT NULL, PIFC_BIRTHDAY        VARCHAR(10), PIFC_CTFTYP          CHAR(2)         NOT NULL, PIFC_CTFNO           VARCHAR(30)     NOT NULL, PIFC_MOBILE          VARCHAR(20), PIFC_ADDRESS         VARCHAR(60), PIFC_PHONE           VARCHAR(20), PIFC_FAX             VARCHAR(20), PIFC_ZIPCODE         VARCHAR(6), PIFC_EMAIL           VARCHAR(60), PIFC_EMPLOYEE        CHAR(1), PIFC_STT             CHAR(1)         NOT NULL, PIFC_LASTLGNTIM      VARCHAR(14), PIFC_LASTLGNIP       VARCHAR(20), PIFC_OPENTYP         CHAR(1), PIFC_OPENTELLER      VARCHAR(10), PIFC_OPENBRANCHNO    VARCHAR(6), PIFC_OPENNETNO       VARCHAR(6), PIFC_OPENDATE        VARCHAR(8), PIFC_OFFTELLER       VARCHAR(10), PIFC_OFFBRANCHNO     VARCHAR(6), PIFC_OFFNETNO        VARCHAR(6), PIFC_OFFCHGTIM       VARCHAR(14), PIFC_RESERVE1        VARCHAR(30), PIFC_RESERVE2        VARCHAR(30), PIFC_RESERVE3        VARCHAR(30), PIFC_RESERVE4        VARCHAR(30), CONSTRAINT PB_CSTINF_CLS_PK01 PRIMARY KEY (PIFC_CSTNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  12  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  13  </td>
+<td>  DROP TABLE PB_ACCINF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  14  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  15  </td>
+<td>  CREATE TABLE PB_ACCINF ( PAI_CSTNO           VARCHAR(10)     NOT NULL, PAI_CARDNO          VARCHAR(30)     NOT NULL, PAI_ALIAS           VARCHAR(30), PAI_CARDTYP         CHAR(1)         NOT NULL, PAI_CARDKIND        CHAR(1)         NOT NULL, PAI_MSTFLAG         CHAR(1)         NOT NULL, PAI_RELATETIM       VARCHAR(14), PAI_HLDNAME         VARCHAR(30), PAI_HLDSEX          CHAR(1), PAI_HLDCTFTYP       CHAR(2), PAI_HLDCTFNO        VARCHAR(30), PAI_FLAG            CHAR(1)         NOT NULL, PAI_COMMFLAG        CHAR(1), PAI_CHGTELLER       VARCHAR(10), PAI_CHGBRANCHNO     VARCHAR(6), PAI_CHGNETNO        VARCHAR(6), PAI_LASTCHGTIM      VARCHAR(14), PAI_EACCFLAG        CHAR(1)        DEFAULT '0', CONSTRAINT PB_ACCINF_PK01 PRIMARY KEY (PAI_CSTNO,PAI_CARDNO) ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  16  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  17  </td>
+<td>  DROP TABLE PB_COMMACCINF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  18  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  19  </td>
+<td>  CREATE TABLE PB_COMMACCINF ( PCAI_CSTNO           VARCHAR(10)     NOT NULL, PCAI_CARDNO          VARCHAR(30)     NOT NULL, PCAI_ALIAS           VARCHAR(30), PCAI_CARDTYP         CHAR(1)         NOT NULL, PCAI_CARDKIND        CHAR(1)         NOT NULL, PCAI_BANKFLAG        CHAR(1)         NOT NULL, PCAI_RELATETIM       VARCHAR(14)     NOT NULL, PCAI_HLDNAME         VARCHAR(30)     NOT NULL, PCAI_HLDCTFTYP       CHAR(2)         NOT NULL, PCAI_HLDCTFNO        VARCHAR(30)     NOT NULL, PCAI_FLAG            CHAR(1)         NOT NULL, PCAI_BANKNAME        VARCHAR(60), PCAI_BANKCODE        VARCHAR(12), PCAI_COMMONFLAG		 CHAR(1)		 NOT NULL, PCAI_ACCTYPE	   	 VARCHAR(2)  DEFAULT '00' NOT NULL, CONSTRAINT PB_COMMACCINF_PK01 PRIMARY KEY (PCAI_CSTNO,PCAI_CARDNO) )IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  20  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  21  </td>
+<td>  DROP TABLE PB_ACCINF_CLOSE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  22  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  23  </td>
+<td>  CREATE TABLE PB_ACCINF_CLOSE ( PAIC_CSTNO           VARCHAR(10)     NOT NULL, PAIC_CARDNO          VARCHAR(30)     NOT NULL, PAIC_ALIAS           VARCHAR(30), PAIC_CARDTYP         CHAR(1)         NOT NULL, PAIC_CARDKIND        CHAR(1)         NOT NULL, PAIC_MSTFLAG         CHAR(1)         NOT NULL, PAIC_RELATETIM       VARCHAR(14), PAIC_HLDNAME         VARCHAR(30), PAIC_HLDSEX          CHAR(1), PAIC_HLDCTFTYP       CHAR(2), PAIC_HLDCTFNO        VARCHAR(30), PAIC_FLAG            CHAR(1)         NOT NULL, PAIC_COMMFLAG        CHAR(1), PAIC_COFFTELLER      VARCHAR(10), PAIC_OFFBRANCHNO     VARCHAR(6), PAIC_OFFNETNO        VARCHAR(6), PAIC_OFFTIM          VARCHAR(14), CONSTRAINT PB_ACCINF_CLS_PK01 PRIMARY KEY (PAIC_CSTNO,PAIC_CARDNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  24  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  25  </td>
+<td>  DROP TABLE PB_CARDLMT
+  </td>
+</tr>
+    <tr class="alt">
+<td>  26  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  27  </td>
+<td>  CREATE TABLE PB_CARDLMT ( PCL_CARDNO          VARCHAR(30)     NOT NULL, PCL_BTMAMT          DECIMAL(15,2), PCL_TOPAMT          DECIMAL(15,2), PCL_LASTCSTNO       VARCHAR(10), PCL_LASTTIM         VARCHAR(14), CONSTRAINT PB_CARDLMT_PK01 PRIMARY KEY (PCL_CARDNO) ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  28  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  29  </td>
+<td>  DROP TABLE PB_LOGFAIL
+  </td>
+</tr>
+    <tr class="alt">
+<td>  30  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  31  </td>
+<td>  CREATE TABLE PB_LOGFAIL ( PLF_CARDNO          VARCHAR(30)     NOT NULL, PLF_TIMES           INTEGER, PLF_UPDTIM          VARCHAR(14), PLF_TYPE            CHAR(1)         NOT NULL WITH DEFAULT '0', PLF_IPADDR          VARCHAR(20), CONSTRAINT PB_LOGFAIL_PK01 PRIMARY KEY (PLF_CARDNO,PLF_TYPE) ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  32  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  33  </td>
+<td>  DROP TABLE PB_CSTRELACC
+  </td>
+</tr>
+    <tr class="alt">
+<td>  34  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  35  </td>
+<td>  CREATE TABLE PB_CSTRELACC ( PRA_CSTNO           VARCHAR(10)     NOT NULL, PRA_ACCNO           VARCHAR(30)     NOT NULL, PRA_NAME            VARCHAR(60), PRA_ALIAS           VARCHAR(60), PRA_FLAG            CHAR(1), PRA_CITY            VARCHAR(30), PRA_MOBILE          VARCHAR(20), PRA_OPENBANK        VARCHAR(60), PRA_AREA            VARCHAR(60), PRA_NETSPOT         VARCHAR(60), PRA_GROUPID		    VARCHAR(8)	DEFAULT '0', PRA_PAYCARDNO       VARCHAR(30), PRA_PARTY           VARCHAR(60), PRA_PARTYID         CHAR(12), PRA_REMARK          VARCHAR(100), PRA_KEYTRAN         CHAR(1)     DEFAULT '0', PRA_MODIFYDATE      CHAR(8), PRA_COUNT           INT         DEFAULT  0, CONSTRAINT PB_CSTRELACC_PK01 PRIMARY KEY (PRA_CSTNO, PRA_ACCNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  36  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  37  </td>
+<td>  DROP TABLE PB_CRDSCTINF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  38  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  39  </td>
+<td>  CREATE TABLE PB_CRDSCTINF ( PCSI_CARDSECT       VARCHAR(10)     NOT NULL, PCSI_FLAG           VARCHAR(2)      NOT NULL, PCSI_CARDTYPE           VARCHAR(1)      NOT NULL, PCSI_CENTERNOINDEX           VARCHAR(1)      NOT NULL, CONSTRAINT PB_CRDSCTINF_PK01 PRIMARY KEY (PCSI_CARDSECT) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  40  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  41  </td>
+<td>  DROP TABLE PB_EXCRATE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  42  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  43  </td>
+<td>  CREATE TABLE PB_EXCRATE ( PER_BRANCHNO        VARCHAR(6)      NOT NULL, PER_EXCCODE         VARCHAR(4)      NOT NULL, PER_CURBUY          DECIMAL(8,4), PER_CURSALE         DECIMAL(8,4), PER_EXCBUY          DECIMAL(8,4), PER_EXCSALE         DECIMAL(8,4), PER_DAYTOP          DECIMAL(8,4), PER_DAYBTM          DECIMAL(8,4), PER_FLAG            CHAR(1), PER_UPDTIM          VARCHAR(14), CONSTRAINT PB_EXCRATE_PK01 PRIMARY KEY (PER_BRANCHNO, PER_EXCCODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  44  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  45  </td>
+<td>  DROP TABLE PB_ORDEXC
+  </td>
+</tr>
+    <tr class="alt">
+<td>  46  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  47  </td>
+<td>  CREATE TABLE PB_ORDEXC ( PROE_CARDNO		VARCHAR(30)			NOT NULL, PROE_EXCCODE	VARCHAR(300)		NOT NULL, PROE_SHOWFLAG	CHAR(1)				NOT NULL ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  48  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  49  </td>
+<td>  DROP TABLE PB_EXCMAXMIN
+  </td>
+</tr>
+    <tr class="alt">
+<td>  50  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  51  </td>
+<td>  CREATE TABLE PB_EXCMAXMIN ( PEM_BRN_CODE VARCHAR(10) NOT NULL, PEM_MAX_MIN VARCHAR(25) NOT NULL ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  52  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  53  </td>
+<td>  DROP TABLE PB_BRNTRSTYP
+  </td>
+</tr>
+    <tr class="alt">
+<td>  54  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  55  </td>
+<td>  CREATE TABLE PB_BRNTRSTYP ( PBTT_CENTERNO        VARCHAR(6)      NOT NULL, PBTT_TYPE            CHAR(1)         NOT NULL, CONSTRAINT PB_BRNTRSTYP_PK01 PRIMARY KEY (PBTT_CENTERNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  56  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  57  </td>
+<td>  DROP TABLE PB_ATTFUND
+  </td>
+</tr>
+    <tr class="alt">
+<td>  58  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  59  </td>
+<td>  CREATE TABLE PB_ATTFUND ( PAF_ACCNO           VARCHAR(30)     NOT NULL, PAF_FUNDCODE        VARCHAR(6)      NOT NULL, PAF_FUNDNAME        VARCHAR(40), PAF_FEETYP          CHAR(1), CONSTRAINT PB_ATTFUND_PK01 PRIMARY KEY (PAF_ACCNO, PAF_FUNDCODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  60  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  61  </td>
+<td>  DROP TABLE PB_FUNDINFO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  62  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  63  </td>
+<td>  CREATE TABLE PB_FUNDINFO ( PFI_FUNDCODE        VARCHAR(6)      NOT NULL, PFI_FUNDNAME        VARCHAR(40)     NOT NULL, PFI_STATUS          CHAR(1)         NOT NULL, PFI_NETVAL          DECIMAL(8,4), PFI_UPDDATE         VARCHAR(8), PFI_MAXRDMVOL       DECIMAL(16,2), PFI_MINACCBAL       DECIMAL(16,2), PFI_APPSUBVOL       DECIMAL(16,2), PFI_APPSUBAMT       DECIMAL(16,2), PFI_MINSUBVOL       DECIMAL(16,2), PFI_MINSUBAMT       DECIMAL(16,2), PFI_REGCODE         VARCHAR(6), PFI_FACEVAL         DECIMAL(8,4), PFI_FEERATE         DECIMAL(8,4), PFI_MAXSUBVOL       DECIMAL(16,2), PFI_MAXSUBAMT       DECIMAL(16,2), PFI_UNITSUBVOL      DECIMAL(16,2), PFI_MINRDMVOL       DECIMAL(16,2), PFI_MINCHGVOL       DECIMAL(16,2), PFI_SUBTYP          CHAR(1), PFI_TRADPRICE       DECIMAL(8,4), PFI_NEXTDATE        VARCHAR(8), PFI_MINBIDAMT       DECIMAL(16,2), PFI_MINAPPBIDAMT    DECIMAL(16,2), PFI_UNITBIDAMT      DECIMAL(16,2), PFI_MAXBIDAMT       DECIMAL(16,2), PFI_DAYINCOME       DECIMAL(10,6), PFI_WEEKINCOME      DECIMAL(10,6), PFI_FEETYP          CHAR(1), PFI_TYPE            CHAR(3), PFI_FLAG            CHAR(1), PFI_RISKLVL       	CHAR(2), PFI_RISKLVLCN       VARCHAR(200), PFI_RISKLVLEN       VARCHAR(400), CONSTRAINT PB_FUNDINFO_PK01 PRIMARY KEY (PFI_FUNDCODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  64  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  65  </td>
+<td>  DROP TABLE PB_TRANFEE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  66  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  67  </td>
+<td>  CREATE TABLE PB_TRANFEE ( PTF_REGCODE         VARCHAR(6)      NOT NULL, PTF_BUSCODE         VARCHAR(6)      NOT NULL, PTF_COMAMT          DECIMAL(15,2), PTF_DISRATE         DECIMAL(8,4), PTF_UPDDATE         VARCHAR(8)      NOT NULL, CONSTRAINT PB_TRANFEE_PK01 PRIMARY KEY (PTF_REGCODE, PTF_BUSCODE, PTF_UPDDATE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  68  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  69  </td>
+<td>  DROP TABLE PB_FUNDPAR
+  </td>
+</tr>
+    <tr class="alt">
+<td>  70  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  71  </td>
+<td>  CREATE TABLE PB_FUNDPAR ( PFP_FUNDCODE        VARCHAR(6)      NOT NULL, PFP_REGCODE         VARCHAR(6)      NOT NULL, PFP_MNGCODE         VARCHAR(6)      NOT NULL, PFP_STARTTIM        VARCHAR(6), PFP_ENDTIM          VARCHAR(6), PFP_FLAG            CHAR(1), PFP_TRANPAR         VARCHAR(20), PFP_TRANTYP         CHAR(1), PFP_MINSUBAMT       DECIMAL(16,2), PFP_FEETYP          CHAR(1), PFP_UPDDATE         VARCHAR(8), PFP_MAXSUBAMT       DECIMAL(16,2), PFP_FUNDMNGCODE     VARCHAR(6), PFP_QRFLAG          CHAR(1), PFP_AUTOTRADEFLAG   CHAR(1), CONSTRAINT PB_FUNDPAR_PK01 PRIMARY KEY (PFP_FUNDCODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  72  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  73  </td>
+<td>  DROP TABLE PB_FUNDCOR
+  </td>
+</tr>
+    <tr class="alt">
+<td>  74  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  75  </td>
+<td>  CREATE TABLE PB_FUNDCOR ( PFC_CODE            VARCHAR(6)      NOT NULL, PFC_NAME            VARCHAR(60)     NOT NULL, CONSTRAINT PB_FUNDCOR_PK01 PRIMARY KEY (PFC_CODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  76  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  77  </td>
+<td>  DROP TABLE PB_FUNDREG
+  </td>
+</tr>
+    <tr class="alt">
+<td>  78  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  79  </td>
+<td>  CREATE TABLE PB_FUNDREG ( PFR_REGCODE         VARCHAR(6)      NOT NULL, PFR_REGNAME         VARCHAR(60)     NOT NULL, CONSTRAINT PB_FUNDREG_PK01 PRIMARY KEY (PFR_REGCODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  80  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  81  </td>
+<td>  DROP TABLE PB_NETVAL
+  </td>
+</tr>
+    <tr class="alt">
+<td>  82  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  83  </td>
+<td>  CREATE TABLE PB_NETVAL ( PNV_FUNDCODE        VARCHAR(6)      NOT NULL, PNV_FEETYP          CHAR(1)         NOT NULL, PNV_FUNDNAME        VARCHAR(40), PNV_NETVAL          DECIMAL(8,4), PNV_FLAG            CHAR(1), PNV_DAYINCOME       DECIMAL(8,4), PNV_WEEKINCOME      DECIMAL(8,4), PNV_UPDDATE         VARCHAR(8)      NOT NULL, CONSTRAINT PB_NETVAL_PK01 PRIMARY KEY (PNV_FUNDCODE, PNV_UPDDATE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  84  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  85  </td>
+<td>  DROP TABLE PB_CHGCOD
+  </td>
+</tr>
+    <tr class="alt">
+<td>  86  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  87  </td>
+<td>  CREATE TABLE PB_CHGCOD ( PCC_FUNDCODE        VARCHAR(6)      NOT NULL, PCC_FEETYP          CHAR(1), PCC_TARGETCODE      VARCHAR(6)      NOT NULL, PCC_TARGETTYP       CHAR(1)         NOT NULL, PCC_UPDDATE         VARCHAR(8), CONSTRAINT PB_CHGCOD_PK01 PRIMARY KEY (PCC_FUNDCODE, PCC_TARGETCODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  88  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  89  </td>
+<td>  DROP TABLE PB_FUNDCOM
+  </td>
+</tr>
+    <tr class="alt">
+<td>  90  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  91  </td>
+<td>  CREATE TABLE PB_FUNDCOM ( PFC_COMCODE         VARCHAR(24)     NOT NULL, PFC_COMNAME         VARCHAR(40)     NOT NULL, PFC_MNGNO           VARCHAR(6), PFC_MINAMT          DECIMAL(16,2), PFC_MAXAMT          DECIMAL(16,2), PFC_COMCHT          VARCHAR(200), PFC_FEERATE         DECIMAL(8,4), PFC_DISRATE         DECIMAL(8,4), PFC_MEMO            VARCHAR(100), PFC_RISKLVL         CHAR(2), PFC_RISKLVLCN       VARCHAR(200), PFC_RISKLVLEN       VARCHAR(400), PFC_SCHEMINAMT		DECIMAL(16,2), PFC_SCHEMAXAMT      DECIMAL(16,2), PFC_ONCEOPENFLAG    CHAR(1), CONSTRAINT PB_FUNDCOM_PK01 PRIMARY KEY (PFC_COMCODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  92  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  93  </td>
+<td>  DROP TABLE PB_COMSMP
+  </td>
+</tr>
+    <tr class="alt">
+<td>  94  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  95  </td>
+<td>  CREATE TABLE PB_COMSMP ( PCS_COMCODE         VARCHAR(24)     NOT NULL, PCS_FUNDCODE        VARCHAR(6)      NOT NULL, PCS_AMOUNT          DECIMAL(16,2), PCS_FEETYP          CHAR(1), PCS_DISRATE         DECIMAL(8,4), PCS_TADISRATE       DECIMAL(8,4), PCS_COMAMT          DECIMAL(16,2), PCS_SCALE           DECIMAL(8,4), PCS_STARTDATE       VARCHAR(8), PCS_ENDDATE         VARCHAR(8), PCS_STATUS          CHAR(1), PCS_MEMO            VARCHAR(100), CONSTRAINT PB_COMSMP_PK01 PRIMARY KEY (PCS_COMCODE, PCS_FUNDCODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  96  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  97  </td>
+<td>  DROP TABLE PB_FUNDCOD
+  </td>
+</tr>
+    <tr class="alt">
+<td>  98  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  99  </td>
+<td>  CREATE TABLE PB_FUNDCOD ( PFC_TRANCODE        VARCHAR(6)      NOT NULL, PFC_TRANNAME        VARCHAR(40)     NOT NULL, PFC_BUSCODE         VARCHAR(6)      NOT NULL, CONSTRAINT PB_FUNDCOD_PK01 PRIMARY KEY (PFC_TRANCODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  100  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  101  </td>
+<td>  DROP TABLE PB_DFLCRD
+  </td>
+</tr>
+    <tr class="alt">
+<td>  102  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  103  </td>
+<td>  CREATE TABLE PB_DFLCRD ( PDC_CSTNO           VARCHAR(10)     NOT NULL, PDC_CARDNO          VARCHAR(30)     NOT NULL, PDC_OPRTYP          CHAR(1)         NOT NULL, CONSTRAINT PB_DFLCRD_PK01 PRIMARY KEY (PDC_CSTNO, PDC_OPRTYP) ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  104  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  105  </td>
+<td>  DROP TABLE PB_PERCTM
+  </td>
+</tr>
+    <tr class="alt">
+<td>  106  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  107  </td>
+<td>  CREATE TABLE PB_PERCTM ( PPC_CSTNO           VARCHAR(10)     NOT NULL, PPC_ACCTYP          CHAR(1)         NOT NULL, PPC_CARDNO          VARCHAR(30), CONSTRAINT PB_PERCTM_PK01 PRIMARY KEY (PPC_CSTNO) ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  108  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  109  </td>
+<td>  DROP TABLE PB_TRNFLW
+  </td>
+</tr>
+    <tr class="alt">
+<td>  110  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  111  </td>
+<td>  CREATE TABLE PB_TRNFLW ( PTF_TRNFLW          VARCHAR(20)     NOT NULL, PTF_CSTNO           VARCHAR(30)     NOT NULL, PTF_BATNO           VARCHAR(20)     NOT NULL, PTF_CHANNEL         CHAR(1)         NOT NULL, PTF_BATFLAG         CHAR(1), PTF_TRANCODE        VARCHAR(6), PTF_HOSTCODE        VARCHAR(20), PTF_DEALTYP         CHAR(2), PTF_TRANTYP         CHAR(1), PTF_BKGFLW          VARCHAR(20), PTF_ACCDATE         VARCHAR(8), PTF_TRANTIM         VARCHAR(14), PTF_PAYBRA          VARCHAR(6), PTF_PAYCARDNO       VARCHAR(30), PTF_PAYCRYTYP       VARCHAR(3), PTF_PAYAMT          DECIMAL(15,2), PTF_CASHFLAG        CHAR(1), PTF_RCVBRA          VARCHAR(6), PTF_RCVCARDNO       VARCHAR(30), PTF_RCVNAME         VARCHAR(60), PTF_RCVCRYTYP       VARCHAR(3), PTF_RCVAMT          DECIMAL(15,2), PTF_HANGTYP         CHAR(2), PTF_LOGTYP          CHAR(1), PTF_HSTFLWNO        VARCHAR(20), PTF_REMARK          VARCHAR(100), PTF_STT             CHAR(2), PTF_FUNDCODE        VARCHAR(6), PTF_TOFUNDCODE      VARCHAR(6), PTF_TRANKIND        VARCHAR(1), PTF_RCVOPENBANK     VARCHAR(60), PTF_RCVOPENCITY     VARCHAR(60), PTF_RCVOPENAREA     VARCHAR(60), PTF_RCVOPENBRANCH   VARCHAR(60), PTF_TRANFEE         DECIMAL(15,2), CONSTRAINT PB_TRNFLW_PK01 PRIMARY KEY (PTF_TRNFLW) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  112  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  113  </td>
+<td>  DROP TABLE PB_TRNFLW_HIS
+  </td>
+</tr>
+    <tr class="alt">
+<td>  114  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  115  </td>
+<td>  CREATE TABLE PB_TRNFLW_HIS ( PTFH_TRNFLW          VARCHAR(20)     NOT NULL, PTFH_CSTNO           VARCHAR(30)     NOT NULL, PTFH_BATNO           VARCHAR(20)     NOT NULL, PTFH_CHANNEL         CHAR(1)         NOT NULL, PTFH_BATFLAG         CHAR(1), PTFH_TRANCODE        VARCHAR(6), PTFH_HOSTCODE        VARCHAR(20), PTFH_DEALTYP         CHAR(2), PTFH_TRANTYP         CHAR(1), PTFH_BKGFLW          VARCHAR(20), PTFH_ACCDATE         VARCHAR(8), PTFH_TRANTIM         VARCHAR(14), PTFH_PAYBRA          VARCHAR(6), PTFH_PAYCARDNO       VARCHAR(30), PTFH_PAYCRYTYP       VARCHAR(3), PTFH_PAYAMT          DECIMAL(15,2), PTFH_CASHFLAG        CHAR(1), PTFH_RCVBRA          VARCHAR(6), PTFH_RCVCARDNO       VARCHAR(30), PTFH_RCVNAME         VARCHAR(60), PTFH_RCVCRYTYP       VARCHAR(3), PTFH_RCVAMT          DECIMAL(15,2), PTFH_HANGTYP         CHAR(2), PTFH_LOGTYP          CHAR(1), PTFH_HSTFLWNO        VARCHAR(20), PTFH_REMARK          VARCHAR(100), PTFH_STT             CHAR(2), PTFH_FUNDCODE        VARCHAR(6), PTFH_TOFUNDCODE      VARCHAR(6), PTFH_TRANKIND        VARCHAR(1), PTFH_RCVOPENBANK     VARCHAR(60), PTFH_RCVOPENCITY     VARCHAR(60), PTFH_RCVOPENAREA     VARCHAR(60), PTFH_RCVOPENBRANCH   VARCHAR(60), PTFH_TRANFEE         DECIMAL(15,2), CONSTRAINT PB_TRNFLW_HIS_PK01 PRIMARY KEY (PTFH_TRNFLW) ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  116  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  117  </td>
+<td>  DROP TABLE PB_NETTRN_HIS
+  </td>
+</tr>
+    <tr class="alt">
+<td>  118  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  119  </td>
+<td>  CREATE TABLE PB_NETTRN_HIS ( PNTH_TRNFLW          VARCHAR(20)     NOT NULL, PNTH_CSTNO           VARCHAR(30)     NOT NULL, PNTH_BATNO           VARCHAR(20)     NOT NULL, PNTH_CHANNEL         CHAR(1)         NOT NULL, PNTH_BATFLAG         CHAR(1), PNTH_TRANCODE        VARCHAR(6), PNTH_HOSTCODE        VARCHAR(20), PNTH_DEALTYP         CHAR(2), PNTH_TRANTYP         CHAR(1), PNTH_BKGFLW          VARCHAR(20), PNTH_ACCDATE         VARCHAR(8), PNTH_TRANTIM         VARCHAR(14), PNTH_PAYBRA          VARCHAR(6), PNTH_PAYCARDNO       VARCHAR(30), PNTH_PAYCRYTYP       VARCHAR(3), PNTH_PAYAMT          DECIMAL(15,2), PNTH_CASHFLAG        CHAR(1), PNTH_RCVBRA          VARCHAR(6), PNTH_RCVCARDNO       VARCHAR(30), PNTH_RCVNAME         VARCHAR(60), PNTH_RCVCRYTYP       VARCHAR(3), PNTH_RCVAMT          DECIMAL(15,2), PNTH_HANGTYP         CHAR(2), PNTH_LOGTYP          CHAR(1), PNTH_HSTFLWNO        VARCHAR(20), PNTH_REMARK          VARCHAR(100), PNTH_STT             CHAR(2), PNTH_FUNDCODE        VARCHAR(6), PNTH_TOFUNDCODE      VARCHAR(6), PNTH_TRANKIND        VARCHAR(1), PNTH_RCVOPENBANK     VARCHAR(60), PNTH_RCVOPENCITY     VARCHAR(60), PNTH_RCVOPENAREA     VARCHAR(60), PNTH_RCVOPENBRANCH   VARCHAR(60), PNTH_TRANFEE         DECIMAL(15,2), CONSTRAINT PB_NETTRN_HIS_PK01 PRIMARY KEY (PNTH_TRNFLW) ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  120  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  121  </td>
+<td>  DROP TABLE PB_BKGFLW
+  </td>
+</tr>
+    <tr class="alt">
+<td>  122  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  123  </td>
+<td>  CREATE TABLE PB_BKGFLW ( PBF_BKGFLW          VARCHAR(20)     NOT NULL, PBF_BKGCYC          CHAR(1)         NOT NULL, PBF_BKGTIM          VARCHAR(8), PBF_STARTDATE       VARCHAR(8), PBF_ENDDATE         VARCHAR(8), PBF_PAYBRA          VARCHAR(6), PBF_PAYCARDNO       VARCHAR(30)     NOT NULL, PBF_PAYCRYTYP       VARCHAR(3)      NOT NULL, PBF_PAYAMT          DECIMAL(15,2)   NOT NULL, PBF_CASHFLAG        CHAR(1), PBF_RCVBRA          VARCHAR(6), PBF_RCVCARDNO       VARCHAR(30), PBF_RCVNAME         VARCHAR(60), PBF_SMTTIM          VARCHAR(14), PBF_STT             CHAR(2), PBF_PRTDSCE         VARCHAR(40), PBF_MEMO            VARCHAR(60), CONSTRAINT PB_BKGFLW_PK01 PRIMARY KEY (PBF_BKGFLW) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  124  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  125  </td>
+<td>  DROP TABLE PB_CSTLOG
+  </td>
+</tr>
+    <tr class="alt">
+<td>  126  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  127  </td>
+<td>  CREATE TABLE PB_CSTLOG ( PCL_LOGNO           VARCHAR(20)     NOT NULL, PCL_LOGTIM          VARCHAR(14), PCL_CSTTYP          CHAR(1), PCL_CSTNO           VARCHAR(30), PCL_CARDNO          VARCHAR(30), PCL_TRANCOD         VARCHAR(6), PCL_CHANNEL         CHAR(1), PCL_FLAG            VARCHAR(8), PCL_OPRRLT          VARCHAR(20), PCL_IP              VARCHAR(20), PCL_OPRDSCE         VARCHAR(2000), CONSTRAINT PB_CSTLOG_PK01 PRIMARY KEY (PCL_LOGNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  128  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  129  </td>
+<td>  DROP TABLE PB_LOGSTT
+  </td>
+</tr>
+    <tr class="alt">
+<td>  130  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  131  </td>
+<td>  CREATE TABLE PB_LOGSTT ( PLS_CARDNO          VARCHAR(30)     NOT NULL, PLS_SESID           VARCHAR(60), PLS_LOGTIM          VARCHAR(14), CONSTRAINT PB_LOGSTT_PK01 PRIMARY KEY (PLS_CARDNO) ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  132  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  133  </td>
+<td>  DROP TABLE PUB_APPPAR
+  </td>
+</tr>
+    <tr class="alt">
+<td>  134  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  135  </td>
+<td>  CREATE TABLE PUB_APPPAR ( APR_CODE            VARCHAR(30)     NOT NULL, APR_VALUE           VARCHAR(30)     NOT NULL, APR_LANGUAGE        VARCHAR(10)     NOT NULL, APR_NAME            VARCHAR(60)     NOT NULL, APR_SHOWMSG         VARCHAR(200)    NOT NULL, APR_CLASS           VARCHAR(6), CONSTRAINT PB_APPPAR_PK01 PRIMARY KEY (APR_CODE,APR_VALUE,APR_LANGUAGE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  136  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  137  </td>
+<td>  DROP TABLE PUB_ERRCODE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  138  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  139  </td>
+<td>  CREATE TABLE PUB_ERRCODE ( ERC_ERRCODE         VARCHAR(8)      NOT NULL, ERC_LANGUAGE        VARCHAR(10)     NOT NULL, ERC_SHOWMSG         VARCHAR(200), ERC_INNERMSG        VARCHAR(200), ERC_CLASS           VARCHAR(6), CONSTRAINT PB_ERRCODE_PK01 PRIMARY KEY (ERC_ERRCODE,ERC_LANGUAGE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  140  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  141  </td>
+<td>  DROP TABLE PB_BRCHRUT
+  </td>
+</tr>
+    <tr class="alt">
+<td>  142  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  143  </td>
+<td>  CREATE TABLE PB_BRCHRUT ( PBR_BRANCHNO        VARCHAR(6)      NOT NULL, PBR_CORENO          VARCHAR(6)      NOT NULL, PBR_BRANCHNAME      VARCHAR(40)     NOT NULL, PBR_BRANCHENNAME    VARCHAR(60)     NOT NULL, PBR_PRVCORENO	VARCHAR(6)	NOT NULL, PBR_PRVBRANCHNAME   VARCHAR(40)	NOT NULL, PBR_SPECIALURL      VARCHAR(100), PBR_CNLOPENFLG      VARCHAR(10), PBR_OPENFLAG        VARCHAR(20), PBR_ADVPAGE         VARCHAR(100), PBR_SEPPAGE         VARCHAR(100), PBR_CONNSIZE				VARCHAR(3), PBR_CITYCODE        VARCHAR(4), PBR_ASYPWD          CHAR(2)  NOT NULL DEFAULT '00', PBR_SAFEINPUTVS          CHAR(2)  , PBR_ORGNO			VARCHAR(6), CONSTRAINT PB_BRCHRUT_PK01 PRIMARY KEY (PBR_BRANCHNO, PBR_CORENO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  144  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  145  </td>
+<td>  DROP TABLE PB_CRDCNT
+  </td>
+</tr>
+    <tr class="alt">
+<td>  146  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  147  </td>
+<td>  CREATE TABLE PB_CRDCNT ( PCC_CENTERNO        VARCHAR(6)      NOT NULL, PCC_BRANCHNO        VARCHAR(6)      NOT NULL, PCC_FLAG            CHAR(1)         NOT NULL, CONSTRAINT PB_CRDCNT_PK01 PRIMARY KEY (PCC_CENTERNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  148  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  149  </td>
+<td>  DROP TABLE PB_SIGNINF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  150  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  151  </td>
+<td>  CREATE TABLE PB_SIGNINF ( PSI_LOGNO           VARCHAR(20)     NOT NULL, PSI_SIGNKEY         VARCHAR(20)     NOT NULL, PSI_CSTNO           VARCHAR(10)     NOT NULL, PSI_BSNCOD          VARCHAR(8), PSI_HOSTCOD         VARCHAR(8), PSI_CERTDN          VARCHAR(100), PSI_DATALEN         VARCHAR(10), PSI_SVRDATA         CLOB(50K), PSI_CLIDATA         CLOB(50K), PSI_SUBDATA         CLOB(50K), CONSTRAINT PB_SIGNINF_PK01 PRIMARY KEY (PSI_LOGNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  152  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  153  </td>
+<td>  DROP TABLE PB_CRYCMP
+  </td>
+</tr>
+    <tr class="alt">
+<td>  154  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  155  </td>
+<td>  CREATE TABLE PB_CRYCMP ( PCP_CRYTYPE         VARCHAR(3)      NOT NULL, PCP_CRYCODE         VARCHAR(3)      NOT NULL, PCP_CRYNAME         VARCHAR(20), CONSTRAINT PB_CRYCMP_PK01 PRIMARY KEY (PCP_CRYTYPE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  156  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  157  </td>
+<td>  DROP TABLE PB_BATFLG
+  </td>
+</tr>
+    <tr class="alt">
+<td>  158  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  159  </td>
+<td>  CREATE TABLE PB_BATFLG ( PBT_BATNO           VARCHAR(4)      NOT NULL, PBT_BATINF          VARCHAR(60), PBT_REPFLG          CHAR(1)         NOT NULL, PBT_STT             CHAR(1)         NOT NULL, PBT_TIME            VARCHAR(14), CONSTRAINT PB_BATFLG_PK01 PRIMARY KEY (PBT_BATNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  160  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  161  </td>
+<td>  DROP TABLE IM_EBTELLER
+  </td>
+</tr>
+    <tr class="alt">
+<td>  162  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  163  </td>
+<td>  CREATE TABLE IM_EBTELLER ( EBT_BRANCHNO        VARCHAR(6)      NOT NULL, EBT_EBTELLNO        VARCHAR(8)      NOT NULL, EBT_STT             CHAR(1), CONSTRAINT IM_EBTELLER_PK01 PRIMARY KEY (EBT_BRANCHNO, EBT_EBTELLNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  164  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  165  </td>
+<td>  DROP TABLE PB_CRDSCR
+  </td>
+</tr>
+    <tr class="alt">
+<td>  166  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  167  </td>
+<td>  CREATE TABLE PB_CRDSCR ( PCS_CARDNO          VARCHAR(30)     NOT NULL, PCS_CHANNEL         CHAR(1)         NOT NULL, PCS_SCORE           DECIMAL(15,2), PCS_UPDDATE         VARCHAR(8), CONSTRAINT PB_CRDSCR_PK01 PRIMARY KEY(PCS_CARDNO, PCS_CHANNEL) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  168  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  169  </td>
+<td>  DROP TABLE PB_USDRAT
+  </td>
+</tr>
+    <tr class="alt">
+<td>  170  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  171  </td>
+<td>  CREATE TABLE PB_USDRAT ( PUR_CRYTYP          VARCHAR(3)      NOT NULL, PUR_RATE            DECIMAL(8,4)    NOT NULL, CONSTRAINT PB_USDRAT_PK01 PRIMARY KEY (PUR_CRYTYP) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  172  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  173  </td>
+<td>  DROP TABLE PB_CSRRUL
+  </td>
+</tr>
+    <tr class="alt">
+<td>  174  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  175  </td>
+<td>  CREATE TABLE PB_CSRRUL ( PCR_TRANCODE        VARCHAR(6)      NOT NULL, PCR_CHANNEL         CHAR(1)         NOT NULL, PCR_HOSTCODE        VARCHAR(8)      NOT NULL, PCR_FIRSTSCORE      DECIMAL(15,2), PCR_SCORE           DECIMAL(15,2), PCR_USDSCORE        DECIMAL(15,2), CONSTRAINT PB_CSRRUL_PK01 PRIMARY KEY (PCR_TRANCODE, PCR_CHANNEL, PCR_HOSTCODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  176  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  177  </td>
+<td>  DROP TABLE PB_USEFLG
+  </td>
+</tr>
+    <tr class="alt">
+<td>  178  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  179  </td>
+<td>  CREATE TABLE PB_USEFLG ( PUF_CARDNO          VARCHAR(30)     NOT NULL, PUF_TRANCODE        VARCHAR(8)      NOT NULL, PUF_CHANNEL         CHAR(1)         NOT NULL, PUF_FIRSTFLAG       CHAR(1), CONSTRAINT PB_USEFLG_PK01 PRIMARY KEY (PUF_CARDNO, PUF_TRANCODE, PUF_CHANNEL) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  180  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  181  </td>
+<td>  DROP TABLE PB_SCRTMP
+  </td>
+</tr>
+    <tr class="alt">
+<td>  182  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  183  </td>
+<td>  CREATE TABLE PB_SCRTMP ( PST_LOGNO           VARCHAR(20)     NOT NULL, PST_CARDNO          VARCHAR(30)     NOT NULL, PST_TRANCODE        VARCHAR(8)      NOT NULL, PST_CHANNEL         CHAR(1)         NOT NULL, PST_TRANFLAG        CHAR(1)         NOT NULL, PST_SCORE           DECIMAL(15,2), PST_LOGDATE         VARCHAR(8), CONSTRAINT PB_USEFLG_PK01 PRIMARY KEY (PST_LOGNO, PST_CARDNO, PST_TRANCODE, PST_CHANNEL, PST_TRANFLAG) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  184  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  185  </td>
+<td>  DROP TABLE PB_SCRTMP_HIS
+  </td>
+</tr>
+    <tr class="alt">
+<td>  186  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  187  </td>
+<td>  CREATE TABLE PB_SCRTMP_HIS ( PSTH_LOGNO           VARCHAR(20)     NOT NULL, PSTH_CARDNO          VARCHAR(30)     NOT NULL, PSTH_TRANCODE        VARCHAR(8)      NOT NULL, PSTH_CHANNEL         CHAR(1)         NOT NULL, PSTH_TRANFLAG        CHAR(1)         NOT NULL, PSTH_SCORE           DECIMAL(15,2), PSTH_LOGDATE         VARCHAR(8), CONSTRAINT PB_USEFLG_PK01 PRIMARY KEY (PSTH_LOGNO, PSTH_CARDNO, PSTH_TRANCODE, PSTH_CHANNEL, PSTH_TRANFLAG) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  188  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  189  </td>
+<td>  DROP TABLE PB_WAP_EXPWDMAP
+  </td>
+</tr>
+    <tr class="alt">
+<td>  190  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  191  </td>
+<td>  CREATE table PB_WAP_EXPWDMAP ( PROE_EXPWD   VARCHAR(6)  NOT NULL, PROE_IMGFILENAME VARCHAR(6)  NOT NULL ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  192  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  193  </td>
+<td>  DROP TABLE PB_WAPCUSTINF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  194  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  195  </td>
+<td>  CREATE TABLE PB_WAPCUSTINF ( MOB_MOBPHONE	VARCHAR(20) 	NOT NULL, MOB_CARDNO		VARCHAR(25) 	NOT NULL, MOB_CARDALIAS   VARCHAR(30)	 	NOT NULL, MOB_BUSTYPE 	VARCHAR(1) 		NOT NULL, MOB_CARDSEQNO   INT 			NOT NULL ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  196  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  197  </td>
+<td>  DROP TABLE PB_MENUDEF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  198  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  199  </td>
+<td>  CREATE TABLE PB_MENUDEF ( MDF_MENUCODE	   CHARACTER(8)    NOT NULL, MDF_PARENTNO	   CHARACTER(8)            , MDF_LEVEL		   CHARACTER(1)    NOT NULL, MDF_ISLEAF		   CHARACTER(1)    NOT NULL, MDF_SEQNO		   INTEGER                 , MDF_NAMECN		   VARCHAR(40)             , MDF_NAMEEN		   VARCHAR(40)             , MDF_TARGET		   VARCHAR(30)             , MDF_BSNCODE        CHARACTER(6)    NOT NULL, MDF_TRANCODE       CHARACTER(21)           , MDF_URLCN          VARCHAR(100)    NOT NULL, MDF_URLEN          VARCHAR(100)            , MDF_STT            CHARACTER(1)    NOT NULL, MDF_SHOWSTATUS     CHARACTER(1)    NOT NULL, MDF_CARDTYPE       VARCHAR(10)     NOT NULL, MDF_MENUDESC       VARCHAR(150)            , MDF_MENUDESCEN     VARCHAR(150)            , MDF_SPECIALSWlTCH  CHARACTER(1)    NOT NULL, MDF_BRANCHNO       VARCHAR(160)            , MDF_SELFNAMECN		   VARCHAR(40)           , MDF_SELFNAMEEN		   VARCHAR(40)           , MDF_NETFLAG        CHARACTER(2)  DEFAULT '00' , PRIMARY KEY(MDF_MENUCODE) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  200  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  201  </td>
+<td>  DROP TABLE PB_ROLEBSNDEF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  202  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  203  </td>
+<td>  CREATE TABLE PB_ROLEBSNDEF (RBD_ROLENO  CHARACTER(2)    NOT NULL, RBD_BSNCODE CHARACTER(6)    NOT NULL ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  204  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  205  </td>
+<td>  DROP TABLE IM_PERSONCSTOPRCRT
+  </td>
+</tr>
+    <tr class="alt">
+<td>  206  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  207  </td>
+<td>  CREATE TABLE IM_PERSONCSTOPRCRT ( POC_CSTNO      VARCHAR(10)   NOT NULL, POC_DISTRICTNO VARCHAR(3), POC_CERST      CHARACTER(1), POC_REFNO      VARCHAR(30), POC_AUTHNO     VARCHAR(30), POC_VALIDTIME  VARCHAR(14), POC_CERTIME    CHARACTER(2), POC_PRINO      CHARACTER(1)  NOT NULL DEFAULT '0', POC_RECST      VARCHAR(2), POC_PRTIM      SMALLINT      DEFAULT 0, POC_NPASS      CHARACTER(50), POC_ERRNO      CHARACTER(6), POC_CATYPE     CHARACTER(1), POC_USERTYPE   CHARACTER(1), POC_CONFERNO   VARCHAR(16), POC_NOTICE	   CHARACTER(1)  DEFAULT '0', POC_CONFCOUNT  SMALLINT      DEFAULT 0, PRIMARY KEY (POC_CSTNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  208  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  209  </td>
+<td>  DROP TABLE IM_PERSONCERTERRMAN
+  </td>
+</tr>
+    <tr class="alt">
+<td>  210  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  211  </td>
+<td>  CREATE TABLE IM_PERSONCERTERRMAN ( PEM_CSTNO  VARCHAR(13)  NOT NULL, PEM_ERRTIM VARCHAR(14), PEM_OPTTYP CHARACTER(1), PEM_ERRMSG VARCHAR(400), PEM_DN     VARCHAR(255), PRIMARY KEY (PEM_CSTNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  212  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  213  </td>
+<td>  DROP TABLE PB_RETPWD
+  </td>
+</tr>
+    <tr class="alt">
+<td>  214  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  215  </td>
+<td>  CREATE TABLE PB_RETPWD ( PRP_CARDNO          VARCHAR(30)     NOT NULL, PRP_USETYPE         CHAR(1)     	NOT NULL, PRP_UPTIME          VARCHAR(14)     NOT NULL, PRP_AMOUNT          INT ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  216  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  217  </td>
+<td>  DROP TABLE PB_WODE_ACCINF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  218  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  219  </td>
+<td>  CREATE TABLE PB_WODE_ACCINF ( PAW_SUBACC          VARCHAR(21) NOT NULL, PAW_RELTYPE         VARCHAR(1), PAW_STATE           VARCHAR(1), PAW_ACCNO         	VARCHAR(21), PAW_WODECARD        VARCHAR(19) NOT NULL, PAW_CUSTNO          VARCHAR(13), PAW_CLEVEL       	VARCHAR(2), PAW_SUBCUSTNO       VARCHAR(13), CONSTRAINT PB_WODE_PK01 PRIMARY KEY (PAW_SUBACC,PAW_WODECARD) ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  220  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  221  </td>
+<td>  DROP TABLE PB_TRANCRDINF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  222  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  223  </td>
+<td>  CREATE TABLE PB_TRANCRDINF ( PTCI_BRANCHCRDFLG     VARCHAR(15)  NOT NULL, PTCI_BRANCHNAME		  VARCHAR(100) NOT NULL, PTCI_ORGCODE		  VARCHAR(8)   NOT NULL, PTCI_ACCLENGTH		  CHAR(2)	   NOT NULL, PTCI_CARDNAME		  VARCHAR(50), PTCI_CARDTYP		  CHAR(1), CONSTRAINT PB_TRANCRDINF_PK01 PRIMARY KEY (PTCI_BRANCHCRDFLG,PTCI_ACCLENGTH) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  224  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  225  </td>
+<td>  DROP TABLE PB_PMSBANKNO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  226  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  227  </td>
+<td>  CREATE TABLE PB_PMSBANKNO ( PBN_BANKNO   CHARACTER(12)  NOT NULL, PBN_STAT     CHARACTER(1)   NOT NULL, PBN_CLASS    CHARACTER(2)   NOT NULL, PBN_BANKTYPE CHARACTER(3)   NOT NULL, PBN_HDIRBANK CHARACTER(12)  NOT NULL, PBN_NODECODE CHARACTER(5)   NOT NULL, PBN_HIGHBANK CHARACTER(130) NOT NULL, PBN_PBCODE   CHARACTER(12)  NOT NULL, PBN_CITYCODE CHARACTER(4)   NOT NULL, PBN_SACSTAT  CHARACTER(1)   NOT NULL, PBN_SAALTD   CHARACTER(8)   NOT NULL, PBN_SAALTT   CHARACTER(14)  NOT NULL, PBN_LONGNAME CHARACTER(60)  NOT NULL, PBN_SHTNAME  CHARACTER(20)  NOT NULL, PBN_ADDRESS  CHARACTER(60)  NOT NULL, PBN_POSTCODE CHARACTER(6)   NOT NULL, PBN_PHONE    CHARACTER(30)  NOT NULL, PBN_EMAIL    CHARACTER(30)  NOT NULL, PBN_EFFDATE  CHARACTER(8)   NOT NULL, PBN_IVDDATE  CHARACTER(8)   NOT NULL, PBN_ALTDATE  CHARACTER(20)  NOT NULL, PBN_ALTTYPE  CHARACTER(1)   NOT NULL, PBN_ALTSTT   CHARACTER(8)   NOT NULL, PBN_REM      CHARACTER(60)  NOT NULL, PBN_ALTFLAG  CHARACTER(1)   NOT NULL, CONSTRAINT PB_PMSBANKNO_PK01 PRIMARY KEY (PBN_BANKNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  228  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  229  </td>
+<td>  DROP TABLE PB_PSDBANKNO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  230  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  231  </td>
+<td>  CREATE TABLE PB_PSDBANKNO ( PSD_BANKNO    VARCHAR(14)  NOT NULL, PSD_BANKCLS   VARCHAR(4)   NOT NULL, PSD_BANKCODE  VARCHAR(3)   NOT NULL, PSD_HDIRBANK  VARCHAR(14)          , PSD_IGLPRSN   VARCHAR(105)         , PBN_HIGHBANK  VARCHAR(70)  NOT NULL, PSD_BRBANK    VARCHAR(14)          , PSD_CHRGBANK  VARCHAR(14)          , PSD_CCPC      VARCHAR(4)   NOT NULL, PSD_CITYCODE  VARCHAR(4)           , PSD_BANKNAME  VARCHAR(60)  NOT NULL, PSD_JOINFLAG  VARCHAR(10)  NOT NULL, PSD_TEL       VARCHAR(32)          , CONSTRAINT PB_PSDBANKNO_PK01 PRIMARY KEY (PSD_BANKNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  232  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  233  </td>
+<td>  DROP TABLE PB_EFTBANKNO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  234  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  235  </td>
+<td>  CREATE TABLE PB_EFTBANKNO ( PEFT_BANKNO     CHARACTER(12)  NOT NULL, PEFT_BANKTYPE   CHARACTER(3)   NOT NULL, PEFT_LONGNAME   VARCHAR(60)    NOT NULL, PEFT_SHORTNAME  VARCHAR(60)    , PEFT_CITYCODE   CHARACTER(4)   NOT NULL, PEFT_CITYNAME   VARCHAR(60)     NOT NULL, PEFT_CLSBANKNO  CHARACTER(12)  NOT NULL, PEFT_SUBBANKNO  CHARACTER(12)  , PEFT_COREBANK   CHARACTER(12)  NOT NULL, CONSTRAINT PB_EFTBANKNO_PK01 PRIMARY KEY (PEFT_BANKNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  236  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  237  </td>
+<td>  DROP TABLE PB_PROVINCEINFO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  238  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  239  </td>
+<td>  CREATE TABLE PB_PROVINCEINFO ( PVI_PVICODE CHARACTER(3)  NOT NULL, PVI_PVINAME CHARACTER(60), PVI_STT     CHARACTER(1), PVI_PVINAMEEN  CHARACTER(100), CONSTRAINT PB_PROINFO_PK01 PRIMARY KEY (PVI_PVICODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  240  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  241  </td>
+<td>  DROP TABLE PB_CITYINFO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  242  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  243  </td>
+<td>  CREATE TABLE PB_CITYINFO ( CIT_CITYCODE CHARACTER(4)  NOT NULL, CIT_PVICODE  CHARACTER(3)  NOT NULL, CIT_CITYNAME CHARACTER(60), CIT_CITYNAMEEN  CHARACTER(100), CONSTRAINT PB_CITYINFO_PK01 PRIMARY KEY (CIT_CITYCODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  244  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  245  </td>
+<td>  DROP TABLE PB_BANKINFO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  246  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  247  </td>
+<td>  CREATE TABLE PB_BANKINFO ( BNK_BANKTYPE CHARACTER(3)  NOT NULL, BNK_AREANAME CHARACTER(60), BNK_AREANAMEEN  CHARACTER(200), BNK_INDEX  INTEGER, CONSTRAINT PB_BANKINFO_PK01 PRIMARY KEY (BNK_BANKTYPE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  248  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  249  </td>
+<td>  DROP TABLE IM_PRIZE_ACTIVE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  250  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  251  </td>
+<td>  CREATE TABLE IM_PRIZE_ACTIVE ( IPA_ACTIVENO        VARCHAR(10)     NOT NULL, IPA_ACTIVENAME      VARCHAR(60)     NOT NULL, IPA_ROLENO          CHAR(2) , IPA_BEGINDATE       VARCHAR(8) , IPA_ENDDATE         VARCHAR(8) , IPA_ACTIVETYP       CHAR(3) , IPA_CONTENTURL      VARCHAR(200) , IPA_REM        	VARCHAR(60)   , CONSTRAINT IM_ACTPRIZE_PK01 PRIMARY KEY ( IPA_ACTIVENO ) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  252  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  253  </td>
+<td>  DROP TABLE IM_PRIZE_CSTINFO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  254  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  255  </td>
+<td>  CREATE TABLE IM_PRIZE_CSTINFO ( IPC_ACTIVENO        VARCHAR(10)     NOT NULL, IPC_CARDNO      	VARCHAR(30)     NOT NULL, IPC_NAME            VARCHAR(30)  , IPC_AMT             DECIMAL(15,2) 	NOT NULL, IPC_DELESCORE       DECIMAL(15,2) 	NOT NULL, IPC_PRIZENO         VARCHAR(20)  	NOT NULL, IPC_STT             CHAR(1)       	NOT NULL, IPC_REM1        	VARCHAR(50), IPC_REM2      	VARCHAR(100), CONSTRAINT IM_CSTPRIZE_PK01 PRIMARY KEY (IPC_ACTIVENO,IPC_CARDNO) )IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  256  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  257  </td>
+<td>  DROP TABLE IM_PRIZE_TRNFLW
+  </td>
+</tr>
+    <tr class="alt">
+<td>  258  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  259  </td>
+<td>  CREATE TABLE IM_PRIZE_TRNFLW ( IPT_TRNFLW      VARCHAR(20)     NOT NULL, IPT_CARDNO      VARCHAR(30)     NOT NULL, IPT_CSTNO      VARCHAR(20)      NOT NULL, IPT_ACTIVENO    VARCHAR(10), IPT_ACTIVENAME  VARCHAR(60), IPT_ACCADDRESS  VARCHAR(30), IPT_PRIZENO     VARCHAR(20), IPT_CHANNEL     CHARACTER(1), IPT_TRANTYPE    CHARACTER(2), IPT_TRANCODE    VARCHAR(6), IPT_HOSTCODE    VARCHAR(20), IPT_ZFNAME      VARCHAR(30), IPT_MERNO       VARCHAR(20), IPT_MERNAME     VARCHAR(30), IPT_REM         DECIMAL(15, 2), IPT_DELESCORE   DECIMAL(15, 2), IPT_ACCDATE     VARCHAR(8), IPT_TRANTIM     VARCHAR(14), IPT_STT         CHARACTER(2), IPT_REM1        VARCHAR(100), IPT_REM2        VARCHAR(50), IPT_REMARK      VARCHAR(100), CONSTRAINT IM_PRI_TRN_PK01 PRIMARY KEY (IPT_TRNFLW,IPT_CARDNO) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  260  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  261  </td>
+<td>  DROP TABLE IM_PRIZE_TRNFLWHIS
+  </td>
+</tr>
+    <tr class="alt">
+<td>  262  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  263  </td>
+<td>  CREATE TABLE IM_PRIZE_TRNFLWHIS ( IPTH_TRNFLW      VARCHAR(20)     NOT NULL, IPTH_CARDNO      VARCHAR(30)     NOT NULL, IPTH_CSTNO      VARCHAR(20)      NOT NULL, IPTH_ACTIVENO    VARCHAR(10), IPTH_ACTIVENAME  VARCHAR(60), IPTH_ACCADDRESS  VARCHAR(30), IPTH_PRIZENO     VARCHAR(20), IPTH_CHANNEL     CHARACTER(1), IPTH_TRANTYPE    CHARACTER(2), IPTH_TRANCODE    VARCHAR(6), IPTH_HOSTCODE    VARCHAR(20), IPTH_ZFNAME      VARCHAR(30), IPTH_MERNO       VARCHAR(20), IPTH_MERNAME     VARCHAR(30), IPTH_REM         DECIMAL(15, 2), IPTH_DELESCORE   DECIMAL(15, 2), IPTH_ACCDATE     VARCHAR(8), IPTH_TRANTIM     VARCHAR(14), IPTH_STT         CHARACTER(2), IPTH_REM1        VARCHAR(100), IPTH_REM2        VARCHAR(50), IPTH_REMARK      VARCHAR(100), CONSTRAINT IM_PRI_TRN_PK01 PRIMARY KEY (IPTH_TRNFLW,IPTH_CARDNO) )IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  264  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  265  </td>
+<td>  DROP TABLE PB_IMAGEINFO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  266  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  267  </td>
+<td>  CREATE TABLE PB_IMAGEINFO ( PII_IMAGENAME      VARCHAR(20)     NOT NULL, PII_LANGUAGE       CHAR(1) DEFAULT '1' NOT NULL, PII_IMAGEPOS       CHAR(1) 	       , PII_PRODUCTURL      VARCHAR(300)  , PII_PRODUCTNAME     VARCHAR(40)   , PII_UPLOADTIME     VARCHAR(8)   , CONSTRAINT PB_IMGBRH_PK01 PRIMARY KEY (PII_IMAGENAME,PII_LANGUAGE) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  268  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  269  </td>
+<td>  DROP TABLE PB_CSTRELACCGRP
+  </td>
+</tr>
+    <tr class="alt">
+<td>  270  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  271  </td>
+<td>  CREATE TABLE PB_CSTRELACCGRP ( PRG_CSTNO VARCHAR(10) NOT NULL, PRG_GROUPID VARCHAR(8)  NOT NULL, PRG_GROUPNAME VARCHAR(60), PRIMARY KEY (PRG_CSTNO, PRG_GROUPID) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  272  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  273  </td>
+<td>  DROP TABLE PB_FUNDMSG
+  </td>
+</tr>
+    <tr class="alt">
+<td>  274  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  275  </td>
+<td>  CREATE TABLE PB_FUNDMSG ( PFM_FUNDCODE        VARCHAR(6)      NOT NULL, PFM_FUNDNAME        VARCHAR(40)     NOT NULL, PFM_UPDDATE					VARCHAR(8), PFM_NETVAL          DECIMAL(9,4), PFM_FUNDTYP         CHAR(1)   			NOT NULL, PFM_FEETYP          CHAR(1)      		NOT NULL, PFM_FUNDLEVEL       CHAR(1), PFM_MONTHRATE       DECIMAL(9,2), PFM_SEASONRATE      DECIMAL(9,2), PFM_YEARRATE        DECIMAL(9,2), PFM_NEWVOL					DECIMAL(12,4), PFM_VOLUPDATE				VARCHAR(8), PFM_VALCHANGE       DECIMAL(9,2), PFM_FEERATE         DECIMAL(9,2), PFM_BACKFUNDCODE    VARCHAR(6), PFM_FLAG						CHAR(1), PFM_CURRRATE				DECIMAL(9,5), PFM_CURRWEEKRATE    DECIMAL(9,4), PFM_STARTDDATE					VARCHAR(8), PFM_ENDDDATE					VARCHAR(8), PFM_DISCOUNT        CHAR(1), CONSTRAINT PB_FUNDMSG_PK01 PRIMARY KEY (PFM_FUNDCODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  276  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  277  </td>
+<td>  DROP TABLE PB_GOLDPICKADDR
+  </td>
+</tr>
+    <tr class="alt">
+<td>  278  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  279  </td>
+<td>  CREATE TABLE PB_GOLDPICKADDR ( PGPA_SEQNO    VARCHAR(10)    NOT NULL, PGPA_CITY		  VARCHAR(20)    NOT NULL, PGPA_ADDR		  VARCHAR(100)   NOT NULL, PGPA_TOUCH		VARCHAR(50)	   NOT NULL, CONSTRAINT PB_ACCINF_PK01 PRIMARY KEY (PGPA_SEQNO,PGPA_CITY) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  280  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  281  </td>
+<td>  DROP TABLE PB_INSURE_PROD
+  </td>
+</tr>
+    <tr class="alt">
+<td>  282  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  283  </td>
+<td>  CREATE TABLE PB_INSURE_PROD( PIP_INSRNO CHAR(10) NOT NULL, PIP_INSRNAME VARCHAR(30)  NOT NULL, PIP_INSRTYPE CHAR(3)  NOT NULL, PIP_COMPANYNO CHAR(10)  NOT NULL, PIP_COMPANYNAME VARCHAR(60)  NOT NULL, PIP_INTR_URL	VARCHAR(60), PIP_ITEM_URL	VARCHAR(60), PIP_BUY_URL	VARCHAR(60), PIP_SEQNO	SMALLINT  NOT NULL, PIP_BUY_SWITCH SMALLINT  NOT NULL, CONSTRAINT PB_INSP_PK01 PRIMARY KEY(PIP_INSRNO,PIP_COMPANYNO) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  284  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  285  </td>
+<td>  DROP TABLE PB_INSURE_NODE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  286  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  287  </td>
+<td>  CREATE TABLE PB_INSURE_NODE( PIN_SUBCMPNO VARCHAR(10) NOT NULL, PIN_COMPANYNO VARCHAR(7)  NOT NULL, PIN_COMPANYNAME VARCHAR(40)  NOT NULL, PIN_PRIVNAME VARCHAR(20)  NOT NULL, PIN_PVICODE   CHAR(3)  NOT NULL, PIN_CITYNAME VARCHAR(20)  NOT NULL, PIN_SERVICEPHONE	VARCHAR(20), PIN_BRANCHNAME VARCHAR(20)  NOT NULL, PIN_BRANCHNO	CHAR(6) NOT NULL, CONSTRAINT PB_INSN_PK01 PRIMARY KEY(PIN_SUBCMPNO,PIN_COMPANYNO,PIN_BRANCHNO) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  288  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  289  </td>
+<td>  DROP TABLE PB_AIRLINECOM
+  </td>
+</tr>
+    <tr class="alt">
+<td>  290  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  291  </td>
+<td>  CREATE TABLE PB_AIRLINECOM ( PALC_SEQNO    VARCHAR(10)    NOT NULL, PALC_NAME		  VARCHAR(20)    NOT NULL, PALC_RATE		  VARCHAR(10)   NOT NULL, PALC_URL		VARCHAR(80)	   NOT NULL, PALC_TELE		VARCHAR(50)	   NOT NULL, CONSTRAINT PB_ALCOM_PK01 PRIMARY KEY (PALC_SEQNO) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  292  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  293  </td>
+<td>  DROP TABLE PB_BUYFORDEL
+  </td>
+</tr>
+    <tr class="alt">
+<td>  294  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  295  </td>
+<td>  CREATE TABLE PB_BUYFORDEL ( PYF_TRNFLW      VARCHAR(20)    	 	NOT NULL, PYF_CARDNO      VARCHAR(30)     	NOT NULL, PYF_CHHTYP      CHAR(1), PYF_BRANCHNO    VARCHAR(6)     		NOT NULL, PYF_TRANDAY     VARCHAR(8)        NOT NULL, PYF_TRANTIM     VARCHAR(14)				NOT NULL, PYF_NAME        VARCHAR(30)				NOT NULL, PYF_SEX         CHAR(1)						NOT NULL, PYF_CTFTYP      CHAR(2)						NOT NULL, PYF_CTFNO       VARCHAR(20)				NOT NULL, PYF_BIRTHDAY    VARCHAR(8)				NOT NULL, PYF_CHNTYP      CHAR(2), PYF_CHNNO       VARCHAR(30), PYF_CHNADDR     VARCHAR(200), PYF_BUYCHNTYPE  VARCHAR(60), PYF_CHNCODE     VARCHAR(8), PYF_CHNCUR      CHAR(3), PYF_CHNAMT      DECIMAL(15,2), PYF_CACULATENO  VARCHAR(20), PYF_CHNEXC      DECIMAL(8,4), PYF_NEEDRMB     DECIMAL(15,2), PYF_RATFLG      CHAR(1) 		 NOT NULL WITH DEFAULT '0'	   , PYF_TRANBODY    CHAR(1), PYF_COUNTRYTYP  VARCHAR(30), PYF_STATUS      CHAR(2), PYF_REFUSERES   VARCHAR(200), PYF_TELLERNO    VARCHAR(20), PYF_OPENNETNO   VARCHAR(6), PRIMARY KEY (PYF_TRNFLW) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  296  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  297  </td>
+<td>  DROP TABLE PB_BUYFORRES
+  </td>
+</tr>
+    <tr class="alt">
+<td>  298  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  299  </td>
+<td>  CREATE TABLE PB_BUYFORRES ( PYS_TRNFLW      VARCHAR(20)    	 	NOT NULL, PYS_CARDNO      VARCHAR(30)     	NOT NULL, PYS_CHHTYP      CHAR(1), PYS_BRANCHNO    VARCHAR(6)     		NOT NULL, PYS_TRANDAY     VARCHAR(8)        NOT NULL, PYS_TRANTIM     VARCHAR(14)				NOT NULL, PYS_DEALTIM     VARCHAR(14)				NOT NULL, PYS_NAME        VARCHAR(30)				NOT NULL, PYS_SEX         CHAR(1)						NOT NULL, PYS_CTFTYP      CHAR(2)						NOT NULL, PYS_CTFNO       VARCHAR(20)				NOT NULL, PYS_BIRTHDAY    VARCHAR(8)				NOT NULL, PYS_CHNTYP      CHAR(2), PYS_CHNNO       VARCHAR(30), PYS_CHNADDR     VARCHAR(200), PYS_BUYCHNTYPE  VARCHAR(60), PYS_CHNCODE     VARCHAR(8), PYS_CHNCUR      CHAR(3), PYS_CHNAMT      DECIMAL(15,2), PYS_CACULATENO  VARCHAR(20), PYS_CHNEXC      DECIMAL(8,4), PYS_NEEDRMB     DECIMAL(15,2), PYS_RATFLG      CHAR(1) 			 NOT NULL WITH DEFAULT '0' , PYS_TRANBODY    CHAR(1), PYS_COUNTRYTYP  VARCHAR(30), PYS_STATUS      CHAR(2), PYS_REFUSERES   VARCHAR(200), PYS_TELLERNO    VARCHAR(20), PYS_HSTFLOWNO   VARCHAR(20), PYS_FISCALFLOW  VARCHAR(11), PYS_OPENNETNO   VARCHAR(6), PYS_BUYNO   	VARCHAR(30), PYS_CHANNEL   	CHAR(1)		 NOT NULL WITH DEFAULT '2', PRIMARY KEY (PYS_TRNFLW) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  300  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  301  </td>
+<td>  DROP TABLE PB_COUNTRY_CODE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  302  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  303  </td>
+<td>  CREATE TABLE PB_COUNTRY_CODE ( PCO_DIGITALNO      CHAR(3)    	 	NOT NULL, PCO_ALPHABETNO     CHAR(3)     		NOT NULL, PCO_INITIAL				 VARCHAR(10)		NOT NULL	, PCO_SHORTNAMECN    VARCHAR(50)		NOT NULL	, PCO_SHORTNAMEEN    VARCHAR(50), PCO_FULLNAMECN     VARCHAR(80), PCO_FULLNAMEEN     VARCHAR(80) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  304  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  305  </td>
+<td>  DROP TABLE PB_PROGUIDE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  306  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  307  </td>
+<td>  CREATE TABLE PB_PROGUIDE ( PPG_PRODUCTNO          VARCHAR(10)     NOT NULL, PPG_FIRSTTIME          VARCHAR(8), PPG_LASTTIME           VARCHAR(8), PPG_PROGUIDE           VARCHAR(60) NOT NULL, PPG_MOBILEPROGUIDE     VARCHAR(60) , PPG_PROINTRO           VARCHAR(60) , PPG_PROREPORT		   VARCHAR(60), PPG_TYPE 							 CHAR(2), PPG_PRONOTE	           VARCHAR(60), CONSTRAINT PB_PROGUIDE_PK01 PRIMARY KEY (PPG_PRODUCTNO,PPG_PROGUIDE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  308  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  309  </td>
+<td>  DROP TABLE PB_TRADEMENUREF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  310  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  311  </td>
+<td>  CREATE TABLE PB_TRADEMENUREF ( PTM_TRANCOD						CHAR(6)	NOT NULL, PTM_BSNCODE						CHAR(6)	NOT NULL, PTM_NAMECN						VARCHAR(40)		, PTM_NAMEEN						VARCHAR(40)		, PTM_URLCN							VARCHAR(100)	, PTM_URLEN							VARCHAR(100)	, PTM_PREBSNCODE				VARCHAR(6)	, PTM_ISCHANNELTRADE		CHAR(1)		NOT NULL, PTM_STT								CHAR(1)		NOT NULL ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  312  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  313  </td>
+<td>  DROP table PB_FINANCECOMPOSITE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  314  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  315  </td>
+<td>  CREATE table PB_FINANCECOMPOSITE ( PFR_CSTNO VARCHAR(10)   NOT NULL, PFR_LARGEID VARCHAR(40)  NOT NULL, PFR_SMALLID  VARCHAR(40) NOT NULL, PFR_ACCTYPE CHAR(2)       NOT NULL, /*帐户类型: 资产类账户有：1现金、2活期存款、3定期存款、4证券、5期货、6基金、7外汇、8黄金、9房子、10车、11其他类资产 负债类账户有：30借款、31贷款、32信用卡、33其他类负债*/ PFR_CURRTYPE CHAR(3)       NOT NULL, PFR_BALANCE  DECIMAL(15,2) NOT NULL , PFR_CAPITALORDEBT  CHAR(1) NOT NULL, PFR_OPENBANK    VARCHAR(40) , PFR_REMARK      VARCHAR(50), PFR_ISLOAD    CHAR(1) DEFAULT '0', PFR_LASTMODIFY  VARCHAR(20), CONSTRAINT PB_FIRST_PK01 PRIMARY KEY(PFR_CSTNO,PFR_LARGEID, PFR_SMALLID) ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  316  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  317  </td>
+<td>  DROP TABLE PB_USERDEFINED
+  </td>
+</tr>
+    <tr class="alt">
+<td>  318  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  319  </td>
+<td>  CREATE TABLE PB_USERDEFINED ( PUD_CSTNO         VARCHAR(10)      NOT NULL, PUD_USUALMENU     VARCHAR(300)      , PUD_STYLE         VARCHAR(20)  , CONSTRAINT PB_DEFINED_PK01 PRIMARY KEY (PUD_CSTNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  320  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  321  </td>
+<td>  DROP TABLE PB_FDCD
+  </td>
+</tr>
+    <tr class="alt">
+<td>  322  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  323  </td>
+<td>  CREATE TABLE PB_FDCD ( PFC_FUNDCODE        VARCHAR(6)      NOT NULL, PFC_FUNDNAME        VARCHAR(40)     NOT NULL, PFC_SHARECLASS      VARCHAR(6)      NOT NULL, PFC_SUBTYP          VARCHAR(6)      NOT NULL, PFC_PRDTYP          VARCHAR(6)      NOT NULL, PRIMARY KEY (PFC_FUNDCODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  324  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  325  </td>
+<td>  DROP TABLE PB_FDZH
+  </td>
+</tr>
+    <tr class="alt">
+<td>  326  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  327  </td>
+<td>  CREATE TABLE PB_FDZH ( PFZ_FUNDCODE    CHAR(6)    NOT NULL, PFZ_FUNDNAME    VARCHAR(40) NOT NULL, PFZ_COMPANY     VARCHAR(60) , PFZ_DSE         VARCHAR(40) , PRIMARY KEY (PFZ_FUNDCODE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  328  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  329  </td>
+<td>  DROP TABLE MP_ATMBOOKING
+  </td>
+</tr>
+    <tr class="alt">
+<td>  330  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  331  </td>
+<td>  CREATE TABLE MP_ATMBOOKING ( MAB_SEQNO           VARCHAR(10)          NOT NULL, MAB_CARDNO          VARCHAR(30)          NOT NULL, MAB_MOBILENO        VARCHAR(20)          NOT NULL, MAB_VERIFYCODE      VARCHAR(30), MAB_BOUND           DECIMAL(15,2)        NOT NULL, MAB_ABLEBOUND       DECIMAL(15,2)        NOT NULL, MAB_CHANNELFLAG     CHAR(1)              NOT NULL, MAB_TRANDATE        VARCHAR(8)           NOT NULL, MAB_TRANTIME        VARCHAR(6)           NOT NULL, MAB_REQTIME         VARCHAR(14)          NOT NULL, MAB_STT             CHAR(1)              NOT NULL, MAB_FAILTIMES       INTEGER              NOT NULL, MAB_CASHTIMES       INTEGER              NOT NULL, MAB_BANKNO          CHAR(6), MAB_TELLERNO        VARCHAR(10), MAB_TRANNO        	VARCHAR(2)				 NOT NULL, MAB_INCARDNO        VARCHAR(30), MAB_CURTYPE         VARCHAR(3), MAB_ACCOUNTNO       VARCHAR(19), MAB_CUSTOMERID      VARCHAR(15), MAB_INVALREASON     VARCHAR(2), MAB_INVALTIME       VARCHAR(14), MAB_PROOFCARDNO     VARCHAR(20), CONSTRAINT MP_ATMBOOKING_PK01 PRIMARY KEY (MAB_SEQNO) ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  332  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  333  </td>
+<td>  DROP TABLE MP_ATMTRNFLW
+  </td>
+</tr>
+    <tr class="alt">
+<td>  334  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  335  </td>
+<td>  CREATE TABLE MP_ATMTRNFLW ( MAT_FLWNO           VARCHAR(20)          NOT NULL, MAT_CARDNO          VARCHAR(30)          NOT NULL, MAT_MOBILENO        VARCHAR(20)          NOT NULL, MAT_SEQNO           VARCHAR(10)          NOT NULL, MAT_TRANTIME        VARCHAR(14)          NOT NULL, MAT_REQTIME         VARCHAR(14)          NOT NULL, MAT_TRANSUM         DECIMAL(15,2)        NOT NULL, MAT_TRANTYP         CHAR(2)              NOT NULL, MAT_CHANNEL         CHAR(1)              NOT NULL, MAT_BANKNO          CHAR(6), MAT_TELLERNO        VARCHAR(10), MAT_TRANNO 				VARCHAR(2), MAT_INCARDNO			VARCHAR(30), MAT_CURTYPE         VARCHAR(3), MAT_ACCOUNTNO       VARCHAR(19), MAT_CUSTOMERID      VARCHAR(15), MAT_PROOFCARDNO     VARCHAR(20), CONSTRAINT MP_ATMTRNFLW_PK01 PRIMARY KEY (MAT_FLWNO) ) IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  336  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  337  </td>
+<td>  DROP TABLE PB_COMMCSTINF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  338  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  339  </td>
+<td>  CREATE TABLE PB_COMMCSTINF( PCIF_ACCNO      VARCHAR(30) NOT NULL, PCIF_COREID     VARCHAR(13) , PCIF_NAME       VARCHAR(30) NOT NULL, PCIF_PASSWORD   VARCHAR(60) NOT NULL, PCIF_CTFTYP     VARCHAR(4)  NOT NULL, PCIF_CTFNO      VARCHAR(30) NOT NULL, PCIF_STT        CHAR(1)     NOT NULL, PCIF_LASTLGNTIM VARCHAR(14) , PCIF_LASTLGNIP  VARCHAR(20) , PCIF_OPENDATE   VARCHAR(8)  NOT NULL, PCIF_ACCTYPE	   VARCHAR(2)  DEFAULT '00' NOT NULL, CONSTRAINT PB_COMMCSTINF_PK01 PRIMARY KEY (PCIF_ACCNO) )IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  340  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  341  </td>
+<td>  DROP TABLE PB_MONITOR_ALLOW
+  </td>
+</tr>
+    <tr class="alt">
+<td>  342  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  343  </td>
+<td>  CREATE TABLE PB_MONITOR_ALLOW( PMA_CARDNO VARCHAR(30) NOT NULL , PMA_IPADDR VARCHAR(20) NOT NULL )IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  344  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  345  </td>
+<td>  DROP TABLE PB_FORSUBBRANCH
+  </td>
+</tr>
+    <tr class="alt">
+<td>  346  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  347  </td>
+<td>  CREATE TABLE PB_FORSUBBRANCH ( PFS_ACCSITE        VARCHAR(6)      NOT NULL, PFS_ACCNAME        VARCHAR(60)      , PFS_CITYCODE        VARCHAR(4)     NOT NULL, PFS_CITYNAME 				VARCHAR(60)     , PFS_REM 				VARCHAR(60)     , PRIMARY KEY (PFS_ACCSITE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  348  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  349  </td>
+<td>  DROP TABLE PB_COCSTINF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  350  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  351  </td>
+<td>  CREATE TABLE PB_COCSTINF( PCCI_CSTNO           VARCHAR(10)     NOT NULL, PCCI_ACCNO      VARCHAR(30) NOT NULL, PCCI_CARDNO     VARCHAR(30) NOT NULL, PCCI_CORPID     VARCHAR(5) NOT NULL, PCCI_COREID     VARCHAR(13) NOT NULL, PCCI_NAMECN      VARCHAR(30) NOT NULL, PCCI_NAMEEN      VARCHAR(30), PCCI_PASSWORD   VARCHAR(60) , PCCI_LOVENAME    VARCHAR(30), PCCI_SEX         CHAR(1)         NOT NULL, PCCI_BIRTHDAY    VARCHAR(10), PCCI_CTFTYP     VARCHAR(4)  NOT NULL, PCCI_CTFNO      VARCHAR(30) NOT NULL, PCCI_MOBILE          VARCHAR(20)	NOT NULL, PCCI_ADDRESS         VARCHAR(60), PCCI_PHONE           VARCHAR(20), PCCI_FAX             VARCHAR(20), PCCI_ZIPCODE         VARCHAR(6), PCCI_EMAIL           VARCHAR(60), PCCI_STT        CHAR(1)     NOT NULL, PCCI_LASTLGNTIM VARCHAR(14) , PCCI_LASTLGNIP  VARCHAR(20) , PCCI_OPENDATE   VARCHAR(8)  NOT NULL, CONSTRAINT PB_COCSTINF_PK01 PRIMARY KEY (PCCI_CSTNO) )IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  352  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  353  </td>
+<td>  DROP TABLE PB_COCSTINF_CLOSE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  354  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  355  </td>
+<td>  CREATE TABLE PB_COCSTINF_CLOSE( PCCI_CSTNO           VARCHAR(10)     NOT NULL, PCCI_ACCNO      VARCHAR(30) NOT NULL, PCCI_CARDNO     VARCHAR(30) NOT NULL, PCCI_CORPID     VARCHAR(5) NOT NULL, PCCI_COREID     VARCHAR(13) NOT NULL, PCCI_NAMECN      VARCHAR(30) NOT NULL, PCCI_NAMEEN      VARCHAR(30), PCCI_PASSWORD   VARCHAR(60) , PCCI_LOVENAME    VARCHAR(30), PCCI_SEX         CHAR(1)         NOT NULL, PCCI_BIRTHDAY    VARCHAR(10), PCCI_CTFTYP     VARCHAR(4)  NOT NULL, PCCI_CTFNO      VARCHAR(30) NOT NULL, PCCI_MOBILE          VARCHAR(20)	NOT NULL, PCCI_ADDRESS         VARCHAR(60), PCCI_PHONE           VARCHAR(20), PCCI_FAX             VARCHAR(20), PCCI_ZIPCODE         VARCHAR(6), PCCI_EMAIL           VARCHAR(60), PCCI_STT        CHAR(1)     NOT NULL, PCCI_LASTLGNTIM VARCHAR(14) , PCCI_LASTLGNIP  VARCHAR(20) , PCCI_OPENDATE   VARCHAR(8)  NOT NULL, PCCI_CLOSEDATE   VARCHAR(8)  NOT NULL, CONSTRAINT PB_COCSTCLOSE_PK01 PRIMARY KEY (PCCI_CSTNO) )IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  356  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  357  </td>
+<td>  DROP TABLE PB_PARTYINF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  358  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  359  </td>
+<td>  CREATE TABLE PB_PARTYINF( PTI_PARTYID        CHAR(12)    NOT NULL, PTI_EFFECTIVEDATE  CHAR(8)     NOT NULL, PTI_PARTYNAME      VARCHAR(60) NOT NULL, PTI_PARTYALIAS     VARCHAR(60) , PTI_BANKCODE       CHAR(3)     NOT NULL, PTI_PARTYTYPE      CHAR(4)     NOT NULL, PTI_SETTAGENTID    CHAR(12)    NOT NULL, PTI_CCPC           CHAR(4)     , PTI_JOINDATE       CHAR(8)     , PTI_QUITDATE       CHAR(8)     , PTI_STATE          CHAR(2)     NOT NULL, PTI_REMARK         VARCHAR(256), CONSTRAINT PB_PARTYINF_PK01 PRIMARY KEY (PTI_PARTYID,PTI_EFFECTIVEDATE) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  360  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  361  </td>
+<td>  DROP TABLE PB_MERINF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  362  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  363  </td>
+<td>  CREATE TABLE PB_MERINF( PMI_MERCHNO            CHAR(15)      NOT NULL, PMI_MERCHSTATUS        CHAR(1)       NOT NULL, PMI_NAMECN             VARCHAR(60)   NOT NULL, PMI_NAMEEN             VARCHAR(100)  , PMI_WEBSITENAME        VARCHAR(50)   , PMI_WEBSITECODE        VARCHAR(200)  , PMI_ACCNO              CHAR(21)      NOT NULL, PMI_ACCNAME            VARCHAR(60)   NOT NULL, PMI_ACCBRANCHID        CHAR(6)       NOT NULL, PMI_MERLEVEL           CHAR(1)       NOT NULL, CONSTRAINT PB_MERINF_PK01 PRIMARY KEY (PMI_MERCHNO) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  364  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  365  </td>
+<td>  DROP TABLE PB_BANKACC
+  </td>
+</tr>
+    <tr class="alt">
+<td>  366  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  367  </td>
+<td>  CREATE TABLE PB_BANKACC( PBA_SIGNNO                  CHAR(60)    NOT NULL, PBA_CSTNO                   CHAR(10)    NOT NULL, PBA_PARTYID                 CHAR(12)    NOT NULL, PBA_MAINCARDNO              VARCHAR(32) NOT NULL, PBA_MAINNAME                VARCHAR(60) NOT NULL, PBA_BSNPARTYID              CHAR(12)    , PBA_CARDNO                  VARCHAR(32) NOT NULL, PBA_HDNAME                  VARCHAR(60) NOT NULL, PBA_CARDTYPE                CHAR(1)     NOT NULL, PBA_ALIAS                   VARCHAR(30) , PBA_BANKNAME                VARCHAR(60) NOT NULL, PBA_BANKCODE                CHAR(12)    NOT NULL, CONSTRAINT PB_PBANKACC_PK01 PRIMARY KEY (PBA_SIGNNO,PBA_CSTNO,PBA_PARTYID) )IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  368  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  369  </td>
+<td>  DROP TABLE PB_PROTOCOL
+  </td>
+</tr>
+    <tr class="alt">
+<td>  370  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  371  </td>
+<td>  CREATE TABLE PB_PROTOCOL( PPL_BSNTYPE       CHAR(6)      NOT NULL, PPL_STT           CHAR(1)      NOT NULL, PPL_EFFECTIVEDATE CHAR(8)      NOT NULL, PPL_DISABLEDATE   CHAR(8)      , PPL_UPDATETIME    CHAR(14)     NOT NULL, PPL_TELLERID      CHAR(10)     NOT NULL, PPL_TELLERNAME    VARCHAR(30)  NOT NULL, PPL_CHANNEL       CHAR(1)      NOT NULL, PPL_PROTOCOLNM    VARCHAR(60)  NOT NULL, CONSTRAINT PB_PROTOCOL_PK01 PRIMARY KEY (PPL_PROTOCOLNM) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  372  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  373  </td>
+<td>  DROP TABLE PB_FUNDQS
+  </td>
+</tr>
+    <tr class="alt">
+<td>  374  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  375  </td>
+<td>  CREATE TABLE PB_FUNDQS ( PQS_FUNDCODE        VARCHAR(6)      NOT NULL, PQS_FUNDNAME        VARCHAR(40)     NOT NULL, PQS_FEETYP          CHAR(1), PQS_PROTYPE         CHAR(2), PQS_COMPANY         VARCHAR(60), PQS_CONTROL         CHAR(1), CONSTRAINT PB_FUNDINFO_PK01 PRIMARY KEY (PQS_FUNDCODE) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  376  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  377  </td>
+<td>  DROP TABLE PB_BATLIST
+  </td>
+</tr>
+    <tr class="alt">
+<td>  378  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  379  </td>
+<td>  CREATE TABLE PB_BATLIST ( PBL_TRNFLW          VARCHAR(20)     NOT NULL, PBL_BATNO           VARCHAR(20)     NOT NULL, PBL_TRANTYP         CHAR(2)        NOT NULL, PBL_CSTNO           VARCHAR(30) , PBL_TRANCODE        VARCHAR(6), PBL_CHANNEL         CHAR(1)         NOT NULL, PBL_TRANTIM         VARCHAR(14), PBL_TRADETIM        VARCHAR(14), PBL_ACCTIM        	VARCHAR(8), PBL_PAYBRA          VARCHAR(6), PBL_PAYCARDNO       VARCHAR(30), PBL_PAYNAME       	VARCHAR(60), PBL_PAYCRYTYP       VARCHAR(3), PBL_PAYAMT          DECIMAL(15,2), PBL_CASHFLAG        CHAR(1), PBL_RCVBRA          VARCHAR(6), PBL_RCVCARDNO       VARCHAR(30), PBL_RCVNAME         VARCHAR(60), PBL_RCVCRYTYP       VARCHAR(3), PBL_RCVAMT          DECIMAL(15,2), PBL_RCVOPENBANK     VARCHAR(60), PBL_RCVOPENCITY     VARCHAR(60), PBL_RCVOPENAREA     VARCHAR(60), PBL_RCVOPENBRANCH   VARCHAR(60), PBL_TRANFEE         DECIMAL(15,2), PBL_LOGTYP          CHAR(1), PBL_PAYSUM          DECIMAL(15,2), PBL_PAYNUM					INTEGER, PBL_REMARK          VARCHAR(100), PBL_STT             CHAR(2), PBL_REASONCODE      VARCHAR(30), PBL_REASON      		VARCHAR(200), PBL_REM     				VARCHAR(100), CONSTRAINT PB_BATLIST_PK01 PRIMARY KEY (PBL_TRNFLW,PBL_BATNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  380  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  381  </td>
+<td>  DROP TABLE PB_BATLIST_HIS
+  </td>
+</tr>
+    <tr class="alt">
+<td>  382  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  383  </td>
+<td>  CREATE TABLE PB_BATLIST_HIS ( PBLH_TRNFLW          VARCHAR(20)     NOT NULL, PBLH_BATNO           VARCHAR(20)     NOT NULL, PBLH_TRANTYP         CHAR(2)        NOT NULL, PBLH_CSTNO           VARCHAR(30)   			, PBLH_TRANCODE        VARCHAR(6), PBLH_CHANNEL         CHAR(1)         NOT NULL, PBLH_TRANTIM         VARCHAR(14), PBLH_TRADETIM        VARCHAR(14), PBLH_ACCTIM        	 VARCHAR(8), PBLH_PAYBRA          VARCHAR(6), PBLH_PAYCARDNO       VARCHAR(30), PBLH_PAYNAME       	 VARCHAR(60), PBLH_PAYCRYTYP       VARCHAR(3), PBLH_PAYAMT          DECIMAL(15,2), PBLH_CASHFLAG        CHAR(1), PBLH_RCVBRA          VARCHAR(6), PBLH_RCVCARDNO       VARCHAR(30), PBLH_RCVNAME         VARCHAR(60), PBLH_RCVCRYTYP       VARCHAR(3), PBLH_RCVAMT          DECIMAL(15,2), PBLH_RCVOPENBANK     VARCHAR(60), PBLH_RCVOPENCITY     VARCHAR(60), PBLH_RCVOPENAREA     VARCHAR(60), PBLH_RCVOPENBRANCH   VARCHAR(60), PBLH_TRANFEE         DECIMAL(15,2), PBLH_LOGTYP          CHAR(1), PBLH_PAYSUM          DECIMAL(15,2), PBLH_PAYNUM					INTEGER, PBLH_REMARK          VARCHAR(100), PBLH_STT             CHAR(2), PBLH_REASONCODE      VARCHAR(30), PBLH_REASON      		VARCHAR(200), PBLH_REM     				VARCHAR(100), CONSTRAINT PB_BATHIS_PK01 PRIMARY KEY (PBLH_TRNFLW,PBLH_BATNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  384  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  385  </td>
+<td>  DROP TABLE PB_BATTRAN
+  </td>
+</tr>
+    <tr class="alt">
+<td>  386  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  387  </td>
+<td>  CREATE TABLE PB_BATTRAN ( PBH_BATNO           VARCHAR(20)     NOT NULL, PBH_CARDNO          VARCHAR(30)     NOT NULL, PBH_TRANTYP         CHAR(2)        NOT NULL, PBH_CHANNEL         CHAR(1)         NOT NULL, PBH_RECVTRANTIM     VARCHAR(14), PBH_SENDTRANTIM     VARCHAR(14), PBH_TOTALNUM        INTEGER, PBH_SUCCNUM         INTEGER, PBH_FAILNUM         INTEGER, PBH_TOTALSUM        DECIMAL(15,2), PBH_STT             CHAR(2), CONSTRAINT PB_BATTRAN_PK01 PRIMARY KEY (PBH_BATNO,PBH_CARDNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  388  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  389  </td>
+<td>  DROP TABLE PB_BATTRAN_HIS
+  </td>
+</tr>
+    <tr class="alt">
+<td>  390  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  391  </td>
+<td>  CREATE TABLE PB_BATTRAN_HIS ( PBHH_BATNO           VARCHAR(20)     NOT NULL, PBHH_CARDNO          VARCHAR(30)     NOT NULL, PBHH_TRANTYP         CHAR(2)        NOT NULL, PBHH_CHANNEL         CHAR(1)         NOT NULL, PBHH_RECVTRANTIM     VARCHAR(14), PBHH_SENDTRANTIM     VARCHAR(14), PBHH_TOTALNUM        INTEGER, PBHH_SUCCNUM         INTEGER, PBHH_FAILNUM         INTEGER, PBHH_TOTALSUM        DECIMAL(15,2), PBHH_STT             CHAR(2), CONSTRAINT PB_BATTRANHIS_PK01 PRIMARY KEY (PBHH_BATNO,PBHH_CARDNO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  392  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  393  </td>
+<td>  DROP TABLE PB_FUND_FEE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  394  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  395  </td>
+<td>  CREATE TABLE PB_FUND_FEE( PFF_FUNDCODE		CHAR(6) 	  NOT NULL, PFF_BUSINESSCODE    CHAR(3) 	  NOT NULL, PFF_FEETYP	        CHAR(1) 	  NOT NULL, PFF_AMTVOL          DECIMAL(16,2) NOT NULL, PFF_CHANNELTYPE     CHAR(1)       NOT NULL, PFF_RATE            DECIMAL(5,4)  NOT NULL, PFF_MINDISCOUNT     DECIMAL(5,4)  NOT NULL ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  396  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  397  </td>
+<td>  DROP TABLE PB_FUND_YSK
+  </td>
+</tr>
+    <tr class="alt">
+<td>  398  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  399  </td>
+<td>  CREATE TABLE PB_FUND_YSK( PFY_FUNDCODE       CHAR(6)        NOT NULL, PFY_FEETYP         CHAR(1)        NOT NULL, PFY_BUSINESSCODE   CHAR(3)        NOT NULL, PFY_OFFDAYS        CHAR(2)        NOT NULL ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  400  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  401  </td>
+<td>  DROP TABLE PB_ERROR_MSG
+  </td>
+</tr>
+    <tr class="alt">
+<td>  402  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  403  </td>
+<td>  CREATE TABLE PB_ERROR_MSG( PEM_CUSTOMERNO   VARCHAR(10)    NOT NULL, PEM_FLOWNO       VARCHAR(20)    NOT NULL, PEM_ERRORCODE    VARCHAR(8)     NOT NULL, PEM_REPORTDATE   VARCHAR(14)    NOT NULL, PEM_TRANCODE     VARCHAR(6), PEM_TRANNAME     VARCHAR(60), PEM_ERRORSHOW    VARCHAR(200), PEM_FREQUENCY    INTEGER, PEM_DETAILS      VARCHAR(200) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  404  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  405  </td>
+<td>  DROP   TABLE PB_IMAGE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  406  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  407  </td>
+<td>  CREATE TABLE PB_IMAGE( IMG_CSTNO VARCHAR(21) NOT NULL, IMG_TYPE  CHAR(1)     NOT NULL, IMG_BANNARY BLOB(10K) , CONSTRAINT PB_IMAGE_PK01 PRIMARY KEY (IMG_CSTNO,IMG_TYPE) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  408  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  409  </td>
+<td>  DROP TABLE PB_SELLINFO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  410  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  411  </td>
+<td>  CREATE TABLE PB_SELLINFO ( PSI_SELLNAME		VARCHAR(20)     NOT NULL, PSI_SELLPOS			CHAR(2) 	       , PSI_CONTENT			CHAR(200) 	       , PSI_CLIENTVS		CHAR(2) , PSI_PRODUCTTYPE	CHAR(2) , PSI_URLOUT			CHAR(1) , PSI_PRODUCTURL	VARCHAR(800)  , PSI_PRODUCTNAME	VARCHAR(40)   , PSI_UPLOADTIME	VARCHAR(8)   , PSI_VALIDDATE		VARCHAR(8)   , PSI_ENDDATE			VARCHAR(8)   , PSI_OPERATENO		VARCHAR(10)   , PSI_CHECKNO			VARCHAR(10)   , PSI_STATUS			CHAR(2) , PSI_LANGUAGE		CHAR(1) DEFAULT '1' NOT NULL , CONSTRAINT PB_IMGBRH_PK01 PRIMARY KEY (PSI_SELLNAME,PSI_LANGUAGE) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  412  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  413  </td>
+<td>  DROP TABLE PB_INSURE_CHJ
+  </td>
+</tr>
+    <tr class="alt">
+<td>  414  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  415  </td>
+<td>  CREATE TABLE PB_INSURE_CHJ ( ICJ_ID             	    CHAR(3)     NOT NULL, ICJ_BEGINTIME           VARCHAR(8) , ICJ_ENDTIME             VARCHAR(8) , ICJ_PROBABILITY         INTEGER  , ICJ_COUNTS        	    INTEGER  , CONSTRAINT PB_INSURE_CHJ_PK01 PRIMARY KEY (ICJ_ID) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  416  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  417  </td>
+<td>  DROP TABLE PB_INSURE_CHJSAVEINFO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  418  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  419  </td>
+<td>  CREATE TABLE PB_INSURE_CHJSAVEINFO ( ICJS_INSURENO             			VARCHAR(30)  NOT NULL, ICJS_CARDNO           			VARCHAR(30) , ICJS_OPERATIONTIME             	VARCHAR(8) , CONSTRAINT PB_INSURE_CJS_PK01 PRIMARY KEY (ICJS_INSURENO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  420  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  421  </td>
+<td>  DROP TABLE PB_FDTPARC
+  </td>
+</tr>
+    <tr class="alt">
+<td>  422  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  423  </td>
+<td>  CREATE TABLE PB_FDTPARC( PFD_BK         CHAR(6)            NOT NULL, PFD_DEP_TYP    DECIMAL(2)         NOT NULL, PFD_CCY        CHAR(3)            NOT NULL, PFD_PERD       CHAR(4)            NOT NULL, PFD_MIN_AMT    DECIMAL(15,2), PFD_MAX_AMT    DECIMAL(15,2), PFD_DRW_LMT    DECIMAL(15,2), PFD_MIN_PERD   SMALLINT, PFD_PART_ALLOW SMALLINT, PFD_RAT_CODE   CHAR(4), PFD_LIBOR_CODE CHAR(4), CONSTRAINT PB_FDTPARC_PK01 PRIMARY KEY (PFD_BK,PFD_DEP_TYP,PFD_CCY,PFD_PERD) )IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  424  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  425  </td>
+<td>  DROP TABLE PB_CMTINT
+  </td>
+</tr>
+    <tr class="alt">
+<td>  426  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  427  </td>
+<td>  CREATE TABLE PB_CMTINT( PBC_BK         CHAR(6)          NOT NULL, PBC_CD         CHAR(4)          NOT NULL, PBC_CCY        CHAR(3)          NOT NULL, PBC_SDT        DECIMAL(8,0)     NOT NULL, PBC_EDT        DECIMAL(8,0), PBC_RATE       DECIMAL(8,6), PBC_CNF_NO     CHAR(12), PBC_STS        CHAR(1), PBC_UPD_DT     DECIMAL(8,0), PBC_UPD_TLR    CHAR(7), CONSTRAINT PB_CMTINT_PK01 PRIMARY KEY (PBC_BK,PBC_CD,PBC_CCY,PBC_SDT) )IN PBANKUSR2 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  428  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  429  </td>
+<td>  DROP TABLE PB_FAMLIY_ACC
+  </td>
+</tr>
+    <tr class="alt">
+<td>  430  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  431  </td>
+<td>  CREATE TABLE PB_FAMLIY_ACC( PFA_CSTNO      CHAR(10)    NOT NULL, PFA_ACCNO      VARCHAR(32) NOT NULL, PFA_HLDNAME    VARCHAR(60) , PFA_MOBILE     CHAR(11)    , PFA_BANKTYPE   CHAR(3)     , PFA_BANKNAME   VARCHAR(60) , PFA_SELF       CHAR(1)     , PFA_CARDTYP    CHAR(1)     , PFA_QRYSTT     CHAR(1)     , PFA_STT		   CHAR(1)     , PFA_ALIAS      VARCHAR(60) , PFA_MAINCARD   CHAR(1)     DEFAULT '0', CONSTRAINT PB_FAMLIY_ACC_PK01 PRIMARY KEY (PFA_CSTNO,PFA_ACCNO) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  432  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  433  </td>
+<td>  DROP TABLE PB_FINACING_INF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  434  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  435  </td>
+<td>  CREATE TABLE PB_FINACING_INF( PFI_SEQ        VARCHAR(20)   NOT NULL, PFI_CSTNO      CHAR(10)      NOT NULL, PFI_DATE       CHAR(8)       , PFI_AMT        DECIMAL(16,2) , PFI_FLAG       CHAR(1)       , PFI_CLASS      CHAR(4)       , PFI_TYPE       CHAR(5)       , PFI_BOOKDATE   CHAR(8)       , PFI_REMARK     VARCHAR(80)   , CONSTRAINT PB_FINACING_PK01 PRIMARY KEY (PFI_SEQ) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  436  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  437  </td>
+<td>  DROP TABLE PB_PRODPAR
+  </td>
+</tr>
+    <tr class="alt">
+<td>  438  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  439  </td>
+<td>  CREATE TABLE PB_PRODPAR ( PDP_PRODUCTNO                     VARCHAR(10)    NOT NULL, PDP_PRODUCTNAME                   VARCHAR(80)    NOT NULL, PDP_TRADETYPE                     CHAR(1), PDP_PRODUCTTYPE                   VARCHAR(3), PDP_CURRTYPE                      CHAR(3), PDP_CASHFLAG                      CHAR(1), PDP_INVESTTERM                    VARCHAR(4), PDP_INVESTSTARTSUM                DECIMAL(16,2), PDP_FIRSTINVESTSTARTSUM           DECIMAL(16,2), PDP_SELLSTATUS                    CHAR(1), PDP_FUNDSTARTDATE                 VARCHAR(8), PDP_FUNDENDDATE                   VARCHAR(8), PDP_INVESTSTARTDATE               VARCHAR(8), PDP_INVESTENDDATE                 VARCHAR(8), PDP_STARTDAY                      VARCHAR(8), PDP_WORKDATE                      VARCHAR(8), PDP_INCREASEAMT                   DECIMAL(16,2), PDP_PRODUCTRISKLEVEL              CHAR(2), PDP_SELLSTARTDATE                 VARCHAR(8), PDP_SELLENDDATE                   VARCHAR(8), PDP_MAXRATIO                      DECIMAL(9,4), PDP_MINRATIO                      DECIMAL(9,4), PDP_INCOME                        VARCHAR(50), PDP_NETFLAG                       CHAR(1), PDP_DELFLAG                       CHAR(1), PDP_AIMCUST                       VARCHAR(10), PDP_TARGETOBJECT                  VARCHAR(200), PDP_NOCUSTSUM                     DECIMAL(16,2), PDP_LIMFLAG                       CHAR(1), PDP_SUBSFLAG                      CHAR(1), PDP_PURCHASEFLAG                  CHAR(1), PDP_FEEFLAG                       CHAR(1), PDP_NEWFLAG                       CHAR(1), PDP_RECOMMENDFLAG                 CHAR(1), PDP_HOTFLAG                       CHAR(1), PDP_MANAGESHOWFLAG                CHAR(1), PDP_INVESTEXPERIENCE              CHAR(1), PDP_CHANNELSELLFLAG               CHAR(1), PDP_MBANKSELLFLAG                 CHAR(1), PDP_BANKSHOWFLAG                  CHAR(1) DEFAULT '0', PDP_INCOMETYPE                  	CHAR(1), PDP_SHAREDETAIL                  	CHAR(1), PDP_CUSTGROUPSIGNFLAG             CHAR(1) DEFAULT '0', PDP_CUSTOMGROUP                   VARCHAR(10), PDP_TAFLAG                        VARCHAR(20), PDP_SIGNFLAG                      CHAR(1), PDP_COFLAG                        CHAR(1) DEFAULT '1', PDP_COSELLSUM                     DECIMAL(16,2), PDP_ZHTLFLAG					  CHAR(1), PDP_CYCLEDAY VARCHAR(3), PDP_IMPAWN CHAR(1), PDP_FRIFLAG CHAR(1) DEFAULT '1', CONSTRAINT PB_PRODPAR_PK01 PRIMARY KEY (PDP_PRODUCTNO) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  440  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  441  </td>
+<td>  DROP TABLE PB_PRO_BANKINFO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  442  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  443  </td>
+<td>  CREATE TABLE PB_PRO_BANKINFO ( PPB_PRODUCTNO                     VARCHAR(10)   NOT NULL, PPB_BKNO                          VARCHAR(6)    NOT NULL, PPB_SELLSTATUS                    CHAR(1), PPB_SELLAMT                        DECIMAL(16,2) DEFAULT 9999999999999.99, PPB_UPDATETIME                     VARCHAR(14), PPB_KEEPAMT                        DECIMAL(16,2) DEFAULT 9999999999999.99, CONSTRAINT PB_PRODPAR_PK01 PRIMARY KEY (PPB_PRODUCTNO,PPB_BKNO) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  444  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  445  </td>
+<td>  DROP TABLE PB_METAL_IMAGE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  446  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  447  </td>
+<td>  CREATE TABLE PB_METAL_IMAGE( PMI_PRODID		VARCHAR(40) NOT NULL, PMI_PRODNAME 	VARCHAR(40) NOT NULL, PMI_IMAGENAME	VARCHAR(300) NOT NULL, PMI_IMAGEPATH 	VARCHAR(1500), PMI_STARTDATE 	VARCHAR(8), PMI_ENDDATE   	VARCHAR(8), PMI_LASTMODDT 	VARCHAR(14), PMI_FLASHNAME 	VARCHAR(60), PMI_FLASHPATH 	VARCHAR(300), PRIMARY KEY(PMI_PRODID) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  448  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  449  </td>
+<td>  DROP TABLE PB_FUNDORDER
+  </td>
+</tr>
+    <tr class="alt">
+<td>  450  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  451  </td>
+<td>  CREATE TABLE PB_FUNDORDER ( PFDR_FUNDCODE   		VARCHAR(24)			NOT NULL, PFDR_SEQNO 				VARCHAR(3)					, PFDR_FUNDTYPE     		CHAR(1)				NOT NULL, PFDR_FUNDNAME			VARCHAR(40)					, PFDR_SETDATE			VARCHAR(14)			NOT NULL, CONSTRAINT PB_FUNDORDER_PK01 PRIMARY KEY (PFDR_FUNDCODE,PFDR_FUNDTYPE) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  452  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  453  </td>
+<td>  DROP TABLE PB_WODEZTC_LOG
+  </td>
+</tr>
+    <tr class="alt">
+<td>  454  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  455  </td>
+<td>  CREATE TABLE PB_WODEZTC_LOG ( PWL_LOGNO           VARCHAR(20)     NOT NULL, PWL_LOGTIM          VARCHAR(14), PWL_LOGTYPE         CHAR(1), PWL_CORECSTNO       VARCHAR(30), PWL_CARDNO          VARCHAR(30), PWL_WDCARDNO        VARCHAR(30), PWL_CSTNAME         VARCHAR(30), PWL_TRANCOD         VARCHAR(6), PWL_PRODCOD         VARCHAR(6), PWL_CHANNEL         CHAR(1), PWL_STATE           CHAR(1), PWL_FLAG            CHAR(1), PWL_EACCFLAG		CHAR(1), CONSTRAINT PB_WDZTC_LOG_PK01 PRIMARY KEY (PWL_LOGNO) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  456  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  457  </td>
+<td>  DROP TABLE PB_ORG_BANKINFO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  458  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  459  </td>
+<td>  CREATE TABLE PB_ORG_BANKINFO ( POB_DEPTNO                 char(6)     NOT NULL, POB_ACT_DATE               char(8), POB_INACT_DATE             char(8), POB_ORG_NAME               char(36)    NOT NULL, POB_ORG_NAME_ADDR          char(50), POB_ORG_ABBR_NAME          char(2), POB_ORG_LEVEL              char(1), POB_ORG_CLS                char(1), POB_ORG_TYPE               char(1), POB_ORG_BK                 char(6) 	   NOT NULL, POB_ORG_SUB_BK             char(6), POB_ORG_ADM_MODE           char(1), POB_ORG_SUPER_BR           char(6), POB_DIFF_REG               char(1), POB_MAX_LVL                char(1), POB_OPEN_ACID              char(6), POB_FX_BUSI                char(2), POB_FX_CORP                char(1), POB_PAYMENT_ID             char(12), POB_TAX_BR                 char(6), POB_PL_BR                  char(6), POB_SVR_ID                 char(5), POB_SWITCH_IND1            char(1), POB_SWITCH_IND2            char(1), POB_AUTH_LVL               char(1), POB_LINK_MAN               char(18), POB_TELEPHONE              char(18), POB_UPDATE_DATE            char(8), POB_PRE_BR_CCY             char(6), POB_CONT_FLAG              char(14), CONSTRAINT PB_ORG_PK01 PRIMARY KEY (POB_DEPTNO) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  460  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  461  </td>
+<td>  DROP TABLE PB_CRPCUSAGR_AREA
+  </td>
+</tr>
+    <tr class="alt">
+<td>  462  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  463  </td>
+<td>  CREATE TABLE PB_CRPCUSAGR_AREA ( PCAR_PVICODE         VARCHAR(6)   NOT NULL, PCAR_CITYCODE        VARCHAR(6)   NOT NULL, PCAR_PVINAME         VARCHAR(60)  NOT NULL, PCAR_CITYNAME        VARCHAR(60)  NOT NULL, PCAR_CONTYP          CHAR(1)  	  NOT NULL DEFAULT '0', PRIMARY KEY(PCAR_PVICODE,PCAR_CITYCODE,PCAR_CONTYP) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  464  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  465  </td>
+<td>  DROP TABLE PB_FUND_DERNAV
+  </td>
+</tr>
+    <tr class="alt">
+<td>  466  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  467  </td>
+<td>  CREATE TABLE PB_FUND_DERNAV ( PFD_FUNDCODE  VARCHAR(8)    NOT NULL, PFD_W1NAVG    DECIMAL(9,2)  , PFD_W1NAVGR   INTEGER       , PFD_W1NAVGRC  INTEGER       , PFD_W4NAVG    DECIMAL(9,2)  , PFD_W4NAVGR   INTEGER       , PFD_W4NAVGRC  INTEGER       , PFD_W13NAVG   DECIMAL(9,2)  , PFD_W13NAVGR  INTEGER       , PFD_W13NAVGRC INTEGER       , PFD_W26NAVG   DECIMAL(9,2)  , PFD_W26NAVGR  INTEGER       , PFD_W26NAVGRC INTEGER       , PFD_W52NAVG   DECIMAL(9,2)  , PFD_W52NAVGR  INTEGER       , PFD_W52NAVGRC INTEGER       , PFD_YTDAVG    DECIMAL(9,2)  , PFD_YTDAVGR   INTEGER       , PFD_YTDAVGRC  INTEGER       , PFD_TMSTAMP   CHAR(8)       , CONSTRAINT    PFD_DERNAV_PK01 PRIMARY KEY(PFD_FUNDCODE) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  468  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  469  </td>
+<td>  DROP TABLE PB_FUND_PROFILE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  470  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  471  </td>
+<td>  CREATE TABLE PB_FUND_PROFILE ( PFP_FUNDCODE    VARCHAR(8)  NOT NULL, PFP_FUNDNAME    VARCHAR(50), PFP_FUNDTYPE    VARCHAR(8), PFP_COMPANYCODE VARCHAR(8), PFP_COMPANYNAME VARCHAR(200), PFP_STYPE       CHAR(3)     NOT NULL, CONSTRAINT PFD_PROFILE_PK01 PRIMARY KEY(PFP_FUNDCODE,PFP_STYPE) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  472  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  473  </td>
+<td>  DROP TABLE PB_FUND_SYMBOL
+  </td>
+</tr>
+    <tr class="alt">
+<td>  474  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  475  </td>
+<td>  CREATE TABLE PB_FUND_SYMBOL ( PFS_FUNDCODE     VARCHAR(8)  NOT NULL, PFS_SYMBOL_TYPE  CHAR(2)     NOT NULL, PFS_SYMBOL       VARCHAR(20) NOT NULL, CONSTRAINT PB_FDSYMBOL_PK01 PRIMARY KEY(PFS_FUNDCODE,PFS_SYMBOL_TYPE) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  476  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  477  </td>
+<td>  DROP TABLE PB_FUND_NAVCUR
+  </td>
+</tr>
+    <tr class="alt">
+<td>  478  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  479  </td>
+<td>  CREATE TABLE PB_FUND_NAVCUR ( PFN_FLOWNO    INTEGER     NOT NULL, PFN_PUBDATE   CHAR(8), PFN_FUNDCODE  VARCHAR(8), PFN_BEGINDATE CHAR(8), PFN_ENDDATE   CHAR(8), PFN_FLAG      INTEGER, PFN_NETVAL    DECIMAL(18,4), PFN_UPRATE    DECIMAL(9,4), PFN_RATE      DECIMAL(9,4), PFN_WEEKRATE  DECIMAL(9,4), PFN_REMARK    VARCHAR(200), CONSTRAINT PFN_NAVCUR_PK01 PRIMARY KEY(PFN_FLOWNO) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  480  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  481  </td>
+<td>  DROP TABLE PB_FUND_AVG
+  </td>
+</tr>
+    <tr class="alt">
+<td>  482  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  483  </td>
+<td>  CREATE TABLE PB_FUND_AVG ( PFA_TYPE       CHAR(1)       NOT NULL, PFA_CODE       VARCHAR(8)    NOT NULL, PFA_W1NAVG     DECIMAL(9,2)  , PFA_W4NAVG     DECIMAL(9,2)  , PFA_W13NAVG    DECIMAL(9,2)  , PFA_W26NAVG    DECIMAL(9,2)  , PFA_W52NAVG    DECIMAL(9,2)  , PFA_YTDAVG     DECIMAL(9,2)  , CONSTRAINT PFA_PROFILE_PK01 PRIMARY KEY(PFA_TYPE,PFA_CODE) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  484  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  485  </td>
+<td>  DROP TABLE PB_TRNFLW_CHECK
+  </td>
+</tr>
+    <tr class="alt">
+<td>  486  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  487  </td>
+<td>  CREATE TABLE PB_TRNFLW_CHECK( PTC_TRNFLW	    VARCHAR(20) NOT NULL, PTC_CSTNO	    VARCHAR(30) NOT NULL, PTC_DEALDATE	CHAR(14), PTC_PAYCARDNO	VARCHAR(30), PTC_RCVCARDNO	VARCHAR(30), PTC_RCVNAME	    VARCHAR(60), PTC_TRANKIND	CHAR(1), PTC_TRANAMT	    DECIMAL(15,2), PTC_TRANFEE	    DECIMAL(15,2), PTC_STT	        CHAR(2) NOT NULL, PTC_ACCDATE	    CHAR(8), PTC_CHKDATE	    CHAR(8) NOT NULL, CONSTRAINT PTF_CHECK_PK01 PRIMARY KEY(PTC_TRNFLW) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  488  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  489  </td>
+<td>  DROP TABLE PB_GOLD_TIMINV_PRICE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  490  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  491  </td>
+<td>  CREATE TABLE PB_GOLD_TIMINV_PRICE ( PGTP_DATE		VARCHAR(8) NOT NULL, PGTP_VARIETY	VARCHAR(2) NOT NULL, PGTP_PRICE		VARCHAR(20) NOT NULL, CONSTRAINT PGTP_PROFILE_PK01 PRIMARY KEY(PGTP_DATE,PGTP_VARIETY) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  492  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  493  </td>
+<td>  DROP TABLE PB_QUEUE_NOTES_INFO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  494  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  495  </td>
+<td>  CREATE TABLE PB_QUEUE_NOTES_INFO ( PQNI_BRNO           VARCHAR(6), PQNI_NODNO          VARCHAR(6), PQNI_OPENFLG        CHAR(1), PQNI_DATETYP       	CHAR(1), PQNI_SPDATE         VARCHAR(8), PQNI_BUSNO        	CHAR(1), PQNI_AMBEGIN        VARCHAR(4), PQNI_AMEND         	VARCHAR(4), PQNI_PMBEGIN        VARCHAR(4), PQNI_PMEND         	VARCHAR(4) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  496  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  497  </td>
+<td>  DROP TABLE PB_CORE_HOLIDAY_INFO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  498  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  499  </td>
+<td>  CREATE TABLE PB_CORE_HOLIDAY_INFO ( PCHI_YEARS          VARCHAR(4)   NOT NULL, PCHI_NODNO          VARCHAR(3)   NOT NULL, PCHI_MONTH1         VARCHAR(31), PCHI_MONTH2         VARCHAR(31), PCHI_MONTH3         VARCHAR(31), PCHI_MONTH4         VARCHAR(31), PCHI_MONTH5         VARCHAR(31), PCHI_MONTH6         VARCHAR(31), PCHI_MONTH7         VARCHAR(31), PCHI_MONTH8         VARCHAR(31), PCHI_MONTH9         VARCHAR(31), PCHI_MONTH10        VARCHAR(31), PCHI_MONTH11        VARCHAR(31), PCHI_MONTH12        VARCHAR(31), CONSTRAINT PB_CORE_HOL_PK01 PRIMARY KEY (PCHI_YEARS,PCHI_NODNO) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  500  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  501  </td>
+<td>  DROP TABLE PB_WELCOME_PAGE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  502  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  503  </td>
+<td>  CREATE TABLE PB_WELCOME_PAGE ( PWP_PATH			VARCHAR(200)		NOT NULL, PWP_TYPE			CHAR(1)  			NOT NULL, PWP_ACTIVE			CHAR(1), PWP_ENDDATE			CHAR(8), PWP_ROLELIST		VARCHAR(100), PWP_REMARK			VARCHAR(100), PWP_UPLOADDATE		CHAR(8), PWP_BAK1			VARCHAR(50), PWP_BAK2			VARCHAR(50), PWP_BAK3			VARCHAR(50), PWP_BAK4			VARCHAR(50), PWP_BAK5			VARCHAR(50), CONSTRAINT PWP_PATH_PK01 PRIMARY KEY(PWP_PATH) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  504  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  505  </td>
+<td>  DROP TABLE PB_REPORT_MAINTAIN
+  </td>
+</tr>
+    <tr class="alt">
+<td>  506  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  507  </td>
+<td>  CREATE TABLE PB_REPORT_MAINTAIN ( PRM_PRODUCTNO       VARCHAR(10)     NOT NULL, PRM_MAINTAINTIME    VARCHAR(8)		NOT NULL, PRM_PROREPORT		VARCHAR(60), PRM_STATUS		   	VARCHAR(2), CONSTRAINT PB_REPORT_PK01 PRIMARY KEY (PRM_PRODUCTNO,PRM_MAINTAINTIME) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  508  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  509  </td>
+<td>  DROP TABLE PB_QRYREMIT_TEMPLATE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  510  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  511  </td>
+<td>  CREATE TABLE PB_QRYREMIT_TEMPLATE ( KJHK_TEMPLATEID		VARCHAR(50)			NOT NULL, KJHK_TEMPLATENAME	VARCHAR(50)			NOT NULL, KJHK_CTFNO		VARCHAR(50)			NOT NULL, KJHK_REMITTYPE		VARCHAR(1), KJHK_CRYTYPE		VARCHAR(3), KJHK_TRANAMT		VARCHAR(15), KJHK_PAYACC		VARCHAR(50), KJHK_PAYADDRESS		VARCHAR(146), KJHK_PHONE		VARCHAR(15), KJHK_RCVNAME		VARCHAR(10), KJHK_RCVADDRESS		VARCHAR(146), KJHK_RCVTYPE		VARCHAR(20)  , KJHK_RCVACC		VARCHAR(34)  , KJHK_RCVAGENT	        VARCHAR(146)  , KJHK_RCVOPENACNO	VARCHAR(34)  , KJHK_RCVSWIFT1		VARCHAR(11)  , KJHK_RCVBRANCH		VARCHAR(146), KJHK_COUNTRYNAMECODE	VARCHAR(3)   , KJHK_REM		VARCHAR(220) , KJHK_FEETYPE		VARCHAR(1) , KJHK_ISALLSUM		VARCHAR(2) , KJHK_PAYACCCRY		VARCHAR(3) , KJHK_SUBACC		VARCHAR(50), KJHK_TRADECODE		VARCHAR(6)  , KJHK_BUZREM		VARCHAR(50), PRIMARY KEY(KJHK_TEMPLATEID) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  512  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  513  </td>
+<td>  DROP TABLE PB_TIPORGINF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  514  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  515  </td>
+<td>  CREATE TABLE    PB_TIPORGINF ( PT_ORGCOD      VARCHAR(12)    NOT NULL, PT_ORGNAM      VARCHAR(60)    NOT NULL, PT_ORGTYP      CHAR(1)     NOT NULL, PT_UTRECD      CHAR(10)    DEFAULT ' ', PT_NODCOD      CHAR(12)    NOT NULL	, PT_PROORG      CHAR(12)    DEFAULT ' '	, PT_CITYORG     CHAR(12)    DEFAULT ' ', PT_CNTYORG     CHAR(12)    DEFAULT ' ', PT_ADDRESS     VARCHAR(80)    DEFAULT ' ', PT_PSTCOD      CHAR(6)     DEFAULT ' ', PT_PERNAM      CHAR(10)    DEFAULT ' ', PT_PERPHN      CHAR(15)    DEFAULT ' ', PT_PERMBL      CHAR(11)    DEFAULT ' ', PT_EMAIL       VARCHAR(60)    DEFAULT ' ', PT_EFFDAT      CHAR(8)     NOT NULL, PT_UPAREA      CHAR(10)    NOT NULL, PRIMARY KEY(PT_ORGCOD) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  516  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  517  </td>
+<td>  DROP TABLE PB_COCRDSCTINF
+  </td>
+</tr>
+    <tr class="alt">
+<td>  518  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  519  </td>
+<td>  CREATE TABLE PB_COCRDSCTINF ( PCCS_CARDSECT       VARCHAR(10)     NOT NULL, PCCS_CORPID         VARCHAR(5)      NOT NULL, PCCS_CPKEYINDEX     VARCHAR(7)      NOT NULL, PCCS_ROLE           VARCHAR(2)      NOT NULL, CONSTRAINT PB_COCRDSCT_PK01 PRIMARY KEY (PCCS_CARDSECT) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  520  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  521  </td>
+<td>  DROP TABLE PB_CARDSEQ
+  </td>
+</tr>
+    <tr class="alt">
+<td>  522  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  523  </td>
+<td>  CREATE TABLE PB_CARDSEQ ( PCO_CARDNO		VARCHAR(50)	NOT NULL, PCO_CSTNO       VARCHAR(20) NOT NULL, PCO_CARDTYPE	CHAR(2), PCO_BANKTYPE	CHAR(1), PCO_SEQ  	    INTEGER  DEFAULT 0 )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  524  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  525  </td>
+<td>  DROP TABLE PB_FUNDCLASS
+  </td>
+</tr>
+    <tr class="alt">
+<td>  526  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  527  </td>
+<td>  CREATE TABLE PB_FUNDCLASS ( PFC_FUNDCODE          VARCHAR(6)     NOT NULL, PFC_SHARECLASS        CHAR(1)        NOT NULL, PFC_CURRENCYTYPE      CHAR(3)        NOT NULL, PFC_CURRFLAG          CHAR(1)        NOT NULL, PFC_FUNDCLASS         CHAR(2)        NOT NULL, PFC_RESV1             VARCHAR(10), PFC_GETCIF            CHAR(1)       DEFAULT '0', PRIMARY KEY (PFC_FUNDCODE) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  528  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  529  </td>
+<td>  DROP TABLE PB_FUND_PROMPT
+  </td>
+</tr>
+    <tr class="alt">
+<td>  530  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  531  </td>
+<td>  CREATE TABLE PB_FUND_PROMPT ( PFP_REGCODE        CHAR(2)        NOT NULL, PFP_FUNDCODE       CHAR(6)        NOT NULL, PFP_SHARECLASS     CHAR(1)        NOT NULL, PFP_AMNTVOL        DECIMAL(16,2)  NOT NULL, PFP_CHANNELTYPE    CHAR(1)        NOT NULL, PFP_BNSCODE        CHAR(3)        NOT NULL, PFP_CUSTGRADE      CHAR(1)        NOT NULL, PFP_CHARGEFLAG     CHAR(1)        NOT NULL, PFP_PERFEE         DECIMAL(10,2)  NOT NULL, PFP_RATE           DECIMAL(9,8)   NOT NULL, PFP_DISRATE        DECIMAL(9,8)   NOT NULL )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  532  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  533  </td>
+<td>  DROP TABLE PB_RCVADDR
+  </td>
+</tr>
+    <tr class="alt">
+<td>  534  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  535  </td>
+<td>  CREATE TABLE PB_RCVADDR ( PSR_CSTNO           VARCHAR(10)     NOT NULL, PSR_PRVNO           CHAR(3)         NOT NULL, PSR_CITYNO          CHAR(4)         NOT NULL, PSR_DISTRICTNO      CHAR(6)         NOT NULL, PSR_ADDRESS         VARCHAR(60)     NOT NULL, PSR_ZIPCODE         VARCHAR(6)      NOT NULL, PSR_PHONE           VARCHAR(20), PSR_MOBILE          VARCHAR(20), PSR_NAME            VARCHAR(60)     NOT NULL, PSR_DEFAULT         CHAR(1), PSR_UPDTIME         VARCHAR(14)     NOT NULL, CONSTRAINT PB_RCVADDR_PK01 PRIMARY KEY (PSR_CSTNO, PSR_PRVNO, PSR_CITYNO, PSR_DISTRICTNO, PSR_ADDRESS) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  536  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  537  </td>
+<td>  DROP TABLE PB_CUSTINFMODIFY
+  </td>
+</tr>
+    <tr class="alt">
+<td>  538  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  539  </td>
+<td>  CREATE TABLE PB_CUSTINFMODIFY ( PCM_CSTNO           VARCHAR(10)     NOT NULL, PCM_DELNODE        	VARCHAR(300), PCM_DAYMOOD      	VARCHAR(100), PCM_LASTTIME      	VARCHAR(14), PRIMARY KEY (PCM_CSTNO) )
+  </td>
+</tr>
+    <tr class="alt">
+<td>  540  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  541  </td>
+<td>  DROP TABLE PB_MARKETINGNEWS
+  </td>
+</tr>
+    <tr class="alt">
+<td>  542  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  543  </td>
+<td>  CREATE TABLE PB_MARKETINGNEWS ( PMN_UPLOADTIME	VARCHAR(14)  NOT NULL, PMN_TITLE		VARCHAR(100)  NOT NULL, PMN_VALIDDATE	VARCHAR(8)   , PMN_ENDDATE		VARCHAR(8)   , PMN_SCOPE		VARCHAR(3)   , PMN_SCOPENAME	VARCHAR(40)  , PMN_URLOUT		CHAR(1) , PMN_PRODUCTURL	VARCHAR(800)  , PMN_CONTENT		VARCHAR(800)     , PMN_ISTOP		CHAR(1)		 , PMN_OPERATENO	VARCHAR(10)   , PMN_LANGUAGE	CHAR(1) DEFAULT '1' NOT NULL , CONSTRAINT PB_MARKETING_PK01 PRIMARY KEY (PMN_UPLOADTIME) )IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  544  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  545  </td>
+<td>  DROP TABLE PB_ROSTER
+  </td>
+</tr>
+    <tr class="alt">
+<td>  546  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  547  </td>
+<td>  CREATE TABLE PB_ROSTER ( PRST_ID					VARCHAR(50) NOT NULL FOR BIT DATA, PRST_ROSTER_TYPE		VARCHAR(10) NOT NULL, PRST_ROSTER_VALSTR		VARCHAR(50) NOT NULL, PRST_ROSTER_VALEND		VARCHAR(50) NOT NULL, PRST_NOTBEFORE			VARCHAR(30) NOT NULL, PRST_NOTAFTER			VARCHAR(30) NOT NULL, PRST_PRESERVE1			VARCHAR(60), PRST_PRESERVE2			VARCHAR(100), CONSTRAINT PRST_PROFILE_PK01 PRIMARY KEY(PRST_ID) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  548  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  549  </td>
+<td>  DROP TABLE PB_BRANCH_INFO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  550  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  551  </td>
+<td>  CREATE TABLE PB_BRANCH_INFO ( PBI_SERIAL_ID        INTEGER NOT NULL, PBI_MARKING_TYPE     VARCHAR (20), PBI_BRANCH_NO        VARCHAR (20), PBI_EXCHANGE_NO      VARCHAR (20), PBI_BRANCH_NAME      VARCHAR (100), PBI_BRANCH_PRE_NAME  VARCHAR (100), PBI_BRANCH_ADDR      VARCHAR (100), PBI_BRANCH_PRE_ADDR  VARCHAR (100), PBI_ZIP_CODE         VARCHAR (10), PBI_BUS_INFO         VARCHAR (100), PBI_SYMBOL_BUILDING  VARCHAR (100), PBI_OPENING_HOURS    VARCHAR (100), PBI_PUBLIC_PHONE     VARCHAR (50), PBI_PRIVATE_PHONE    VARCHAR (50), PBI_UPPER_ORG        VARCHAR (20), PBI_PROVINCE_BRANCH  VARCHAR (20), PBI_BELONG_BRANCH    VARCHAR (20), PBI_CITY_BRANCH      VARCHAR (30), PBI_ORG_TYPE         VARCHAR (20), PBI_BRANCH_ATTR      VARCHAR (2), PBI_WTO              VARCHAR (2), PBI_PBANK            VARCHAR (2), PBI_BRANCH_PRINCIPAL VARCHAR (20), PBI_LONGITUDE        VARCHAR (20), PBI_LATITUDE         VARCHAR (20), PBI_PHOTO_URL        VARCHAR (100), PBI_BUSINESS_STATE   VARCHAR (10), PBI_RENEW_DATE       VARCHAR (8), PBI_RENEW_TIME       VARCHAR (6), PBI_CLOSEING_DATE    VARCHAR (8), PBI_BRANCH_STATE     VARCHAR (10), PBI_DISPLAY_CLIENT   VARCHAR (2), PBI_AREA_CODE        VARCHAR (20), PBI_AREA_NAME        VARCHAR (20), PBI_REMARK           VARCHAR (100), PBI_BUSINESS_INFO    VARCHAR (100), CONSTRAINT PB_BINFO_PK01 PRIMARY KEY (PBI_SERIAL_ID) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  552  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  553  </td>
+<td>  DROP TABLE PB_GOLD_PRODUCT_INFO
+  </td>
+</tr>
+    <tr class="alt">
+<td>  554  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  555  </td>
+<td>  CREATE TABLE PB_GOLD_PRODUCT_INFO ( PGPI_PRDCOD				VARCHAR(8) NOT NULL, PGPI_PRDNAM				VARCHAR(60) NOT NULL, PGPI_ENTNO				VARCHAR(2) NOT NULL, PGPI_ENTNAM				VARCHAR(60) NOT NULL, PGPI_SHOUR				VARCHAR(6), PGPI_EHOUR				VARCHAR(6), PGPI_YDGOLD				VARCHAR(2), PGPI_PRDTYP				VARCHAR(20), PGPI_PRDTYPNAME			VARCHAR(60), PGPI_MER				VARCHAR(20), PGPI_WEIGHT				DECIMAL(13, 2), PGPI_SPEC				VARCHAR(10), CONSTRAINT PGPI_PROFILE_PK01 PRIMARY KEY(PGPI_PRDCOD) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  556  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  557  </td>
+<td>  DROP TABLE PB_GOLD_PRODUCT_PRICE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  558  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  559  </td>
+<td>  CREATE TABLE PB_GOLD_PRODUCT_PRICE ( PGPP_PRDCOD				VARCHAR(8) NOT NULL, PGPP_AREANO				VARCHAR(10) NOT NULL, PGPP_EXCPRC				DECIMAL(13, 2), PGPP_DISFLAG			VARCHAR(1) NOT NULL WITH DEFAULT '0', CONSTRAINT PGPP_PROFILE_PK01 PRIMARY KEY(PGPP_PRDCOD, PGPP_AREANO) ) IN PBANKUSR1 INDEX IN PBANKIND1
+  </td>
+</tr>
+    <tr class="alt">
+<td>  560  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  561  </td>
+<td>  DROP TABLE PB_MQT_GOLD_PRODUCT
+  </td>
+</tr>
+    <tr class="alt">
+<td>  562  </td>
+<td>  DB21034E  该命令被当作 SQL 语句来处理，因为它是无效的“命令行处理器”命令。在
+  </td>
+</tr>
+    <tr>
+<td>  563  </td>
+<td>  SQL 处理期间，它返回：
+  </td>
+</tr>
+    <tr class="alt">
+<td>  564  </td>
+<td>  SQL0204N  "PBANK.PB_MQT_GOLD_PRODUCT" 是一个未定义的名称。  SQLSTATE=42704
+  </td>
+</tr>
+    <tr>
+<td>  565  </td>
+<td>  CREATE TABLE PB_MQT_GOLD_PRODUCT (PMGP_PRDCOD, PMGP_PRDNAM, PMGP_ENTNO, PMGP_ENTNAM, PMGP_SHOUR, PMGP_EHOUR, PMGP_YDGOLD, PMGP_PRDTYP, PMGP_PRDTYPNAME, PMGP_MER, PMGP_WEIGHT, PMGP_SPEC, PGPP_PRDCOD, PGPP_AREANO, PGPP_EXCPRC, PGPP_DISFLAG, PMI_PRODID, PMI_IMAGENAME, PMI_FLASHNAME) AS ( SELECT PB_GOLD_PRODUCT_INFO.*, PGPP_PRDCOD, PGPP_AREANO, PGPP_EXCPRC, PGPP_DISFLAG, PMI_PRODID, PMI_IMAGENAME, PMI_FLASHNAME FROM PB_GOLD_PRODUCT_INFO, PB_GOLD_PRODUCT_PRICE, PB_METAL_IMAGE WHERE PGPI_PRDCOD = PGPP_PRDCOD AND PGPI_PRDCOD = PMI_PRODID ) DATA INITIALLY DEFERRED REFRESH IMMEDIATE
+  </td>
+</tr>
+    <tr class="alt">
+<td>  566  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+    <tr>
+<td>  567  </td>
+<td>  SET INTEGRITY FOR PB_MQT_GOLD_PRODUCT IMMEDIATE CHECKED NOT INCREMENTAL
+  </td>
+</tr>
+    <tr class="alt">
+<td>  568  </td>
+<td>  DB20000I  SQL 命令成功完成。
+  </td>
+</tr>
+  </table>  <br/>
+<footer align="center">&copy;2014-2017 CORSWORK</footer></body>
+</html>

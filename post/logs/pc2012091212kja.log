@@ -1,0 +1,54 @@
+[2014/03/25 08:23:44.137415,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/25 09:15:05.070555,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/25 09:17:05.274665,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/25 09:49:05.485863,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/25 10:21:05.507336,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/25 10:53:10.761766,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/25 11:25:12.698821,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/26 03:03:32.351205,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/26 03:35:37.314039,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/26 04:07:39.818735,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/26 04:39:41.815436,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/26 05:11:44.133883,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/26 05:43:45.101272,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/26 06:15:47.953442,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/26 06:47:50.194835,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/26 07:19:48.086478,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/27 04:31:14.073439,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/27 04:33:14.113879,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/27 05:05:14.123510,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/27 05:37:14.146960,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/27 06:09:14.132170,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/27 06:41:14.128716,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/27 07:13:14.122418,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/27 07:45:17.052441,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/27 08:17:18.678393,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/27 08:49:21.622384,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.
+[2014/03/27 09:21:23.895504,  0] smbd/trans2.c:2946(smbd_do_qfsinfo)
+  smbd_do_qfsinfo: not an allowed info level (0x102) on IPC$.

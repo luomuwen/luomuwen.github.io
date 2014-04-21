@@ -1,0 +1,1059 @@
+
+07/22/2013 23:31:13 Populating the Host list...
+07/22/2013 23:31:15 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:15 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:31:15 Populating the Database list...
+07/22/2013 23:31:16 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:16 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:31:16 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:16 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:31:16 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:16 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:31:16 DCS directory not found.
+07/22/2013 23:31:16 DCS directory not found.
+07/22/2013 23:31:16 DCS directory not found.
+07/22/2013 23:31:16 Populating the Node list...
+07/22/2013 23:31:16 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:16 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:31:16 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:16 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:31:16 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:16 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:31:16 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:16 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:31:16 Populating the Host list...
+07/22/2013 23:31:16 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:16 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:31:20 Populating the Node list...
+07/22/2013 23:31:20 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:20 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:31:22 Populating the Database list...
+07/22/2013 23:31:22 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:22 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:31:22 DCS directory not found.
+07/22/2013 23:31:22 DCS directory not found.
+07/22/2013 23:31:22 DCS directory not found.
+07/22/2013 23:31:22 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:22 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:31:22 DCS directory not found.
+07/22/2013 23:31:22 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:22 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:31:22 DCS directory not found.
+07/22/2013 23:31:22 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:22 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:31:22 DCS directory not found.
+07/22/2013 23:31:33 QCC10010I: Successful connect to PBANK
+07/22/2013 23:31:33 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:33 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:31:33 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:31:33 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:37:01 QCC10010I: Successful connect to PBANK
+07/22/2013 23:37:01 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:37:01 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:37:01 QCC10023W: DB List - Node directory is empty.
+07/22/2013 23:37:01 QCC10027I: DB List - Closing the node directory scan.
+07/22/2013 23:37:12 DROP PROCEDURE QUERY_PB_CSTINF
+07/22/2013 23:37:12 [IBM][CLI Driver][DB2/NT] SQL0204N  "PBANK.QUERY_PB_CSTINF" 是一个未定义的名称。  SQLSTATE=42704 
+
+07/22/2013 23:38:25 CREATE PROCEDURE QUERY_PB_CSTINF
+ ( OUT PROC_RET_CODE VARCHAR(5)
+ ) 
+READS SQL DATA 
+DYNAMIC RESULT SETS 1
+BEGIN
+	-- 根据用户编号查询用户信息
+    DECLARE	RET_BANKINFO CURSOR WITH	RETURN FOR
+	SELECT
+		PIF_CSTNO, 
+		PIF_ACCNO, 
+		PIF_AREACODE, 
+		PIF_CSTTYP, 
+		PIF_CERTTYP, 
+		PIF_NAMECN 
+	FROM  PB_CSTINF;
+
+	-- 异常处理
+	DECLARE EXIT HANDLER FOR SQLEXCEPTION
+	BEGIN
+		SET OUT_RET_CODE = '95000';
+		ROLLBACK ;
+	END;
+	
+	OPEN RET_BANKINFO;	
+
+
+	SET OUT_RET_CODE = '00000';
+  
+END
+
+ 
+07/22/2013 23:38:25 [IBM][CLI Driver][DB2/NT] SQL0206N  "OUT_RET_CODE" 在使用它的上下文中无效。  LINE NUMBER=21.  SQLSTATE=42703 
+
+07/22/2013 23:43:07 QCC10011I: Successful disconnect from PBANK
+07/22/2013 23:43:07 QCC10011I: Successful disconnect from PBANK
+07/23/2013 17:19:21 Populating the Host list...
+07/23/2013 17:19:22 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:22 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:19:22 Populating the Database list...
+07/23/2013 17:19:22 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:22 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:19:22 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:22 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:19:22 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:22 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:19:22 DCS directory not found.
+07/23/2013 17:19:22 DCS directory not found.
+07/23/2013 17:19:22 DCS directory not found.
+07/23/2013 17:19:22 Populating the Node list...
+07/23/2013 17:19:22 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:22 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:19:22 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:22 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:19:22 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:22 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:19:22 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:22 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:19:22 Populating the Host list...
+07/23/2013 17:19:22 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:22 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:19:43 Populating the Node list...
+07/23/2013 17:19:43 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:43 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:19:47 Populating the Database list...
+07/23/2013 17:19:47 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:47 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:19:47 DCS directory not found.
+07/23/2013 17:19:47 DCS directory not found.
+07/23/2013 17:19:47 DCS directory not found.
+07/23/2013 17:19:47 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:47 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:19:47 DCS directory not found.
+07/23/2013 17:19:47 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:47 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:19:47 DCS directory not found.
+07/23/2013 17:19:47 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:47 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:19:47 DCS directory not found.
+07/23/2013 17:19:55 QCC10010I: Successful connect to PBANK
+07/23/2013 17:19:55 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:55 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:19:55 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:19:55 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:22:17 Populating the Database list...
+07/23/2013 17:22:17 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:22:17 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:22:17 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:22:17 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:22:17 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:22:17 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:22:17 DCS directory not found.
+07/23/2013 17:22:17 DCS directory not found.
+07/23/2013 17:22:17 DCS directory not found.
+07/23/2013 17:22:17 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:22:17 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:22:17 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:22:17 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:22:17 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:22:17 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:22:17 Populating the Node list...
+07/23/2013 17:22:17 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:22:17 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:22:17 Populating the Database list...
+07/23/2013 17:22:17 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:22:17 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:22:17 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:22:17 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:22:17 QCC10023W: DB List - Node directory is empty.
+07/23/2013 17:22:17 QCC10027I: DB List - Closing the node directory scan.
+07/23/2013 17:22:17 DCS directory not found.
+07/23/2013 17:22:17 DCS directory not found.
+07/23/2013 17:22:17 DCS directory not found.
+07/23/2013 17:28:07 QCC10011I: Successful disconnect from PBANK
+07/24/2013 15:56:42 Populating the Host list...
+07/24/2013 15:56:44 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:56:44 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 15:56:44 Populating the Database list...
+07/24/2013 15:56:44 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:56:44 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 15:56:44 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:56:44 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 15:56:44 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:56:44 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 15:56:44 DCS directory not found.
+07/24/2013 15:56:44 DCS directory not found.
+07/24/2013 15:56:44 DCS directory not found.
+07/24/2013 15:56:44 Populating the Node list...
+07/24/2013 15:56:44 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:56:44 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 15:56:44 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:56:44 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 15:56:44 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:56:44 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 15:56:44 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:56:44 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 15:56:44 Populating the Host list...
+07/24/2013 15:56:44 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:56:44 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 15:57:06 Populating the Node list...
+07/24/2013 15:57:06 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:57:06 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 15:57:07 Populating the Database list...
+07/24/2013 15:57:07 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:57:07 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 15:57:07 DCS directory not found.
+07/24/2013 15:57:07 DCS directory not found.
+07/24/2013 15:57:07 DCS directory not found.
+07/24/2013 15:57:07 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:57:07 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 15:57:07 DCS directory not found.
+07/24/2013 15:57:07 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:57:07 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 15:57:07 DCS directory not found.
+07/24/2013 15:57:07 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:57:07 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 15:57:07 DCS directory not found.
+07/24/2013 15:57:11 QCC10010I: Successful connect to PBANK
+07/24/2013 15:57:11 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:57:11 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 15:57:11 QCC10023W: DB List - Node directory is empty.
+07/24/2013 15:57:11 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:03:32 QCC10010I: Successful connect to PBANK
+07/24/2013 16:03:32 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:03:32 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:03:32 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:03:32 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:05:18 CREATE PROCEDURE QUERY_PB_CSTINF
+ ( OUT OUT_RET_CODE VARCHAR(5)
+ ) 
+READS SQL DATA 
+DYNAMIC RESULT SETS 1
+BEGIN
+	-- 根据用户编号查询用户信息
+    DECLARE	RET_PB_CSTINF CURSOR WITH	RETURN FOR
+	SELECT
+		PIF_CSTNO, 
+		PIF_ACCNO, 
+		PIF_AREACODE, 
+		PIF_CSTTYP, 
+		PIF_CERTTYP, 
+		PIF_NAMECN,
+		PIF_NAMEEN,
+		PIF_ALIAS,
+		PIF_PASSWORD,
+		PIF_LOVENAME,
+		PIF_SEX,
+		PIF_BIRTHDAY,
+		PIF_CTFTYP,
+		PIF_CTFNO,
+		PIF_MOBILE,
+		PIF_ADDRESS,
+		PIF_PHONE,
+		PIF_FAX,
+		PIF_ZIPCODE,
+		PIF_EMAIL,
+		PIF_EMPLOYEE,
+		PIF_STT,
+		PIF_LASTLGNTIM,
+		PIF_LASTLGNIP,
+		PIF_OPENTYP,
+		PIF_OPENTELLER,
+		PIF_OPENBRANCHNO,
+		PIF_OPENNETNO,
+		PIF_OPENDATE,
+		PIF_CHGTELLER,
+		PIF_CHGBRANCHNO,
+		PIF_CHGNETNO,
+		PIF_LASTCHGTIM,
+		PIF_RESERVE1,
+		PIF_RESERVE2,
+		PIF_RESERVE3,
+		PIF_RESERVE4
+	FROM  PB_CSTINF;
+
+	-- 异常处理
+	DECLARE EXIT HANDLER FOR SQLEXCEPTION
+	BEGIN
+		SET OUT_RET_CODE = '95000';
+		ROLLBACK ;
+	END;
+	
+	OPEN RET_PB_CSTINF;	
+
+
+	SET OUT_RET_CODE = '00000';
+  
+END
+
+ 
+07/24/2013 16:05:19 [IBM][CLI Driver][DB2/NT] SQL0454N  例程 "PBANK.QUERY_PB_CSTINF" 的定义中提供的特征符与模式或模块中已存在的另外某个例程的特征符相匹配。  LINE NUMBER=61.  SQLSTATE=42723 
+
+07/24/2013 16:06:45 CREATE PROCEDURE QUERY_PB_CSTINF
+ ( OUT OUT_RET_CODE_ALL VARCHAR(5)
+ ) 
+READS SQL DATA 
+DYNAMIC RESULT SETS 1
+BEGIN
+	-- 根据用户编号查询用户信息
+    DECLARE	RET_PB_CSTINF CURSOR WITH	RETURN FOR
+	SELECT
+		PIF_CSTNO, 
+		PIF_ACCNO, 
+		PIF_AREACODE, 
+		PIF_CSTTYP, 
+		PIF_CERTTYP, 
+		PIF_NAMECN,
+		PIF_NAMEEN,
+		PIF_ALIAS,
+		PIF_PASSWORD,
+		PIF_LOVENAME,
+		PIF_SEX,
+		PIF_BIRTHDAY,
+		PIF_CTFTYP,
+		PIF_CTFNO,
+		PIF_MOBILE,
+		PIF_ADDRESS,
+		PIF_PHONE,
+		PIF_FAX,
+		PIF_ZIPCODE,
+		PIF_EMAIL,
+		PIF_EMPLOYEE,
+		PIF_STT,
+		PIF_LASTLGNTIM,
+		PIF_LASTLGNIP,
+		PIF_OPENTYP,
+		PIF_OPENTELLER,
+		PIF_OPENBRANCHNO,
+		PIF_OPENNETNO,
+		PIF_OPENDATE,
+		PIF_CHGTELLER,
+		PIF_CHGBRANCHNO,
+		PIF_CHGNETNO,
+		PIF_LASTCHGTIM,
+		PIF_RESERVE1,
+		PIF_RESERVE2,
+		PIF_RESERVE3,
+		PIF_RESERVE4
+	FROM  PB_CSTINF;
+
+	-- 异常处理
+	DECLARE EXIT HANDLER FOR SQLEXCEPTION
+	BEGIN
+		SET OUT_RET_CODE_ALL = '95000';
+		ROLLBACK ;
+	END;
+	
+	OPEN RET_PB_CSTINF;	
+
+
+	SET OUT_RET_CODE_ALL = '00000';
+  
+END
+
+ 
+07/24/2013 16:06:45 [IBM][CLI Driver][DB2/NT] SQL0454N  例程 "PBANK.QUERY_PB_CSTINF" 的定义中提供的特征符与模式或模块中已存在的另外某个例程的特征符相匹配。  LINE NUMBER=61.  SQLSTATE=42723 
+
+07/24/2013 16:07:51 CREATE PROCEDURE QUERY_PB_CSTINF
+ ( OUT OUT_RET_CODE_LANFFY VARCHAR(5)
+ ) 
+READS SQL DATA 
+DYNAMIC RESULT SETS 1
+BEGIN
+	-- 根据用户编号查询用户信息
+    DECLARE	RET_PB_CSTINF CURSOR WITH	RETURN FOR
+	SELECT
+		PIF_CSTNO, 
+		PIF_ACCNO, 
+		PIF_AREACODE, 
+		PIF_CSTTYP, 
+		PIF_CERTTYP, 
+		PIF_NAMECN,
+		PIF_NAMEEN,
+		PIF_ALIAS,
+		PIF_PASSWORD,
+		PIF_LOVENAME,
+		PIF_SEX,
+		PIF_BIRTHDAY,
+		PIF_CTFTYP,
+		PIF_CTFNO,
+		PIF_MOBILE,
+		PIF_ADDRESS,
+		PIF_PHONE,
+		PIF_FAX,
+		PIF_ZIPCODE,
+		PIF_EMAIL,
+		PIF_EMPLOYEE,
+		PIF_STT,
+		PIF_LASTLGNTIM,
+		PIF_LASTLGNIP,
+		PIF_OPENTYP,
+		PIF_OPENTELLER,
+		PIF_OPENBRANCHNO,
+		PIF_OPENNETNO,
+		PIF_OPENDATE,
+		PIF_CHGTELLER,
+		PIF_CHGBRANCHNO,
+		PIF_CHGNETNO,
+		PIF_LASTCHGTIM,
+		PIF_RESERVE1,
+		PIF_RESERVE2,
+		PIF_RESERVE3,
+		PIF_RESERVE4
+	FROM  PB_CSTINF;
+
+	-- 异常处理
+	DECLARE EXIT HANDLER FOR SQLEXCEPTION
+	BEGIN
+		SET OUT_RET_CODE_LANFFY = '95000';
+		ROLLBACK ;
+	END;
+	
+	OPEN RET_PB_CSTINF;	
+
+
+	SET OUT_RET_CODE_LANFFY = '00000';
+  
+END
+
+ 
+07/24/2013 16:07:51 [IBM][CLI Driver][DB2/NT] SQL0454N  例程 "PBANK.QUERY_PB_CSTINF" 的定义中提供的特征符与模式或模块中已存在的另外某个例程的特征符相匹配。  LINE NUMBER=61.  SQLSTATE=42723 
+
+07/24/2013 16:08:03 CREATE PROCEDURE QUERY_PB_CSTINF
+ ( OUT OUT_RET_CODE_LANFFY VARCHAR(5)
+ ) 
+READS SQL DATA 
+DYNAMIC RESULT SETS 1
+BEGIN
+	-- 根据用户编号查询用户信息
+    DECLARE	RET_PB_CSTINF CURSOR WITH	RETURN FOR
+	SELECT
+		PIF_CSTNO, 
+		PIF_ACCNO, 
+		PIF_AREACODE, 
+		PIF_CSTTYP, 
+		PIF_CERTTYP, 
+		PIF_NAMECN,
+		PIF_NAMEEN,
+		PIF_ALIAS,
+		PIF_PASSWORD,
+		PIF_LOVENAME,
+		PIF_SEX,
+		PIF_BIRTHDAY,
+		PIF_CTFTYP,
+		PIF_CTFNO,
+		PIF_MOBILE,
+		PIF_ADDRESS,
+		PIF_PHONE,
+		PIF_FAX,
+		PIF_ZIPCODE,
+		PIF_EMAIL,
+		PIF_EMPLOYEE,
+		PIF_STT,
+		PIF_LASTLGNTIM,
+		PIF_LASTLGNIP,
+		PIF_OPENTYP,
+		PIF_OPENTELLER,
+		PIF_OPENBRANCHNO,
+		PIF_OPENNETNO,
+		PIF_OPENDATE,
+		PIF_CHGTELLER,
+		PIF_CHGBRANCHNO,
+		PIF_CHGNETNO,
+		PIF_LASTCHGTIM,
+		PIF_RESERVE1,
+		PIF_RESERVE2,
+		PIF_RESERVE3,
+		PIF_RESERVE4
+	FROM  PB_CSTINF;
+
+	-- 异常处理
+	DECLARE EXIT HANDLER FOR SQLEXCEPTION
+	BEGIN
+		SET OUT_RET_CODE_LANFFY = '95000';
+		ROLLBACK ;
+	END;
+	
+	OPEN RET_PB_CSTINF;	
+
+
+	SET OUT_RET_CODE_LANFFY = '00001';
+  
+END
+
+ 
+07/24/2013 16:08:03 [IBM][CLI Driver][DB2/NT] SQL0454N  例程 "PBANK.QUERY_PB_CSTINF" 的定义中提供的特征符与模式或模块中已存在的另外某个例程的特征符相匹配。  LINE NUMBER=61.  SQLSTATE=42723 
+
+07/24/2013 16:10:34 QCC10011I: Successful disconnect from PBANK
+07/24/2013 16:10:34 QCC10011I: Successful disconnect from PBANK
+07/24/2013 16:10:38 QCC10010I: Successful connect to PBANK
+07/24/2013 16:10:38 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:10:38 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:10:38 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:10:38 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:16 Populating the Host list...
+07/24/2013 16:11:16 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:16 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:16 Populating the Database list...
+07/24/2013 16:11:16 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:16 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:16 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:16 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:16 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:16 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:16 DCS directory not found.
+07/24/2013 16:11:16 DCS directory not found.
+07/24/2013 16:11:16 DCS directory not found.
+07/24/2013 16:11:16 Populating the Node list...
+07/24/2013 16:11:16 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:16 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:16 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:16 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:16 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:16 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:16 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:16 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:16 Populating the Host list...
+07/24/2013 16:11:16 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:16 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:16 Populating the Node list...
+07/24/2013 16:11:16 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:16 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:16 Populating the Database list...
+07/24/2013 16:11:16 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:16 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:16 DCS directory not found.
+07/24/2013 16:11:16 DCS directory not found.
+07/24/2013 16:11:16 DCS directory not found.
+07/24/2013 16:11:18 Populating the Host list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Database list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 Populating the Node list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Host list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Node list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Database list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 Populating the Host list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Database list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 Populating the Node list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Host list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Node list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Database list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 Populating the Host list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Database list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 Populating the Node list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Host list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Node list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Database list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 Populating the Host list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Database list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 Populating the Node list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Host list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Node list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Database list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 Populating the Host list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Database list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 Populating the Node list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Host list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Node list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 Populating the Database list...
+07/24/2013 16:11:18 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:18 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:18 DCS directory not found.
+07/24/2013 16:11:19 Populating the Host list...
+07/24/2013 16:11:19 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:19 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:19 Populating the Database list...
+07/24/2013 16:11:19 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:19 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:19 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:19 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:19 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:19 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:19 DCS directory not found.
+07/24/2013 16:11:19 DCS directory not found.
+07/24/2013 16:11:19 DCS directory not found.
+07/24/2013 16:11:19 Populating the Node list...
+07/24/2013 16:11:19 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:19 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:19 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:19 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:19 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:19 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:19 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:19 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:19 Populating the Host list...
+07/24/2013 16:11:19 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:19 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:19 Populating the Node list...
+07/24/2013 16:11:19 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:19 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:19 Populating the Database list...
+07/24/2013 16:11:19 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:19 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:19 DCS directory not found.
+07/24/2013 16:11:19 DCS directory not found.
+07/24/2013 16:11:19 DCS directory not found.
+07/24/2013 16:11:56 QCC10010I: Successful connect to PBANK
+07/24/2013 16:11:56 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:56 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:56 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:56 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:56 QCC10010I: Successful connect to PBANK
+07/24/2013 16:11:56 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:56 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:56 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:56 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:57 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:57 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:57 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:57 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:57 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:57 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:57 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:11:57 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:11:58 QCC10011I: Successful disconnect from PBANK
+07/24/2013 16:12:00 QCC10011I: Successful disconnect from PBANK
+07/24/2013 16:12:34 QCC10010I: Successful connect to PBANK
+07/24/2013 16:12:34 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:12:34 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:12:34 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:12:34 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:13:27 Populating the Host list...
+07/24/2013 16:13:27 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:13:27 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:13:27 Populating the Database list...
+07/24/2013 16:13:27 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:13:27 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:13:27 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:13:27 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:13:27 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:13:27 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:13:27 DCS directory not found.
+07/24/2013 16:13:27 DCS directory not found.
+07/24/2013 16:13:27 DCS directory not found.
+07/24/2013 16:13:27 Populating the Node list...
+07/24/2013 16:13:27 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:13:27 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:13:27 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:13:27 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:13:27 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:13:27 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:13:27 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:13:27 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:13:27 Populating the Host list...
+07/24/2013 16:13:27 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:13:27 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:13:27 Populating the Node list...
+07/24/2013 16:13:27 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:13:27 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:13:27 Populating the Database list...
+07/24/2013 16:13:27 QCC10023W: DB List - Node directory is empty.
+07/24/2013 16:13:27 QCC10027I: DB List - Closing the node directory scan.
+07/24/2013 16:13:27 DCS directory not found.
+07/24/2013 16:13:27 DCS directory not found.
+07/24/2013 16:13:27 DCS directory not found.
+07/24/2013 17:09:11 QCC10011I: Successful disconnect from PBANK
+07/24/2013 17:09:12 QCC10011I: Successful disconnect from PBANK
+08/19/2013 10:11:15 Populating the Host list...
+08/19/2013 10:11:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:16 Populating the Database list...
+08/19/2013 10:11:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:16 DCS directory not found.
+08/19/2013 10:11:16 DCS directory not found.
+08/19/2013 10:11:16 DCS directory not found.
+08/19/2013 10:11:16 Populating the Node list...
+08/19/2013 10:11:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:16 Populating the Host list...
+08/19/2013 10:11:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:21 Populating the Node list...
+08/19/2013 10:11:21 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:21 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:22 Populating the Database list...
+08/19/2013 10:11:22 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:22 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:22 DCS directory not found.
+08/19/2013 10:11:22 DCS directory not found.
+08/19/2013 10:11:22 DCS directory not found.
+08/19/2013 10:11:22 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:22 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:22 DCS directory not found.
+08/19/2013 10:11:22 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:22 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:22 DCS directory not found.
+08/19/2013 10:11:22 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:22 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:22 DCS directory not found.
+08/19/2013 10:11:26 QCC10010I: Successful connect to PBANK
+08/19/2013 10:11:26 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:26 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:26 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:26 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:57 Populating the Database list...
+08/19/2013 10:11:57 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:57 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:57 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:57 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:57 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:57 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:57 DCS directory not found.
+08/19/2013 10:11:57 DCS directory not found.
+08/19/2013 10:11:57 DCS directory not found.
+08/19/2013 10:11:57 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:57 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:57 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:57 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:57 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:57 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:57 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:57 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:57 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:57 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:11:57 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:11:57 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:12:07 QCC10010I: Successful connect to PBANK
+08/19/2013 10:12:07 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:12:07 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:12:07 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:12:07 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:12:09 "01010000",,"0","Account",1,,,"1111000000" "01020000",,"0","Transfer",2,,,"1111000000" "01030000",,"0","Financial",3,,,"1111000000" "01040000",,"0","Loan",4,,,"1111000000" "01050000",,"0","Credit",5,,,"1111000000" "01060000",,"0","Life",6,,,"1111000000" "01070000",,"0","Service",7,,,"1111000000" "02010100","01010000","1","AccountQuery",1,,,"1111000000" "03010100","02010100","0","InnerAccountQuery",1,,,"1111000000" "03010101","02010100","0","OtherAccountQuery",2,"y0124     ",,"1111000000" "02030100","01030000","0","Futures",1,,,"1111000000" "03030100","02030100","0","BFTransfer",1,,,"1111000000" "04030100","03030100","0","CardToFutures",1,"y0        ",,"1111000000"
+08/19/2013 10:12:09 [IBM][CLI Driver][DB2/NT] SQL0104N  在 "BEGIN-OF-STATEMENT" 后面找到异常标记 ""01010000",,"。预期标记可能包括："<values>"。  SQLSTATE=42601 
+
+08/19/2013 10:12:23 "01010000",,"0","Account",1,,,"1111000000" "01020000",,"0","Transfer",2,,,"1111000000" "01030000",,"0","Financial",3,,,"1111000000" "01040000",,"0","Loan",4,,,"1111000000" "01050000",,"0","Credit",5,,,"1111000000" "01060000",,"0","Life",6,,,"1111000000" "01070000",,"0","Service",7,,,"1111000000" "02010100","01010000","1","AccountQuery",1,,,"1111000000" "03010100","02010100","0","InnerAccountQuery",1,,,"1111000000" "03010101","02010100","0","OtherAccountQuery",2,"y0124     ",,"1111000000" "02030100","01030000","0","Futures",1,,,"1111000000" "03030100","02030100","0","BFTransfer",1,,,"1111000000" "04030100","03030100","0","CardToFutures",1,"y0        ",,"1111000000"
+08/19/2013 10:12:23 [IBM][CLI Driver][DB2/NT] SQL0104N  在 "BEGIN-OF-STATEMENT" 后面找到异常标记 ""01010000",,"。预期标记可能包括："<values>"。  SQLSTATE=42601 
+
+08/19/2013 10:13:16 Populating the Database list...
+08/19/2013 10:13:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:13:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:13:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:13:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:13:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:13:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:13:16 DCS directory not found.
+08/19/2013 10:13:16 DCS directory not found.
+08/19/2013 10:13:16 DCS directory not found.
+08/19/2013 10:13:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:13:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:13:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:13:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:13:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:13:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:13:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:13:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:13:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:13:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:13:16 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:13:16 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:13:20 QCC10010I: Successful connect to PBANK
+08/19/2013 10:13:20 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:13:20 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:13:20 QCC10023W: DB List - Node directory is empty.
+08/19/2013 10:13:20 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 10:13:21 "01010000","***","0","account/welcome.do" "01020000","***","0","transfer/welcome.do" "01030000","***","0","financial/welcome.do" "01040000","***","0","loan/welcome.do" "01050000","***","0","credit/welcome.do" "01060000","***","0","life/welcome.do" "01070000","***","0","service/welcome.do" "02010100","***","1","javascript:showLogin()" "02010100","2**","0","account/acQuery.do" "03010100","***","1","javascript:showLogin()" "03010100","2**","0","account/acQuery.do" "03010101","***","1","javascript:showLogin()" "03010101","2**","0","account/acBankQuery.do" "04030100","2**","0","futures/sfCardToFutures.do" "04030100","***","1","javascript:showLogin()" "03030100","2**","0", "03030100","***","1","javascript:showLogin()" "02030100","2**","0", "02030100","***","1","javascript:showLogin()"
+08/19/2013 10:13:21 [IBM][CLI Driver][DB2/NT] SQL0104N  在 "BEGIN-OF-STATEMENT" 后面找到异常标记 ""01010000""。预期标记可能包括："SELECT"。  SQLSTATE=42601 
+
+08/19/2013 10:13:29 QCC10011I: Successful disconnect from PBANK
+08/19/2013 10:13:29 QCC10011I: Successful disconnect from PBANK
+08/19/2013 10:13:29 QCC10011I: Successful disconnect from PBANK
+08/19/2013 11:01:30 Populating the Host list...
+08/19/2013 11:01:31 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:31 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:01:31 Populating the Database list...
+08/19/2013 11:01:31 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:31 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:01:31 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:31 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:01:31 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:31 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:01:31 DCS directory not found.
+08/19/2013 11:01:31 DCS directory not found.
+08/19/2013 11:01:31 DCS directory not found.
+08/19/2013 11:01:31 Populating the Node list...
+08/19/2013 11:01:31 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:31 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:01:31 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:31 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:01:31 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:31 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:01:31 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:31 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:01:31 Populating the Host list...
+08/19/2013 11:01:31 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:31 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:01:38 Populating the Node list...
+08/19/2013 11:01:38 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:38 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:01:38 Populating the Database list...
+08/19/2013 11:01:38 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:38 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:01:38 DCS directory not found.
+08/19/2013 11:01:38 DCS directory not found.
+08/19/2013 11:01:38 DCS directory not found.
+08/19/2013 11:01:38 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:38 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:01:38 DCS directory not found.
+08/19/2013 11:01:38 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:38 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:01:38 DCS directory not found.
+08/19/2013 11:01:38 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:38 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:01:38 DCS directory not found.
+08/19/2013 11:01:43 QCC10010I: Successful connect to PBANK
+08/19/2013 11:01:43 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:43 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:01:43 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:01:43 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:03:03 QCC10010I: Successful connect to PBANK
+08/19/2013 11:03:03 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:03:03 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:03:03 QCC10023W: DB List - Node directory is empty.
+08/19/2013 11:03:03 QCC10027I: DB List - Closing the node directory scan.
+08/19/2013 11:04:17 QCC10011I: Successful disconnect from PBANK
+08/19/2013 11:32:19 QCC10011I: Successful disconnect from PBANK
+03/21/2014 09:16:41 Populating the Host list...
+03/21/2014 09:16:41 Populating the Host list...
+03/21/2014 09:16:41 Populating the Host list...
+03/21/2014 09:16:41 Populating the Host list...
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 Populating the Database list...
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 Populating the Database list...
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 Populating the Database list...
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 Populating the Database list...
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 DCS directory not found.
+03/21/2014 09:16:43 DCS directory not found.
+03/21/2014 09:16:43 DCS directory not found.
+03/21/2014 09:16:43 DCS directory not found.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 DCS directory not found.
+03/21/2014 09:16:43 Populating the Node list...
+03/21/2014 09:16:43 DCS directory not found.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 DCS directory not found.
+03/21/2014 09:16:43 DCS directory not found.
+03/21/2014 09:16:43 Populating the Node list...
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 DCS directory not found.
+03/21/2014 09:16:43 DCS directory not found.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 DCS directory not found.
+03/21/2014 09:16:43 Populating the Node list...
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 Populating the Host list...
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 DCS directory not found.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 Populating the Node list...
+03/21/2014 09:16:43 Populating the Host list...
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 Populating the Host list...
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.
+03/21/2014 09:16:43 Populating the Host list...
+03/21/2014 09:16:43 QCC10023W: DB List - Node directory is empty.
+03/21/2014 09:16:43 QCC10027I: DB List - Closing the node directory scan.

@@ -1,0 +1,72 @@
+[2014-2-26 10:14:40:561] [RaCoInst] ==================>Ralink CoInstaller
+[2014-2-26 10:14:40:610] [RaCoInst] DrvierRegKey={4d36e972-e325-11ce-bfc1-08002be10318}\0017
+[2014-2-26 10:14:40:684] [RaCoInst] strWindowsCountry=CHN
+[2014-2-26 10:14:40:684] [RaCoInst] dwCoInstOpt = 0x2F
+[2014-2-26 10:14:40:685] [RaCoInst] =====> Set CountryRegion: CHN
+[2014-2-26 10:14:40:686] [RaCoInst] Write Registry Data=1
+[2014-2-26 10:14:40:687] [RaCoInst] Registry CountryRegion=1
+[2014-2-26 10:14:40:688] [RaCoInst] Write Registry Data=4
+[2014-2-26 10:14:40:689] [RaCoInst] Registry CountryRegionABand=4
+[2014-2-26 10:14:40:690] [RaCoInst] =====> Set CarrierDetect: JPN
+[2014-2-26 10:14:40:691] [RaCoInst] =====> Set IEEE802.11H: JPN
+[2014-2-26 10:14:40:692] [RaCoInst] =====> Set Country Tx Power
+[2014-2-26 10:14:40:695] [RaCoInst] Write Registry Data=66E558
+[2014-2-26 10:14:40:697] [RaCoInst] Write Registry Data=66E558
+[2014-2-26 10:14:40:698] [RaCoInst] =====> Remove AdHoc N mode from driver property if N is not allowed
+[2014-2-26 10:14:44:264] [RaCoInst] <==================Ralink CoInstaller
+
+
+[2014-2-26 10:14:44:496] [RaCoInst] ==================>Ralink CoInstaller
+[2014-2-26 10:14:44:498] [RaCoInst] DrvierRegKey={4d36e972-e325-11ce-bfc1-08002be10318}\0017
+[2014-2-26 10:14:44:499] [RaCoInst] strWindowsCountry=CHN
+[2014-2-26 10:14:44:500] [RaCoInst] dwCoInstOpt = 0x2F
+[2014-2-26 10:14:44:500] [RaCoInst] =====> Set CountryRegion: CHN
+[2014-2-26 10:14:44:502] [RaCoInst] Write Registry Data=1
+[2014-2-26 10:14:44:502] [RaCoInst] Registry CountryRegion=1
+[2014-2-26 10:14:44:504] [RaCoInst] Write Registry Data=4
+[2014-2-26 10:14:44:504] [RaCoInst] Registry CountryRegionABand=4
+[2014-2-26 10:14:44:505] [RaCoInst] =====> Set CarrierDetect: JPN
+[2014-2-26 10:14:44:506] [RaCoInst] =====> Set IEEE802.11H: JPN
+[2014-2-26 10:14:44:507] [RaCoInst] =====> Set Country Tx Power
+[2014-2-26 10:14:44:509] [RaCoInst] Write Registry Data=40D480
+[2014-2-26 10:14:44:510] [RaCoInst] Write Registry Data=40D480
+[2014-2-26 10:14:44:511] [RaCoInst] =====> Remove AdHoc N mode from driver property if N is not allowed
+[2014-2-26 10:14:47:864] [RaCoInst] <==================Ralink CoInstaller
+
+
+[2014-2-26 10:25:10:913] [RaCoInst] ==================>Ralink CoInstaller
+[2014-2-26 10:25:10:916] [RaCoInst] DrvierRegKey={4d36e972-e325-11ce-bfc1-08002be10318}\0017
+[2014-2-26 10:25:10:933] [RaCoInst] strWindowsCountry=CHN
+[2014-2-26 10:25:10:934] [RaCoInst] dwCoInstOpt = 0x2F
+[2014-2-26 10:25:10:934] [RaCoInst] =====> Set CountryRegion: CHN
+[2014-2-26 10:25:10:936] [RaCoInst] Write Registry Data=1
+[2014-2-26 10:25:10:936] [RaCoInst] Registry CountryRegion=1
+[2014-2-26 10:25:10:938] [RaCoInst] Write Registry Data=4
+[2014-2-26 10:25:10:939] [RaCoInst] Registry CountryRegionABand=4
+[2014-2-26 10:25:10:940] [RaCoInst] =====> Set CarrierDetect: JPN
+[2014-2-26 10:25:10:941] [RaCoInst] =====> Set IEEE802.11H: JPN
+[2014-2-26 10:25:10:942] [RaCoInst] =====> Set Country Tx Power
+[2014-2-26 10:25:10:943] [RaCoInst] Write Registry Data=61E850
+[2014-2-26 10:25:10:944] [RaCoInst] Write Registry Data=61E850
+[2014-2-26 10:25:10:944] [RaCoInst] =====> Remove AdHoc N mode from driver property if N is not allowed
+[2014-2-26 10:25:15:790] [RaCoInst] <==================Ralink CoInstaller
+
+
+[2014-2-26 10:25:16:55] [RaCoInst] ==================>Ralink CoInstaller
+[2014-2-26 10:25:16:61] [RaCoInst] DrvierRegKey={4d36e972-e325-11ce-bfc1-08002be10318}\0017
+[2014-2-26 10:25:16:62] [RaCoInst] strWindowsCountry=CHN
+[2014-2-26 10:25:16:63] [RaCoInst] dwCoInstOpt = 0x2F
+[2014-2-26 10:25:16:64] [RaCoInst] =====> Set CountryRegion: CHN
+[2014-2-26 10:25:16:65] [RaCoInst] Write Registry Data=1
+[2014-2-26 10:25:16:66] [RaCoInst] Registry CountryRegion=1
+[2014-2-26 10:25:16:67] [RaCoInst] Write Registry Data=4
+[2014-2-26 10:25:16:67] [RaCoInst] Registry CountryRegionABand=4
+[2014-2-26 10:25:16:70] [RaCoInst] =====> Set CarrierDetect: JPN
+[2014-2-26 10:25:16:71] [RaCoInst] =====> Set IEEE802.11H: JPN
+[2014-2-26 10:25:16:72] [RaCoInst] =====> Set Country Tx Power
+[2014-2-26 10:25:16:74] [RaCoInst] Write Registry Data=2DD418
+[2014-2-26 10:25:16:75] [RaCoInst] Write Registry Data=2DD418
+[2014-2-26 10:25:16:78] [RaCoInst] =====> Remove AdHoc N mode from driver property if N is not allowed
+[2014-2-26 10:25:19:322] [RaCoInst] <==================Ralink CoInstaller
+
+

@@ -1,0 +1,1684 @@
+2013-11-29 22:16:13 818  ---------------------------------------------------------------------
+2013-11-29 22:16:13 818  KHelper::SetUpdateTime:2, return:1
+2013-11-29 22:16:13 818  KHelper::IsReupdateForceReboot return:0
+2013-11-29 22:16:13 818  Auto Clean:1
+2013-11-29 22:16:13 818  ParseCommandLine: silent
+2013-11-29 22:16:13 818  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-29 22:16:13 818  KUpdateInst::ReadExternConfig try no changed, reg tryno:-1 svr tryno:4360
+2013-11-29 22:16:13 818  TryNo:4360
+2013-11-29 22:16:13 818  KUpdateInst::ReadSvrConfig return:0
+2013-11-29 22:16:13 818  KUpdateInst::Init return:0
+2013-11-29 22:16:13 818  KCs3::LoadCs3SvrList return:0
+2013-11-29 22:16:13 818  KCs3::LoadChannelList return:0
+2013-11-29 22:16:13 818  KCs3::Cs3VerRequest begin
+2013-11-29 22:16:13 927  KCs3::IsRespondsLogic return:1
+2013-11-29 22:16:13 927  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-29 22:16:13 927  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-29 22:16:13 927  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-29 22:16:13 927  KCs3::RequestCs3Info return 0, costtime:109
+2013-11-29 22:16:13 927  KCs3::Cs3VerRequest return 1
+2013-11-29 22:16:13 927  KCs3::IsNeedUpdate return 1
+2013-11-29 22:16:13 927  KHelper::SetLastRebootTipTime return:1, Time:20131129221613
+2013-11-29 22:16:13 927  KCs3::IsNeedUpdate return 1
+2013-11-29 22:16:13 927  KCs3::IsNeedUpdate return 1
+2013-11-29 22:16:13 927  KCs3::IsNeedUpdateFast return 0
+2013-11-29 22:16:13 927  KDubaUpdate::CheckDiskSize diskSpace:46731 MB
+2013-11-29 22:16:13 927  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-29 22:16:13 927  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-29 22:16:13 927  KUpdateInst::CreateChannels return:0
+2013-11-29 22:16:13 927  KUpdateInst::Create return:0
+2013-11-29 22:16:13 927  KUpdateInst::DownloadIndex ...
+2013-11-29 22:16:13 927  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-29 22:16:14 161  DownloadFileAndDecompressCrcDat return:0, cost time:234, url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat, path:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-29 22:16:14 161  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-29 22:16:14 660  DownloadFileAndDecompress return:0, cost time:499, url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48, path:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-29 22:16:14 660  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-29 22:16:14 660  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-29 22:16:14 894  DownloadFileAndDecompressCrcDat return:0, cost time:234, url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat, path:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-29 22:16:14 894  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-29 22:16:15 144  DownloadFileAndDecompress return:0, cost time:250, url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598, path:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-29 22:16:15 144  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-29 22:16:15 144  KUpdateInst::DownloadIndex return:0
+2013-11-29 22:16:15 144  KUpdateInst::ParseIndex ...
+2013-11-29 22:16:15 144  KChannel::IsScrollBack name:indexmain return:0
+2013-11-29 22:16:16 532  IsItemDiffFromFile File Size, local:568, server:233, path:f:\myapp\DriverGenius2013\data\deswitch.dat
+2013-11-29 22:16:16 688  IsItemDiffFromFile File Size, local:2644336, server:2574704, path:f:\myapp\DriverGenius2013\security\ksde\dgdecs.dll
+2013-11-29 22:16:17 078  IsItemDiffFromFile File Size, local:846192, server:842096, path:f:\myapp\DriverGenius2013\dgguide.exe
+2013-11-29 22:16:18 498  IsItemDiffFromFile File Size, local:467996, server:468764, path:f:\myapp\DriverGenius2013\data\dgp.mht
+2013-11-29 22:16:19 028  IsItemDiffFromFile CRC, local:3964296075, server:2605542173, path:f:\myapp\DriverGenius2013\dgpver.dat
+2013-11-29 22:16:20 151  IsItemDiffFromFile Version, local:7.0.1127.1507, server:7.0.1129.1512, path:f:\myapp\DriverGenius2013\dgservice.exe
+2013-11-29 22:16:20 760  IsItemDiffFromFile Version, local:7.0.1127.1511, server:7.0.1126.1510, path:f:\myapp\DriverGenius2013\dgver.dll
+2013-11-29 22:16:21 758  IsItemDiffFromFile File Size, local:3244912, server:3244400, path:f:\myapp\DriverGenius2013\drivergenius.exe
+2013-11-29 22:16:24 098  IsItemDiffFromFile File Size, local:1404, server:1428, path:f:\myapp\DriverGenius2013\hmpgconfig.ini
+2013-11-29 22:16:24 566  IsItemDiffFromFile File Size, local:2649, server:2810, path:f:\myapp\DriverGenius2013\install.xml
+2013-11-29 22:16:26 360  IsItemDiffFromFile File Size, local:578, server:577, path:f:\myapp\DriverGenius2013\ksoft\kctrl.dat
+2013-11-29 22:16:27 280  IsItemDiffFromFile File Size, local:3995, server:4099, path:f:\myapp\DriverGenius2013\ksoft\kfmt.dat
+2013-11-29 22:16:34 848  IsItemDiffFromFile File Size, local:747888, server:678256, path:f:\myapp\DriverGenius2013\notifier.exe
+2013-11-29 22:16:34 885  IsItemDiffFromFile Version, local:7.0.1125.1504, server:7.0.1128.1508, path:f:\myapp\DriverGenius2013\patchcore.dll
+2013-11-29 22:16:34 895  IsItemDiffFromFile File Size, local:702832, server:706928, path:f:\myapp\DriverGenius2013\pnpsup.dll
+2013-11-29 22:16:42 369  IsItemDiffFromFile File Size, local:8700, server:45147, path:f:\myapp\DriverGenius2013\whatsnew.txt
+2013-11-29 22:16:42 578  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-29 22:16:42 650  KUpdateInst::ParseIndex return:0
+2013-11-29 22:16:42 650  KUpdateInst::GetTotalSize return:5805668
+2013-11-29 22:16:42 650  KUpdateInst::DownloadFiles ...
+2013-11-29 22:16:42 650  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/data/6aca585fa074af1615045efa193c1cb5 file:f:\myapp\DriverGenius2013\update\kav\main\data\deswitch.dat
+2013-11-29 22:16:42 811  DownloadFileAndDecompressCrc return:0, cost time:172, url:http://update.drivergenius.com/update/duba/2013/4360/main/data/6aca585fa074af1615045efa193c1cb5, path:f:\myapp\DriverGenius2013\update\kav\main\data\deswitch.dat
+2013-11-29 22:16:42 821  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/security/ksde/074341055e2e3d976676cb6bb07188aa file:f:\myapp\DriverGenius2013\update\kav\main\security\ksde\dgdecs.dll
+2013-11-29 22:16:53 199  DownloadFileAndDecompressCrc return:0, cost time:10374, url:http://update.drivergenius.com/update/duba/2013/4360/main/security/ksde/074341055e2e3d976676cb6bb07188aa, path:f:\myapp\DriverGenius2013\update\kav\main\security\ksde\dgdecs.dll
+2013-11-29 22:16:53 214  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/550c48209f3b3d0231e448635597e00a file:f:\myapp\DriverGenius2013\update\kav\main\dgfixer.dll
+2013-11-29 22:16:54 478  DownloadFileAndDecompressCrc return:0, cost time:1264, url:http://update.drivergenius.com/update/duba/2013/4360/main/550c48209f3b3d0231e448635597e00a, path:f:\myapp\DriverGenius2013\update\kav\main\dgfixer.dll
+2013-11-29 22:16:54 494  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/b4b05026d72cdab4a5f11484b7a5c5f1 file:f:\myapp\DriverGenius2013\update\kav\main\dgguide.exe
+2013-11-29 22:17:04 150  DownloadFileAndDecompressCrc return:0, cost time:9657, url:http://update.drivergenius.com/update/duba/2013/4360/main/b4b05026d72cdab4a5f11484b7a5c5f1, path:f:\myapp\DriverGenius2013\update\kav\main\dgguide.exe
+2013-11-29 22:17:04 166  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/data/f529d96f1c57f9131255c15ffc0067e3 file:f:\myapp\DriverGenius2013\update\kav\main\data\dgp.mht
+2013-11-29 22:17:11 700  DownloadFileAndDecompressCrc return:0, cost time:7534, url:http://update.drivergenius.com/update/duba/2013/4360/main/data/f529d96f1c57f9131255c15ffc0067e3, path:f:\myapp\DriverGenius2013\update\kav\main\data\dgp.mht
+2013-11-29 22:17:11 716  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/556ce58258b668dd01bf2391bcad5541 file:f:\myapp\DriverGenius2013\update\kav\main\dgpver.dat
+2013-11-29 22:17:11 950  DownloadFileAndDecompressCrc return:0, cost time:234, url:http://update.drivergenius.com/update/duba/2013/4360/main/556ce58258b668dd01bf2391bcad5541, path:f:\myapp\DriverGenius2013\update\kav\main\dgpver.dat
+2013-11-29 22:17:11 966  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/4bf0203d8ba7b7b4e9d3f56d53c2e90a file:f:\myapp\DriverGenius2013\update\kav\main\dgservice.exe
+2013-11-29 22:17:15 351  DownloadFileAndDecompressCrc return:0, cost time:3385, url:http://update.drivergenius.com/update/duba/2013/4360/main/4bf0203d8ba7b7b4e9d3f56d53c2e90a, path:f:\myapp\DriverGenius2013\update\kav\main\dgservice.exe
+2013-11-29 22:17:15 366  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/bin/b61998883d1f62a89ff1b7449deb47e4 file:f:\myapp\DriverGenius2013\update\kav\main\bin\dgupdate.exe
+2013-11-29 22:17:17 660  DownloadFileAndDecompressCrc return:0, cost time:2294, url:http://update.drivergenius.com/update/duba/2013/4360/main/bin/b61998883d1f62a89ff1b7449deb47e4, path:f:\myapp\DriverGenius2013\update\kav\main\bin\dgupdate.exe
+2013-11-29 22:17:17 675  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/9e7cd27a110a454deb92bc5d4ef304e9 file:f:\myapp\DriverGenius2013\update\kav\main\dgver.dll
+2013-11-29 22:17:18 923  DownloadFileAndDecompressCrc return:0, cost time:1248, url:http://update.drivergenius.com/update/duba/2013/4360/main/9e7cd27a110a454deb92bc5d4ef304e9, path:f:\myapp\DriverGenius2013\update\kav\main\dgver.dll
+2013-11-29 22:17:18 939  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/575c4e4af35d494cec13211d949cc1ff file:f:\myapp\DriverGenius2013\update\kav\main\drivergenius.exe
+2013-11-29 22:37:30 666  ---------------------------------------------------------------------
+2013-11-29 22:37:30 668  KHelper::SetUpdateTime:2, return:1
+2013-11-29 22:37:30 668  KHelper::IsReupdateForceReboot return:0
+2013-11-29 22:37:30 668  Auto Clean:1
+2013-11-29 22:37:30 713  ParseCommandLine: silent
+2013-11-29 22:37:30 714  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-29 22:37:30 715  KUpdateInst::ReadExternConfig try no changed, reg tryno:-1 svr tryno:4360
+2013-11-29 22:37:30 715  TryNo:4360
+2013-11-29 22:37:30 715  KUpdateInst::ReadSvrConfig return:0
+2013-11-29 22:37:30 715  KUpdateInst::Init return:0
+2013-11-29 22:37:30 715  KCs3::LoadCs3SvrList return:0
+2013-11-29 22:37:30 716  KCs3::LoadChannelList return:0
+2013-11-29 22:37:30 716  KCs3::Cs3VerRequest begin
+2013-11-29 22:37:30 797  KCs3::IsRespondsLogic return:1
+2013-11-29 22:37:30 797  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-29 22:37:30 797  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-29 22:37:30 797  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-29 22:37:30 798  KCs3::RequestCs3Info return 0, costtime:78
+2013-11-29 22:37:30 798  KCs3::Cs3VerRequest return 1
+2013-11-29 22:37:30 798  KCs3::IsNeedUpdate return 1
+2013-11-29 22:37:30 798  KHelper::SetLastRebootTipTime return:1, Time:20131129223730
+2013-11-29 22:37:30 798  KCs3::IsNeedUpdate return 1
+2013-11-29 22:37:30 798  KCs3::IsNeedUpdate return 1
+2013-11-29 22:37:30 798  KCs3::IsNeedUpdateFast return 0
+2013-11-29 22:37:30 798  KDubaUpdate::CheckDiskSize diskSpace:46693 MB
+2013-11-29 22:37:30 798  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-29 22:37:30 798  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-29 22:37:30 798  KUpdateInst::CreateChannels return:0
+2013-11-29 22:37:30 798  KUpdateInst::Create return:0
+2013-11-29 22:37:30 798  KUpdateInst::DownloadIndex ...
+2013-11-29 22:37:30 798  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-29 22:37:30 969  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-29 22:37:31 242  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-29 22:37:31 243  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-29 22:37:31 364  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-29 22:37:31 445  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-29 22:37:31 445  KUpdateInst::DownloadIndex return:0
+2013-11-29 22:37:31 445  KUpdateInst::ParseIndex ...
+2013-11-29 22:37:31 445  KChannel::IsScrollBack name:indexmain return:0
+2013-11-29 22:37:32 410  IsItemDiffFromFile File Size, local:568, server:233, path:f:\myapp\DriverGenius2013\data\deswitch.dat
+2013-11-29 22:37:32 510  IsItemDiffFromFile File Size, local:2644336, server:2574704, path:f:\myapp\DriverGenius2013\security\ksde\dgdecs.dll
+2013-11-29 22:37:32 797  IsItemDiffFromFile File Size, local:846192, server:842096, path:f:\myapp\DriverGenius2013\dgguide.exe
+2013-11-29 22:37:33 780  IsItemDiffFromFile File Size, local:467996, server:468764, path:f:\myapp\DriverGenius2013\data\dgp.mht
+2013-11-29 22:37:34 146  IsItemDiffFromFile CRC, local:3964296075, server:2605542173, path:f:\myapp\DriverGenius2013\dgpver.dat
+2013-11-29 22:37:35 008  IsItemDiffFromFile Version, local:7.0.1127.1507, server:7.0.1129.1512, path:f:\myapp\DriverGenius2013\dgservice.exe
+2013-11-29 22:37:35 365  IsItemDiffFromFile Version, local:7.0.1127.1511, server:7.0.1126.1510, path:f:\myapp\DriverGenius2013\dgver.dll
+2013-11-29 22:37:36 148  IsItemDiffFromFile File Size, local:3244912, server:3244400, path:f:\myapp\DriverGenius2013\drivergenius.exe
+2013-11-29 22:37:37 700  IsItemDiffFromFile File Size, local:1404, server:1428, path:f:\myapp\DriverGenius2013\hmpgconfig.ini
+2013-11-29 22:37:37 963  IsItemDiffFromFile File Size, local:2649, server:2810, path:f:\myapp\DriverGenius2013\install.xml
+2013-11-29 22:37:39 137  IsItemDiffFromFile File Size, local:578, server:577, path:f:\myapp\DriverGenius2013\ksoft\kctrl.dat
+2013-11-29 22:37:39 833  IsItemDiffFromFile File Size, local:3995, server:4099, path:f:\myapp\DriverGenius2013\ksoft\kfmt.dat
+2013-11-29 22:37:45 441  IsItemDiffFromFile File Size, local:747888, server:678256, path:f:\myapp\DriverGenius2013\notifier.exe
+2013-11-29 22:37:45 475  IsItemDiffFromFile Version, local:7.0.1125.1504, server:7.0.1128.1508, path:f:\myapp\DriverGenius2013\patchcore.dll
+2013-11-29 22:37:45 485  IsItemDiffFromFile File Size, local:702832, server:706928, path:f:\myapp\DriverGenius2013\pnpsup.dll
+2013-11-29 22:37:50 651  IsItemDiffFromFile File Size, local:8700, server:45147, path:f:\myapp\DriverGenius2013\whatsnew.txt
+2013-11-29 22:37:50 844  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-29 22:37:50 915  KUpdateInst::ParseIndex return:0
+2013-11-29 22:37:50 915  KUpdateInst::GetTotalSize return:5805668
+2013-11-29 22:37:50 915  KUpdateInst::DownloadFiles ...
+2013-11-29 22:37:52 760  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/575c4e4af35d494cec13211d949cc1ff file:f:\myapp\DriverGenius2013\update\kav\main\drivergenius.exe
+2013-11-29 22:38:51 033  DownloadFileAndDecompressCrc return:0, cost time:58267, url:http://update.drivergenius.com/update/duba/2013/4360/main/575c4e4af35d494cec13211d949cc1ff, path:f:\myapp\DriverGenius2013\update\kav\main\drivergenius.exe
+2013-11-29 22:38:51 043  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/1934629f768d81b539ac9acb50f6f943 file:f:\myapp\DriverGenius2013\update\kav\main\hmpgconfig.ini
+2013-11-29 22:38:51 369  DownloadFileAndDecompressCrc return:0, cost time:328, url:http://update.drivergenius.com/update/duba/2013/4360/main/1934629f768d81b539ac9acb50f6f943, path:f:\myapp\DriverGenius2013\update\kav\main\hmpgconfig.ini
+2013-11-29 22:38:51 379  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/24229e8cbf2dcd1e3fccf206c52cc0ad file:f:\myapp\DriverGenius2013\update\kav\main\install.xml
+2013-11-29 22:38:51 556  DownloadFileAndDecompressCrc return:0, cost time:172, url:http://update.drivergenius.com/update/duba/2013/4360/main/24229e8cbf2dcd1e3fccf206c52cc0ad, path:f:\myapp\DriverGenius2013\update\kav\main\install.xml
+2013-11-29 22:38:51 566  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/ksoft/5952af66f973064d7cbc6a8c154e8686 file:f:\myapp\DriverGenius2013\update\kav\main\ksoft\kavmgr.dll
+2013-11-29 22:38:53 811  DownloadFileAndDecompressCrc return:0, cost time:2246, url:http://update.drivergenius.com/update/duba/2013/4360/main/ksoft/5952af66f973064d7cbc6a8c154e8686, path:f:\myapp\DriverGenius2013\update\kav\main\ksoft\kavmgr.dll
+2013-11-29 22:38:53 821  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/ksoft/d8c84549e4e15857dcb5ffb30402088f file:f:\myapp\DriverGenius2013\update\kav\main\ksoft\kctrl.dat
+2013-11-29 22:38:54 062  DownloadFileAndDecompressCrc return:0, cost time:250, url:http://update.drivergenius.com/update/duba/2013/4360/main/ksoft/d8c84549e4e15857dcb5ffb30402088f, path:f:\myapp\DriverGenius2013\update\kav\main\ksoft\kctrl.dat
+2013-11-29 22:38:54 072  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/ksoft/a1c3284cb2f631d4808a9a1253074f8c file:f:\myapp\DriverGenius2013\update\kav\main\ksoft\kfmt.dat
+2013-11-29 22:38:54 316  DownloadFileAndDecompressCrc return:0, cost time:249, url:http://update.drivergenius.com/update/duba/2013/4360/main/ksoft/a1c3284cb2f631d4808a9a1253074f8c, path:f:\myapp\DriverGenius2013\update\kav\main\ksoft\kfmt.dat
+2013-11-29 22:38:54 326  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/ksoft/2e8f70ae714d11f96d47369ea28d7dd2 file:f:\myapp\DriverGenius2013\update\kav\main\ksoft\ksafedb.dll
+2013-11-29 22:38:57 637  DownloadFileAndDecompressCrc return:0, cost time:3307, url:http://update.drivergenius.com/update/duba/2013/4360/main/ksoft/2e8f70ae714d11f96d47369ea28d7dd2, path:f:\myapp\DriverGenius2013\update\kav\main\ksoft\ksafedb.dll
+2013-11-29 22:38:57 647  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/440100c65b2678fdd639e1142f840ba6 file:f:\myapp\DriverGenius2013\update\kav\main\notifier.exe
+2013-11-29 22:39:04 959  DownloadFileAndDecompressCrc return:0, cost time:7316, url:http://update.drivergenius.com/update/duba/2013/4360/main/440100c65b2678fdd639e1142f840ba6, path:f:\myapp\DriverGenius2013\update\kav\main\notifier.exe
+2013-11-29 22:39:04 969  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/5bf56eed28951288535220159d34b090 file:f:\myapp\DriverGenius2013\update\kav\main\patchcore.dll
+2013-11-29 22:39:13 324  DownloadFileAndDecompressCrc return:0, cost time:8346, url:http://update.drivergenius.com/update/duba/2013/4360/main/5bf56eed28951288535220159d34b090, path:f:\myapp\DriverGenius2013\update\kav\main\patchcore.dll
+2013-11-29 22:39:13 334  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/7706c0127a8b9252e3aecd641af83612 file:f:\myapp\DriverGenius2013\update\kav\main\pnpsup.dll
+2013-11-29 22:39:20 687  DownloadFileAndDecompressCrc return:0, cost time:7347, url:http://update.drivergenius.com/update/duba/2013/4360/main/7706c0127a8b9252e3aecd641af83612, path:f:\myapp\DriverGenius2013\update\kav\main\pnpsup.dll
+2013-11-29 22:39:20 697  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/ea33a0437e2a2bec33b570be8657087d file:f:\myapp\DriverGenius2013\update\kav\main\upcfg.dat
+2013-11-29 22:39:20 844  DownloadFileAndDecompressCrc return:0, cost time:140, url:http://update.drivergenius.com/update/duba/2013/4360/main/ea33a0437e2a2bec33b570be8657087d, path:f:\myapp\DriverGenius2013\update\kav\main\upcfg.dat
+2013-11-29 22:39:20 854  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/72c68e0255a37478cc5d77d574e327d4 file:f:\myapp\DriverGenius2013\update\kav\main\whatsnew.txt
+2013-11-29 22:39:22 007  DownloadFileAndDecompressCrc return:0, cost time:1154, url:http://update.drivergenius.com/update/duba/2013/4360/main/72c68e0255a37478cc5d77d574e327d4, path:f:\myapp\DriverGenius2013\update\kav\main\whatsnew.txt
+2013-11-29 22:39:22 017  KUpdateInst::DownloadFiles return:0
+2013-11-29 22:39:22 020  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:data\deswitch.dat
+2013-11-29 22:39:22 219  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:security\ksde\dgdecs.dll
+2013-11-29 22:39:22 222  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:dgfixer.dll
+2013-11-29 22:39:22 278  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:dgguide.exe
+2013-11-29 22:39:22 313  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:data\dgp.mht
+2013-11-29 22:39:22 315  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:dgpver.dat
+2013-11-29 22:39:22 323  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:dgservice.exe
+2013-11-29 22:39:22 326  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:bin\dgupdate.exe
+2013-11-29 22:39:22 328  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:dgver.dll
+2013-11-29 22:39:22 335  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:drivergenius.exe
+2013-11-29 22:39:22 336  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:hmpgconfig.ini
+2013-11-29 22:39:22 337  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:install.xml
+2013-11-29 22:39:22 339  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:ksoft\kavmgr.dll
+2013-11-29 22:39:22 340  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:ksoft\kctrl.dat
+2013-11-29 22:39:22 342  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:ksoft\kfmt.dat
+2013-11-29 22:39:22 343  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:ksoft\ksafedb.dll
+2013-11-29 22:39:22 346  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:notifier.exe
+2013-11-29 22:39:22 349  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:patchcore.dll
+2013-11-29 22:39:22 351  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:pnpsup.dll
+2013-11-29 22:39:22 353  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:upcfg.dat
+2013-11-29 22:39:22 361  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:whatsnew.txt
+2013-11-29 22:39:22 362  KRebootConfigWritter::AddRebootFile Save config file return:1
+2013-11-29 22:39:22 362  KRebootConfigWritter::SaveRebootBackConfig end
+2013-11-29 22:39:22 363  KHelper::LoadUpdateConfig bAlertReboot:0, groupupdate:1, ReupdateForceReboot:0, AutoReupdateDelayTime:0s
+2013-11-29 22:39:22 363  KUpdateInst::Update ...
+2013-11-29 22:39:22 366  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\data\deswitch.dat, dst:f:\myapp\DriverGenius2013\data\deswitch.dat errorcode:0
+2013-11-29 22:39:22 366  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\data\deswitch.dat, dst:f:\myapp\DriverGenius2013\data\deswitch.dat
+2013-11-29 22:39:22 373  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\security\ksde\dgdecs.dll, dst:f:\myapp\DriverGenius2013\security\ksde\dgdecs.dll errorcode:0
+2013-11-29 22:39:22 373  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\security\ksde\dgdecs.dll, dst:f:\myapp\DriverGenius2013\security\ksde\dgdecs.dll
+2013-11-29 22:39:22 375  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\dgfixer.dll, dst:f:\myapp\DriverGenius2013\dgfixer.dll errorcode:0
+2013-11-29 22:39:22 375  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\dgfixer.dll, dst:f:\myapp\DriverGenius2013\dgfixer.dll
+2013-11-29 22:39:22 378  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\dgguide.exe, dst:f:\myapp\DriverGenius2013\dgguide.exe errorcode:0
+2013-11-29 22:39:22 379  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\dgguide.exe, dst:f:\myapp\DriverGenius2013\dgguide.exe
+2013-11-29 22:39:22 382  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\data\dgp.mht, dst:f:\myapp\DriverGenius2013\data\dgp.mht errorcode:0
+2013-11-29 22:39:22 382  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\data\dgp.mht, dst:f:\myapp\DriverGenius2013\data\dgp.mht
+2013-11-29 22:39:22 384  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\dgpver.dat, dst:f:\myapp\DriverGenius2013\dgpver.dat errorcode:0
+2013-11-29 22:39:22 384  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\dgpver.dat, dst:f:\myapp\DriverGenius2013\dgpver.dat
+2013-11-29 22:39:22 388  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\dgservice.exe, dst:f:\myapp\DriverGenius2013\dgservice.exe errorcode:0
+2013-11-29 22:39:22 388  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\dgservice.exe, dst:f:\myapp\DriverGenius2013\dgservice.exe
+2013-11-29 22:39:22 391  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\bin\dgupdate.exe, dst:f:\myapp\DriverGenius2013\bin\dgupdate.exe errorcode:0
+2013-11-29 22:39:22 391  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\bin\dgupdate.exe, dst:f:\myapp\DriverGenius2013\bin\dgupdate.exe
+2013-11-29 22:39:22 395  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\dgver.dll, dst:f:\myapp\DriverGenius2013\dgver.dll errorcode:0
+2013-11-29 22:39:22 395  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\dgver.dll, dst:f:\myapp\DriverGenius2013\dgver.dll
+2013-11-29 22:39:22 473  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\drivergenius.exe, dst:f:\myapp\DriverGenius2013\drivergenius.exe errorcode:0
+2013-11-29 22:39:22 473  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\drivergenius.exe, dst:f:\myapp\DriverGenius2013\drivergenius.exe
+2013-11-29 22:39:22 475  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\hmpgconfig.ini, dst:f:\myapp\DriverGenius2013\hmpgconfig.ini errorcode:0
+2013-11-29 22:39:22 475  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\hmpgconfig.ini, dst:f:\myapp\DriverGenius2013\hmpgconfig.ini
+2013-11-29 22:39:22 477  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\install.xml, dst:f:\myapp\DriverGenius2013\install.xml errorcode:0
+2013-11-29 22:39:22 477  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\install.xml, dst:f:\myapp\DriverGenius2013\install.xml
+2013-11-29 22:39:22 480  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\ksoft\kavmgr.dll, dst:f:\myapp\DriverGenius2013\ksoft\kavmgr.dll errorcode:0
+2013-11-29 22:39:22 480  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\ksoft\kavmgr.dll, dst:f:\myapp\DriverGenius2013\ksoft\kavmgr.dll
+2013-11-29 22:39:22 482  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\ksoft\kctrl.dat, dst:f:\myapp\DriverGenius2013\ksoft\kctrl.dat errorcode:0
+2013-11-29 22:39:22 482  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\ksoft\kctrl.dat, dst:f:\myapp\DriverGenius2013\ksoft\kctrl.dat
+2013-11-29 22:39:22 485  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\ksoft\kfmt.dat, dst:f:\myapp\DriverGenius2013\ksoft\kfmt.dat errorcode:0
+2013-11-29 22:39:22 485  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\ksoft\kfmt.dat, dst:f:\myapp\DriverGenius2013\ksoft\kfmt.dat
+2013-11-29 22:39:22 487  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\ksoft\ksafedb.dll, dst:f:\myapp\DriverGenius2013\ksoft\ksafedb.dll errorcode:0
+2013-11-29 22:39:22 487  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\ksoft\ksafedb.dll, dst:f:\myapp\DriverGenius2013\ksoft\ksafedb.dll
+2013-11-29 22:39:22 490  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\notifier.exe, dst:f:\myapp\DriverGenius2013\notifier.exe errorcode:0
+2013-11-29 22:39:22 490  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\notifier.exe, dst:f:\myapp\DriverGenius2013\notifier.exe
+2013-11-29 22:39:22 507  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\patchcore.dll, dst:f:\myapp\DriverGenius2013\patchcore.dll errorcode:0
+2013-11-29 22:39:22 507  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\patchcore.dll, dst:f:\myapp\DriverGenius2013\patchcore.dll
+2013-11-29 22:39:22 510  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\pnpsup.dll, dst:f:\myapp\DriverGenius2013\pnpsup.dll errorcode:0
+2013-11-29 22:39:22 510  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\pnpsup.dll, dst:f:\myapp\DriverGenius2013\pnpsup.dll
+2013-11-29 22:39:22 512  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\upcfg.dat, dst:f:\myapp\DriverGenius2013\upcfg.dat errorcode:0
+2013-11-29 22:39:22 512  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\upcfg.dat, dst:f:\myapp\DriverGenius2013\upcfg.dat
+2013-11-29 22:39:22 514  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\whatsnew.txt, dst:f:\myapp\DriverGenius2013\whatsnew.txt errorcode:0
+2013-11-29 22:39:22 514  RebootUpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\whatsnew.txt, dst:f:\myapp\DriverGenius2013\whatsnew.txt
+2013-11-29 22:39:22 514  KUpdateInst::Update return:0
+2013-11-29 22:39:22 516  KRebootConfigWritter::SaveRebootConfig end
+2013-11-29 22:39:22 517  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\data\deswitch.dat
+2013-11-29 22:39:22 517  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\security\ksde\dgdecs.dll
+2013-11-29 22:39:22 517  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\dgfixer.dll
+2013-11-29 22:39:22 517  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\dgguide.exe
+2013-11-29 22:39:22 517  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\data\dgp.mht
+2013-11-29 22:39:22 517  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\dgpver.dat
+2013-11-29 22:39:22 517  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\dgservice.exe
+2013-11-29 22:39:22 518  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\bin\dgupdate.exe
+2013-11-29 22:39:22 518  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\dgver.dll
+2013-11-29 22:39:22 518  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\drivergenius.exe
+2013-11-29 22:39:22 518  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\hmpgconfig.ini
+2013-11-29 22:39:22 518  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\install.xml
+2013-11-29 22:39:22 518  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\ksoft\kavmgr.dll
+2013-11-29 22:39:22 518  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\ksoft\kctrl.dat
+2013-11-29 22:39:22 518  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\ksoft\kfmt.dat
+2013-11-29 22:39:22 518  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\ksoft\ksafedb.dll
+2013-11-29 22:39:22 518  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\notifier.exe
+2013-11-29 22:39:22 518  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\patchcore.dll
+2013-11-29 22:39:22 518  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\pnpsup.dll
+2013-11-29 22:39:22 518  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\upcfg.dat
+2013-11-29 22:39:22 518  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\whatsnew.txt
+2013-11-29 22:39:22 518  KReupdate::ReadConfig return:0, file count:21
+2013-11-29 22:39:22 518  KReupdate::Init return:0
+2013-11-29 22:39:22 518  KReupdate::ReupdateSilent Init return:0
+2013-11-29 22:39:22 810  KReupdate::IsOccupeModule detect:f:\myapp\DriverGenius2013\DgService.exe
+2013-11-29 22:39:22 846  KHelper::GetProcessModules CreateToolhelp32Snapshot failed, error:5
+2013-11-29 22:39:22 849  KReupdate::IsHasOtherProcess return:0
+2013-11-29 22:39:22 850  KReupdate::IsNeedExitDriverUpdate return 0
+2013-11-29 22:39:22 850  KReupdate::IsNeedReboot return 0
+2013-11-29 22:39:24 858  KReupdate::GetAllDubaProcess find f:\myapp\drivergenius2013\dgservice.exe
+2013-11-29 22:39:24 860  KHelper::GetProcessPath OpenProcess failed, pid:5624 error:5
+2013-11-29 22:39:24 860  KReupdate::GetAllDubaProcess return 0
+2013-11-29 22:39:24 860  KReupdate::GetActiveProcess find:f:\myapp\drivergenius2013\dgservice.exe, module:f:\myapp\DriverGenius2013\DgService.exe
+2013-11-29 22:39:24 860  KReupdate::GetActiveProcess find StartDgnpsev.exe and need exit kxetray!
+2013-11-29 22:39:24 860  KReupdate::GetActiveProcess return:0
+2013-11-29 22:39:24 860  KReupdate::ReupdateSilent GetActiveProcess return:0
+2013-11-29 22:39:24 861  KReupdate::ReupdateSilent HasActiveProcess return:0
+2013-11-29 22:39:31 462  KReupdate::ExitActiveProcess fail count:0
+2013-11-29 22:39:31 462  KReupdate::ReupdateSilent ExitActiveProcess return:0
+2013-11-29 22:39:31 465  KReupdate::IsAllWritable return 1
+2013-11-29 22:39:31 467  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\data\deswitch.dat, dst:f:\myapp\drivergenius2013\data\deswitch.dat
+2013-11-29 22:39:31 467  KRebootConfigWritter::AddUpdateSucFile add reboot file:data\deswitch.dat
+2013-11-29 22:39:31 467  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 473  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\security\ksde\dgdecs.dll, dst:f:\myapp\drivergenius2013\security\ksde\dgdecs.dll
+2013-11-29 22:39:31 473  KRebootConfigWritter::AddUpdateSucFile add reboot file:security\ksde\dgdecs.dll
+2013-11-29 22:39:31 473  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 475  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\dgfixer.dll, dst:f:\myapp\drivergenius2013\dgfixer.dll
+2013-11-29 22:39:31 475  KRebootConfigWritter::AddUpdateSucFile add reboot file:dgfixer.dll
+2013-11-29 22:39:31 475  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 479  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\dgguide.exe, dst:f:\myapp\drivergenius2013\dgguide.exe
+2013-11-29 22:39:31 479  KRebootConfigWritter::AddUpdateSucFile add reboot file:dgguide.exe
+2013-11-29 22:39:31 479  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 482  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\data\dgp.mht, dst:f:\myapp\drivergenius2013\data\dgp.mht
+2013-11-29 22:39:31 482  KRebootConfigWritter::AddUpdateSucFile add reboot file:data\dgp.mht
+2013-11-29 22:39:31 482  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 483  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\dgpver.dat, dst:f:\myapp\drivergenius2013\dgpver.dat
+2013-11-29 22:39:31 483  KRebootConfigWritter::AddUpdateSucFile add reboot file:dgpver.dat
+2013-11-29 22:39:31 483  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 618  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\dgservice.exe, dst:f:\myapp\drivergenius2013\dgservice.exe
+2013-11-29 22:39:31 619  KRebootConfigWritter::AddUpdateSucFile add reboot file:dgservice.exe
+2013-11-29 22:39:31 619  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 620  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\bin\dgupdate.exe, dst:f:\myapp\drivergenius2013\bin\dgupdate.exe
+2013-11-29 22:39:31 620  KRebootConfigWritter::AddUpdateSucFile add reboot file:bin\dgupdate.exe
+2013-11-29 22:39:31 620  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 622  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\dgver.dll, dst:f:\myapp\drivergenius2013\dgver.dll
+2013-11-29 22:39:31 622  KRebootConfigWritter::AddUpdateSucFile add reboot file:dgver.dll
+2013-11-29 22:39:31 622  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 629  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\drivergenius.exe, dst:f:\myapp\drivergenius2013\drivergenius.exe
+2013-11-29 22:39:31 630  KRebootConfigWritter::AddUpdateSucFile add reboot file:drivergenius.exe
+2013-11-29 22:39:31 630  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 631  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\hmpgconfig.ini, dst:f:\myapp\drivergenius2013\hmpgconfig.ini
+2013-11-29 22:39:31 631  KRebootConfigWritter::AddUpdateSucFile add reboot file:hmpgconfig.ini
+2013-11-29 22:39:31 631  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 633  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\install.xml, dst:f:\myapp\drivergenius2013\install.xml
+2013-11-29 22:39:31 633  KRebootConfigWritter::AddUpdateSucFile add reboot file:install.xml
+2013-11-29 22:39:31 633  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 635  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\ksoft\kavmgr.dll, dst:f:\myapp\drivergenius2013\ksoft\kavmgr.dll
+2013-11-29 22:39:31 635  KRebootConfigWritter::AddUpdateSucFile add reboot file:ksoft\kavmgr.dll
+2013-11-29 22:39:31 635  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 636  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\ksoft\kctrl.dat, dst:f:\myapp\drivergenius2013\ksoft\kctrl.dat
+2013-11-29 22:39:31 637  KRebootConfigWritter::AddUpdateSucFile add reboot file:ksoft\kctrl.dat
+2013-11-29 22:39:31 637  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 638  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\ksoft\kfmt.dat, dst:f:\myapp\drivergenius2013\ksoft\kfmt.dat
+2013-11-29 22:39:31 638  KRebootConfigWritter::AddUpdateSucFile add reboot file:ksoft\kfmt.dat
+2013-11-29 22:39:31 638  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 640  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\ksoft\ksafedb.dll, dst:f:\myapp\drivergenius2013\ksoft\ksafedb.dll
+2013-11-29 22:39:31 641  KRebootConfigWritter::AddUpdateSucFile add reboot file:ksoft\ksafedb.dll
+2013-11-29 22:39:31 641  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 660  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\notifier.exe, dst:f:\myapp\drivergenius2013\notifier.exe
+2013-11-29 22:39:31 660  KRebootConfigWritter::AddUpdateSucFile add reboot file:notifier.exe
+2013-11-29 22:39:31 660  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 663  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\patchcore.dll, dst:f:\myapp\drivergenius2013\patchcore.dll
+2013-11-29 22:39:31 663  KRebootConfigWritter::AddUpdateSucFile add reboot file:patchcore.dll
+2013-11-29 22:39:31 663  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 666  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\pnpsup.dll, dst:f:\myapp\drivergenius2013\pnpsup.dll
+2013-11-29 22:39:31 666  KRebootConfigWritter::AddUpdateSucFile add reboot file:pnpsup.dll
+2013-11-29 22:39:31 666  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 668  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\upcfg.dat, dst:f:\myapp\drivergenius2013\upcfg.dat
+2013-11-29 22:39:31 668  KRebootConfigWritter::AddUpdateSucFile add reboot file:upcfg.dat
+2013-11-29 22:39:31 668  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 670  RenameUpdate return:0, src:f:\myapp\drivergenius2013\update\reboot_update\whatsnew.txt, dst:f:\myapp\drivergenius2013\whatsnew.txt
+2013-11-29 22:39:31 670  KRebootConfigWritter::AddUpdateSucFile add reboot file:whatsnew.txt
+2013-11-29 22:39:31 670  KReupdate::UpdateFile return 0
+2013-11-29 22:39:31 670  KReupdate::UpdateAll return 0
+2013-11-29 22:39:31 670  KReupdate::UpdateGroup return 0
+2013-11-29 22:39:31 710  KRebootConfigWritter::SetDonotNeedRebootUpdate delete all back files
+2013-11-29 22:39:32 014  KHelper::StartDgnpsev return:0
+2013-11-29 22:39:34 014  KReupdate::ReupdateSilent m_bExitTray:0 return:0
+2013-11-29 22:39:34 014  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-29 22:39:34 014  KUpdateInst::ExecHotfix return:0
+2013-11-29 22:39:34 014  KUpdater::SaveVersionToReg return 0, version:
+2013-11-29 22:39:34 016  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-29 22:39:34 016  KNotifyDefendReload::Notify m_bEnable = FALSE and return
+2013-11-29 22:39:34 016  KChannel::IsScrollBack name:indexmain return:0
+2013-11-29 22:39:34 023  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-29 22:39:34 027  KUpdateInst::BackupIndex return:0
+2013-11-29 22:39:34 067  KUpdateInst::Clean return:0
+2013-11-29 22:39:34 067  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-29 22:39:34 067  KUpdater::ProcessReupdateInfo return -1
+2013-11-29 22:39:34 100  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=21
+2013-11-29 23:11:20 891  ---------------------------------------------------------------------
+2013-11-29 23:11:20 893  KHelper::SetUpdateTime:2, return:1
+2013-11-29 23:11:20 893  KHelper::IsReupdateForceReboot return:0
+2013-11-29 23:11:20 893  Auto Clean:1
+2013-11-29 23:11:20 955  ParseCommandLine: silent
+2013-11-29 23:11:20 956  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-29 23:11:20 957  TryNo:4360
+2013-11-29 23:11:20 957  KUpdateInst::ReadSvrConfig return:0
+2013-11-29 23:11:20 957  KUpdateInst::Init return:0
+2013-11-29 23:11:20 957  KCs3::LoadCs3SvrList return:0
+2013-11-29 23:11:20 984  KCs3::LoadChannelList return:0
+2013-11-29 23:11:20 984  KCs3::Cs3VerRequest begin
+2013-11-29 23:11:21 057  KCs3::IsRespondsLogic return:1
+2013-11-29 23:11:21 057  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-29 23:11:21 057  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-29 23:11:21 057  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-29 23:11:21 057  KCs3::RequestCs3Info return 0, costtime:78
+2013-11-29 23:11:21 057  KCs3::Cs3VerRequest return 1
+2013-11-29 23:11:21 057  KCs3::IsNeedUpdate return 1
+2013-11-29 23:11:21 057  KHelper::SetLastRebootTipTime return:1, Time:20131129231121
+2013-11-29 23:11:21 057  KCs3::IsNeedUpdate return 1
+2013-11-29 23:11:21 057  KCs3::IsNeedUpdate return 1
+2013-11-29 23:11:21 057  KCs3::IsNeedUpdateFast return 0
+2013-11-29 23:11:21 057  KDubaUpdate::CheckDiskSize diskSpace:46712 MB
+2013-11-29 23:11:21 057  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-29 23:11:21 057  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-29 23:11:21 058  KUpdateInst::CreateChannels return:0
+2013-11-29 23:11:21 058  KUpdateInst::Create return:0
+2013-11-29 23:11:21 058  KUpdateInst::DownloadIndex ...
+2013-11-29 23:11:21 058  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-29 23:11:21 202  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-29 23:11:21 473  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-29 23:11:21 473  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-29 23:11:21 595  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-29 23:11:21 676  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-29 23:11:21 676  KUpdateInst::DownloadIndex return:0
+2013-11-29 23:11:21 676  KUpdateInst::ParseIndex ...
+2013-11-29 23:11:21 677  KChannel::IsScrollBack name:indexmain return:0
+2013-11-29 23:11:45 203  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-29 23:11:45 274  KUpdateInst::ParseIndex return:0
+2013-11-29 23:11:45 274  KUpdateInst::GetTotalSize return:0
+2013-11-29 23:11:45 274  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-29 23:11:45 274  KUpdateInst::ExecHotfix return:0
+2013-11-29 23:11:45 274  KUpdater::SaveVersionToReg return 0, version:
+2013-11-29 23:11:45 274  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-29 23:11:45 302  KUpdateInst::Clean return:0
+2013-11-29 23:11:45 302  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-29 23:11:45 302  KUpdater::ProcessReupdateInfo return -1
+2013-11-29 23:11:45 363  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 00:03:48 467  ---------------------------------------------------------------------
+2013-11-30 00:03:48 467  KHelper::SetUpdateTime:2, return:1
+2013-11-30 00:03:48 467  KHelper::IsReupdateForceReboot return:0
+2013-11-30 00:03:48 467  Auto Clean:1
+2013-11-30 00:03:48 517  ParseCommandLine: silent
+2013-11-30 00:03:48 517  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 00:03:48 517  TryNo:4360
+2013-11-30 00:03:48 517  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 00:03:48 517  KUpdateInst::Init return:0
+2013-11-30 00:03:48 517  KCs3::LoadCs3SvrList return:0
+2013-11-30 00:03:48 567  KCs3::LoadChannelList return:0
+2013-11-30 00:03:48 567  KCs3::Cs3VerRequest begin
+2013-11-30 00:03:48 657  KCs3::IsRespondsLogic return:1
+2013-11-30 00:03:48 657  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 00:03:48 657  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 00:03:48 657  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 00:03:48 657  KCs3::RequestCs3Info return 0, costtime:94
+2013-11-30 00:03:48 657  KCs3::Cs3VerRequest return 1
+2013-11-30 00:03:48 657  KCs3::IsNeedUpdate return 1
+2013-11-30 00:03:48 657  KHelper::SetLastRebootTipTime return:1, Time:20131130000348
+2013-11-30 00:03:48 657  KCs3::IsNeedUpdate return 1
+2013-11-30 00:03:48 657  KCs3::IsNeedUpdate return 1
+2013-11-30 00:03:48 657  KCs3::IsNeedUpdateFast return 0
+2013-11-30 00:03:48 657  KDubaUpdate::CheckDiskSize diskSpace:46661 MB
+2013-11-30 00:03:48 657  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 00:03:48 657  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 00:03:48 657  KUpdateInst::CreateChannels return:0
+2013-11-30 00:03:48 657  KUpdateInst::Create return:0
+2013-11-30 00:03:48 657  KUpdateInst::DownloadIndex ...
+2013-11-30 00:03:48 657  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 00:03:48 777  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 00:03:49 087  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 00:03:49 087  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 00:03:49 207  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 00:03:49 317  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 00:03:49 317  KUpdateInst::DownloadIndex return:0
+2013-11-30 00:03:49 317  KUpdateInst::ParseIndex ...
+2013-11-30 00:03:49 317  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 00:04:11 907  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 00:04:11 977  KUpdateInst::ParseIndex return:0
+2013-11-30 00:04:11 977  KUpdateInst::GetTotalSize return:0
+2013-11-30 00:04:11 977  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 00:04:11 977  KUpdateInst::ExecHotfix return:0
+2013-11-30 00:04:11 977  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 00:04:11 977  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 00:04:12 007  KUpdateInst::Clean return:0
+2013-11-30 00:04:12 007  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 00:04:12 007  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 00:04:12 047  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 01:11:03 610  ---------------------------------------------------------------------
+2013-11-30 01:11:03 660  KHelper::SetUpdateTime:2, return:1
+2013-11-30 01:11:03 660  KHelper::IsReupdateForceReboot return:0
+2013-11-30 01:11:03 660  Auto Clean:1
+2013-11-30 01:11:03 660  ParseCommandLine: silent
+2013-11-30 01:11:03 660  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 01:11:03 660  TryNo:4360
+2013-11-30 01:11:03 660  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 01:11:03 660  KUpdateInst::Init return:0
+2013-11-30 01:11:03 660  KCs3::LoadCs3SvrList return:0
+2013-11-30 01:11:03 660  KCs3::LoadChannelList return:0
+2013-11-30 01:11:03 660  KCs3::Cs3VerRequest begin
+2013-11-30 01:11:03 720  KCs3::IsRespondsLogic return:1
+2013-11-30 01:11:03 720  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 01:11:03 720  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 01:11:03 720  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 01:11:03 720  KCs3::RequestCs3Info return 0, costtime:62
+2013-11-30 01:11:03 720  KCs3::Cs3VerRequest return 1
+2013-11-30 01:11:03 720  KCs3::IsNeedUpdate return 1
+2013-11-30 01:11:03 720  KHelper::SetLastRebootTipTime return:1, Time:20131130011103
+2013-11-30 01:11:03 720  KCs3::IsNeedUpdate return 1
+2013-11-30 01:11:03 720  KCs3::IsNeedUpdate return 1
+2013-11-30 01:11:03 720  KCs3::IsNeedUpdateFast return 0
+2013-11-30 01:11:03 720  KDubaUpdate::CheckDiskSize diskSpace:46655 MB
+2013-11-30 01:11:03 720  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 01:11:03 720  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 01:11:03 720  KUpdateInst::CreateChannels return:0
+2013-11-30 01:11:03 720  KUpdateInst::Create return:0
+2013-11-30 01:11:03 720  KUpdateInst::DownloadIndex ...
+2013-11-30 01:11:03 720  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 01:11:03 840  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 01:11:04 110  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 01:11:04 110  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 01:11:04 230  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 01:11:04 310  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 01:11:04 310  KUpdateInst::DownloadIndex return:0
+2013-11-30 01:11:04 310  KUpdateInst::ParseIndex ...
+2013-11-30 01:11:04 310  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 01:11:27 240  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 01:11:27 310  KUpdateInst::ParseIndex return:0
+2013-11-30 01:11:27 310  KUpdateInst::GetTotalSize return:0
+2013-11-30 01:11:27 310  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 01:11:27 310  KUpdateInst::ExecHotfix return:0
+2013-11-30 01:11:27 310  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 01:11:27 310  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 01:11:27 320  KUpdateInst::Clean return:0
+2013-11-30 01:11:27 320  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 01:11:27 320  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 01:11:27 370  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 02:14:33 641  ---------------------------------------------------------------------
+2013-11-30 02:14:33 641  KHelper::SetUpdateTime:2, return:1
+2013-11-30 02:14:33 641  KHelper::IsReupdateForceReboot return:0
+2013-11-30 02:14:33 641  Auto Clean:1
+2013-11-30 02:14:33 641  ParseCommandLine: silent
+2013-11-30 02:14:33 641  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 02:14:33 641  TryNo:4360
+2013-11-30 02:14:33 641  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 02:14:33 641  KUpdateInst::Init return:0
+2013-11-30 02:14:33 641  KCs3::LoadCs3SvrList return:0
+2013-11-30 02:14:33 704  KCs3::LoadChannelList return:0
+2013-11-30 02:14:33 704  KCs3::Cs3VerRequest begin
+2013-11-30 02:14:33 782  KCs3::IsRespondsLogic return:1
+2013-11-30 02:14:33 782  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 02:14:33 782  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 02:14:33 782  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 02:14:33 782  KCs3::RequestCs3Info return 0, costtime:78
+2013-11-30 02:14:33 782  KCs3::Cs3VerRequest return 1
+2013-11-30 02:14:33 782  KCs3::IsNeedUpdate return 1
+2013-11-30 02:14:33 782  KHelper::SetLastRebootTipTime return:1, Time:20131130021433
+2013-11-30 02:14:33 782  KCs3::IsNeedUpdate return 1
+2013-11-30 02:14:33 782  KCs3::IsNeedUpdate return 1
+2013-11-30 02:14:33 782  KCs3::IsNeedUpdateFast return 0
+2013-11-30 02:14:33 782  KDubaUpdate::CheckDiskSize diskSpace:46650 MB
+2013-11-30 02:14:33 782  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 02:14:33 782  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 02:14:33 782  KUpdateInst::CreateChannels return:0
+2013-11-30 02:14:33 782  KUpdateInst::Create return:0
+2013-11-30 02:14:33 782  KUpdateInst::DownloadIndex ...
+2013-11-30 02:14:33 782  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 02:14:33 969  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 02:14:34 374  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 02:14:34 374  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 02:14:34 577  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 02:14:34 702  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 02:14:34 702  KUpdateInst::DownloadIndex return:0
+2013-11-30 02:14:34 702  KUpdateInst::ParseIndex ...
+2013-11-30 02:14:34 702  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 02:15:10 489  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 02:15:10 598  KUpdateInst::ParseIndex return:0
+2013-11-30 02:15:10 598  KUpdateInst::GetTotalSize return:0
+2013-11-30 02:15:10 598  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 02:15:10 598  KUpdateInst::ExecHotfix return:0
+2013-11-30 02:15:10 598  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 02:15:10 598  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 02:15:10 676  KUpdateInst::Clean return:0
+2013-11-30 02:15:10 676  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 02:15:10 676  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 02:15:10 754  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 03:20:05 659  ---------------------------------------------------------------------
+2013-11-30 03:20:05 659  KHelper::SetUpdateTime:2, return:1
+2013-11-30 03:20:05 659  KHelper::IsReupdateForceReboot return:0
+2013-11-30 03:20:05 659  Auto Clean:1
+2013-11-30 03:20:05 659  ParseCommandLine: silent
+2013-11-30 03:20:05 659  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 03:20:05 675  TryNo:4360
+2013-11-30 03:20:05 675  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 03:20:05 675  KUpdateInst::Init return:0
+2013-11-30 03:20:05 675  KCs3::LoadCs3SvrList return:0
+2013-11-30 03:20:05 691  KCs3::LoadChannelList return:0
+2013-11-30 03:20:05 691  KCs3::Cs3VerRequest begin
+2013-11-30 03:20:05 753  KCs3::IsRespondsLogic return:1
+2013-11-30 03:20:05 753  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 03:20:05 753  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 03:20:05 753  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 03:20:05 753  KCs3::RequestCs3Info return 0, costtime:63
+2013-11-30 03:20:05 753  KCs3::Cs3VerRequest return 1
+2013-11-30 03:20:05 753  KCs3::IsNeedUpdate return 1
+2013-11-30 03:20:05 753  KHelper::SetLastRebootTipTime return:1, Time:20131130032005
+2013-11-30 03:20:05 753  KCs3::IsNeedUpdate return 1
+2013-11-30 03:20:05 753  KCs3::IsNeedUpdate return 1
+2013-11-30 03:20:05 753  KCs3::IsNeedUpdateFast return 0
+2013-11-30 03:20:05 753  KDubaUpdate::CheckDiskSize diskSpace:46650 MB
+2013-11-30 03:20:05 753  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 03:20:05 753  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 03:20:05 753  KUpdateInst::CreateChannels return:0
+2013-11-30 03:20:05 753  KUpdateInst::Create return:0
+2013-11-30 03:20:05 753  KUpdateInst::DownloadIndex ...
+2013-11-30 03:20:05 753  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 03:20:05 956  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 03:20:06 361  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 03:20:06 361  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 03:20:06 549  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 03:20:06 673  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 03:20:06 673  KUpdateInst::DownloadIndex return:0
+2013-11-30 03:20:06 673  KUpdateInst::ParseIndex ...
+2013-11-30 03:20:06 673  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 03:20:41 961  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 03:20:42 070  KUpdateInst::ParseIndex return:0
+2013-11-30 03:20:42 070  KUpdateInst::GetTotalSize return:0
+2013-11-30 03:20:42 070  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 03:20:42 070  KUpdateInst::ExecHotfix return:0
+2013-11-30 03:20:42 070  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 03:20:42 070  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 03:20:42 070  KUpdateInst::Clean return:0
+2013-11-30 03:20:42 070  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 03:20:42 070  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 03:20:42 132  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 04:25:37 755  ---------------------------------------------------------------------
+2013-11-30 04:25:37 755  KHelper::SetUpdateTime:2, return:1
+2013-11-30 04:25:37 755  KHelper::IsReupdateForceReboot return:0
+2013-11-30 04:25:37 771  Auto Clean:1
+2013-11-30 04:25:37 771  ParseCommandLine: silent
+2013-11-30 04:25:37 771  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 04:25:37 771  TryNo:4360
+2013-11-30 04:25:37 771  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 04:25:37 771  KUpdateInst::Init return:0
+2013-11-30 04:25:37 771  KCs3::LoadCs3SvrList return:0
+2013-11-30 04:25:37 771  KCs3::LoadChannelList return:0
+2013-11-30 04:25:37 771  KCs3::Cs3VerRequest begin
+2013-11-30 04:25:37 833  KCs3::IsRespondsLogic return:1
+2013-11-30 04:25:37 833  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 04:25:37 833  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 04:25:37 833  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 04:25:37 833  KCs3::RequestCs3Info return 0, costtime:62
+2013-11-30 04:25:37 833  KCs3::Cs3VerRequest return 1
+2013-11-30 04:25:37 833  KCs3::IsNeedUpdate return 1
+2013-11-30 04:25:37 833  KHelper::SetLastRebootTipTime return:1, Time:20131130042537
+2013-11-30 04:25:37 833  KCs3::IsNeedUpdate return 1
+2013-11-30 04:25:37 833  KCs3::IsNeedUpdate return 1
+2013-11-30 04:25:37 833  KCs3::IsNeedUpdateFast return 0
+2013-11-30 04:25:37 833  KDubaUpdate::CheckDiskSize diskSpace:46650 MB
+2013-11-30 04:25:37 833  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 04:25:37 833  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 04:25:37 833  KUpdateInst::CreateChannels return:0
+2013-11-30 04:25:37 833  KUpdateInst::Create return:0
+2013-11-30 04:25:37 833  KUpdateInst::DownloadIndex ...
+2013-11-30 04:25:37 833  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 04:25:38 021  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 04:25:38 426  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 04:25:38 426  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 04:25:38 613  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 04:25:38 738  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 04:25:38 738  KUpdateInst::DownloadIndex return:0
+2013-11-30 04:25:38 738  KUpdateInst::ParseIndex ...
+2013-11-30 04:25:38 738  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 04:26:12 700  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 04:26:12 809  KUpdateInst::ParseIndex return:0
+2013-11-30 04:26:12 809  KUpdateInst::GetTotalSize return:0
+2013-11-30 04:26:12 809  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 04:26:12 809  KUpdateInst::ExecHotfix return:0
+2013-11-30 04:26:12 809  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 04:26:12 809  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 04:26:12 809  KUpdateInst::Clean return:0
+2013-11-30 04:26:12 809  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 04:26:12 809  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 04:26:12 840  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 05:31:09 867  ---------------------------------------------------------------------
+2013-11-30 05:31:09 867  KHelper::SetUpdateTime:2, return:1
+2013-11-30 05:31:09 867  KHelper::IsReupdateForceReboot return:0
+2013-11-30 05:31:09 867  Auto Clean:1
+2013-11-30 05:31:09 867  ParseCommandLine: silent
+2013-11-30 05:31:09 867  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 05:31:09 867  TryNo:4360
+2013-11-30 05:31:09 867  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 05:31:09 867  KUpdateInst::Init return:0
+2013-11-30 05:31:09 867  KCs3::LoadCs3SvrList return:0
+2013-11-30 05:31:09 867  KCs3::LoadChannelList return:0
+2013-11-30 05:31:09 867  KCs3::Cs3VerRequest begin
+2013-11-30 05:31:09 945  KCs3::IsRespondsLogic return:1
+2013-11-30 05:31:09 945  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 05:31:09 945  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 05:31:09 945  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 05:31:09 945  KCs3::RequestCs3Info return 0, costtime:78
+2013-11-30 05:31:09 945  KCs3::Cs3VerRequest return 1
+2013-11-30 05:31:09 945  KCs3::IsNeedUpdate return 1
+2013-11-30 05:31:09 945  KHelper::SetLastRebootTipTime return:1, Time:20131130053109
+2013-11-30 05:31:09 945  KCs3::IsNeedUpdate return 1
+2013-11-30 05:31:09 945  KCs3::IsNeedUpdate return 1
+2013-11-30 05:31:09 945  KCs3::IsNeedUpdateFast return 0
+2013-11-30 05:31:09 945  KDubaUpdate::CheckDiskSize diskSpace:46650 MB
+2013-11-30 05:31:09 945  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 05:31:09 945  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 05:31:09 945  KUpdateInst::CreateChannels return:0
+2013-11-30 05:31:09 945  KUpdateInst::Create return:0
+2013-11-30 05:31:09 945  KUpdateInst::DownloadIndex ...
+2013-11-30 05:31:09 945  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 05:31:10 132  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 05:31:10 522  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 05:31:10 522  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 05:31:10 710  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 05:31:10 834  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 05:31:10 834  KUpdateInst::DownloadIndex return:0
+2013-11-30 05:31:10 834  KUpdateInst::ParseIndex ...
+2013-11-30 05:31:10 834  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 05:31:44 686  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 05:31:44 796  KUpdateInst::ParseIndex return:0
+2013-11-30 05:31:44 796  KUpdateInst::GetTotalSize return:0
+2013-11-30 05:31:44 796  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 05:31:44 796  KUpdateInst::ExecHotfix return:0
+2013-11-30 05:31:44 796  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 05:31:44 796  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 05:31:44 796  KUpdateInst::Clean return:0
+2013-11-30 05:31:44 796  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 05:31:44 796  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 05:31:44 905  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 06:36:41 745  ---------------------------------------------------------------------
+2013-11-30 06:36:41 745  KHelper::SetUpdateTime:2, return:1
+2013-11-30 06:36:41 745  KHelper::IsReupdateForceReboot return:0
+2013-11-30 06:36:41 745  Auto Clean:1
+2013-11-30 06:36:41 745  ParseCommandLine: silent
+2013-11-30 06:36:41 745  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 06:36:41 745  TryNo:4360
+2013-11-30 06:36:41 745  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 06:36:41 745  KUpdateInst::Init return:0
+2013-11-30 06:36:41 745  KCs3::LoadCs3SvrList return:0
+2013-11-30 06:36:41 745  KCs3::LoadChannelList return:0
+2013-11-30 06:36:41 745  KCs3::Cs3VerRequest begin
+2013-11-30 06:36:41 807  KCs3::IsRespondsLogic return:1
+2013-11-30 06:36:41 807  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 06:36:41 807  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 06:36:41 807  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 06:36:41 807  KCs3::RequestCs3Info return 0, costtime:62
+2013-11-30 06:36:41 807  KCs3::Cs3VerRequest return 1
+2013-11-30 06:36:41 807  KCs3::IsNeedUpdate return 1
+2013-11-30 06:36:41 807  KHelper::SetLastRebootTipTime return:1, Time:20131130063641
+2013-11-30 06:36:41 807  KCs3::IsNeedUpdate return 1
+2013-11-30 06:36:41 807  KCs3::IsNeedUpdate return 1
+2013-11-30 06:36:41 807  KCs3::IsNeedUpdateFast return 0
+2013-11-30 06:36:41 807  KDubaUpdate::CheckDiskSize diskSpace:46650 MB
+2013-11-30 06:36:41 807  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 06:36:41 807  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 06:36:41 807  KUpdateInst::CreateChannels return:0
+2013-11-30 06:36:41 807  KUpdateInst::Create return:0
+2013-11-30 06:36:41 807  KUpdateInst::DownloadIndex ...
+2013-11-30 06:36:41 807  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 06:36:41 994  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 06:36:42 447  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 06:36:42 447  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 06:36:42 634  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 06:36:42 759  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 06:36:42 759  KUpdateInst::DownloadIndex return:0
+2013-11-30 06:36:42 759  KUpdateInst::ParseIndex ...
+2013-11-30 06:36:42 759  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 06:37:16 127  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 06:37:16 237  KUpdateInst::ParseIndex return:0
+2013-11-30 06:37:16 237  KUpdateInst::GetTotalSize return:0
+2013-11-30 06:37:16 237  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 06:37:16 237  KUpdateInst::ExecHotfix return:0
+2013-11-30 06:37:16 237  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 06:37:16 237  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 06:37:16 237  KUpdateInst::Clean return:0
+2013-11-30 06:37:16 237  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 06:37:16 237  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 06:37:16 268  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 07:42:14 777  ---------------------------------------------------------------------
+2013-11-30 07:42:14 777  KHelper::SetUpdateTime:2, return:1
+2013-11-30 07:42:14 777  KHelper::IsReupdateForceReboot return:0
+2013-11-30 07:42:14 777  Auto Clean:1
+2013-11-30 07:42:14 777  ParseCommandLine: silent
+2013-11-30 07:42:14 793  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 07:42:14 793  TryNo:4360
+2013-11-30 07:42:14 793  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 07:42:14 793  KUpdateInst::Init return:0
+2013-11-30 07:42:14 793  KCs3::LoadCs3SvrList return:0
+2013-11-30 07:42:14 793  KCs3::LoadChannelList return:0
+2013-11-30 07:42:14 793  KCs3::Cs3VerRequest begin
+2013-11-30 07:42:14 855  KCs3::IsRespondsLogic return:1
+2013-11-30 07:42:14 855  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 07:42:14 855  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 07:42:14 855  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 07:42:14 855  KCs3::RequestCs3Info return 0, costtime:63
+2013-11-30 07:42:14 855  KCs3::Cs3VerRequest return 1
+2013-11-30 07:42:14 855  KCs3::IsNeedUpdate return 1
+2013-11-30 07:42:14 855  KHelper::SetLastRebootTipTime return:1, Time:20131130074214
+2013-11-30 07:42:14 855  KCs3::IsNeedUpdate return 1
+2013-11-30 07:42:14 855  KCs3::IsNeedUpdate return 1
+2013-11-30 07:42:14 855  KCs3::IsNeedUpdateFast return 0
+2013-11-30 07:42:14 855  KDubaUpdate::CheckDiskSize diskSpace:46650 MB
+2013-11-30 07:42:14 855  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 07:42:14 855  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 07:42:14 855  KUpdateInst::CreateChannels return:0
+2013-11-30 07:42:14 855  KUpdateInst::Create return:0
+2013-11-30 07:42:14 855  KUpdateInst::DownloadIndex ...
+2013-11-30 07:42:14 855  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 07:42:15 042  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 07:42:15 432  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 07:42:15 432  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 07:42:15 619  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 07:42:15 744  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 07:42:15 744  KUpdateInst::DownloadIndex return:0
+2013-11-30 07:42:15 744  KUpdateInst::ParseIndex ...
+2013-11-30 07:42:15 744  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 07:42:49 737  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 07:42:49 846  KUpdateInst::ParseIndex return:0
+2013-11-30 07:42:49 846  KUpdateInst::GetTotalSize return:0
+2013-11-30 07:42:49 846  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 07:42:49 846  KUpdateInst::ExecHotfix return:0
+2013-11-30 07:42:49 846  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 07:42:49 846  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 07:42:49 846  KUpdateInst::Clean return:0
+2013-11-30 07:42:49 846  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 07:42:49 846  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 07:42:49 893  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 08:47:46 467  ---------------------------------------------------------------------
+2013-11-30 08:47:46 467  KHelper::SetUpdateTime:2, return:1
+2013-11-30 08:47:46 467  KHelper::IsReupdateForceReboot return:0
+2013-11-30 08:47:46 467  Auto Clean:1
+2013-11-30 08:47:46 467  ParseCommandLine: silent
+2013-11-30 08:47:46 467  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 08:47:46 467  TryNo:4360
+2013-11-30 08:47:46 467  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 08:47:46 467  KUpdateInst::Init return:0
+2013-11-30 08:47:46 467  KCs3::LoadCs3SvrList return:0
+2013-11-30 08:47:46 467  KCs3::LoadChannelList return:0
+2013-11-30 08:47:46 467  KCs3::Cs3VerRequest begin
+2013-11-30 08:47:46 530  KCs3::IsRespondsLogic return:1
+2013-11-30 08:47:46 530  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 08:47:46 530  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 08:47:46 530  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 08:47:46 530  KCs3::RequestCs3Info return 0, costtime:63
+2013-11-30 08:47:46 530  KCs3::Cs3VerRequest return 1
+2013-11-30 08:47:46 530  KCs3::IsNeedUpdate return 1
+2013-11-30 08:47:46 530  KHelper::SetLastRebootTipTime return:1, Time:20131130084746
+2013-11-30 08:47:46 530  KCs3::IsNeedUpdate return 1
+2013-11-30 08:47:46 530  KCs3::IsNeedUpdate return 1
+2013-11-30 08:47:46 530  KCs3::IsNeedUpdateFast return 0
+2013-11-30 08:47:46 545  KDubaUpdate::CheckDiskSize diskSpace:46650 MB
+2013-11-30 08:47:46 545  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 08:47:46 545  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 08:47:46 545  KUpdateInst::CreateChannels return:0
+2013-11-30 08:47:46 545  KUpdateInst::Create return:0
+2013-11-30 08:47:46 545  KUpdateInst::DownloadIndex ...
+2013-11-30 08:47:46 545  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 08:47:46 733  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 08:47:47 232  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 08:47:47 232  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 08:47:47 435  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 08:47:47 559  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 08:47:47 559  KUpdateInst::DownloadIndex return:0
+2013-11-30 08:47:47 559  KUpdateInst::ParseIndex ...
+2013-11-30 08:47:47 559  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 08:48:22 847  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 08:48:22 956  KUpdateInst::ParseIndex return:0
+2013-11-30 08:48:22 956  KUpdateInst::GetTotalSize return:0
+2013-11-30 08:48:22 956  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 08:48:22 956  KUpdateInst::ExecHotfix return:0
+2013-11-30 08:48:22 956  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 08:48:22 956  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 08:48:23 128  KUpdateInst::Clean return:0
+2013-11-30 08:48:23 128  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 08:48:23 128  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 08:48:23 596  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 09:53:19 000  ---------------------------------------------------------------------
+2013-11-30 09:53:19 000  KHelper::SetUpdateTime:2, return:1
+2013-11-30 09:53:19 000  KHelper::IsReupdateForceReboot return:0
+2013-11-30 09:53:19 000  Auto Clean:1
+2013-11-30 09:53:19 000  ParseCommandLine: silent
+2013-11-30 09:53:19 000  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 09:53:19 000  TryNo:4360
+2013-11-30 09:53:19 000  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 09:53:19 000  KUpdateInst::Init return:0
+2013-11-30 09:53:19 000  KCs3::LoadCs3SvrList return:0
+2013-11-30 09:53:19 000  KCs3::LoadChannelList return:0
+2013-11-30 09:53:19 000  KCs3::Cs3VerRequest begin
+2013-11-30 09:53:19 078  KCs3::IsRespondsLogic return:1
+2013-11-30 09:53:19 078  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 09:53:19 078  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 09:53:19 078  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 09:53:19 078  KCs3::RequestCs3Info return 0, costtime:78
+2013-11-30 09:53:19 078  KCs3::Cs3VerRequest return 1
+2013-11-30 09:53:19 078  KCs3::IsNeedUpdate return 1
+2013-11-30 09:53:19 078  KHelper::SetLastRebootTipTime return:1, Time:20131130095319
+2013-11-30 09:53:19 078  KCs3::IsNeedUpdate return 1
+2013-11-30 09:53:19 078  KCs3::IsNeedUpdate return 1
+2013-11-30 09:53:19 078  KCs3::IsNeedUpdateFast return 0
+2013-11-30 09:53:19 078  KDubaUpdate::CheckDiskSize diskSpace:46650 MB
+2013-11-30 09:53:19 078  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 09:53:19 078  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 09:53:19 078  KUpdateInst::CreateChannels return:0
+2013-11-30 09:53:19 078  KUpdateInst::Create return:0
+2013-11-30 09:53:19 078  KUpdateInst::DownloadIndex ...
+2013-11-30 09:53:19 078  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 09:53:19 266  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 09:53:19 656  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 09:53:19 656  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 09:53:19 843  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 09:53:19 968  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 09:53:19 968  KUpdateInst::DownloadIndex return:0
+2013-11-30 09:53:19 968  KUpdateInst::ParseIndex ...
+2013-11-30 09:53:19 968  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 09:53:53 648  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 09:53:53 757  KUpdateInst::ParseIndex return:0
+2013-11-30 09:53:53 757  KUpdateInst::GetTotalSize return:0
+2013-11-30 09:53:53 757  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 09:53:53 757  KUpdateInst::ExecHotfix return:0
+2013-11-30 09:53:53 757  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 09:53:53 757  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 09:53:53 757  KUpdateInst::Clean return:0
+2013-11-30 09:53:53 757  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 09:53:53 757  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 09:53:53 898  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 11:00:06 144  ---------------------------------------------------------------------
+2013-11-30 11:00:06 146  KHelper::SetUpdateTime:2, return:1
+2013-11-30 11:00:06 194  KHelper::IsReupdateForceReboot return:0
+2013-11-30 11:00:06 194  Auto Clean:1
+2013-11-30 11:00:06 195  ParseCommandLine: silent
+2013-11-30 11:00:06 196  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 11:00:06 197  TryNo:4360
+2013-11-30 11:00:06 197  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 11:00:06 197  KUpdateInst::Init return:0
+2013-11-30 11:00:06 197  KCs3::LoadCs3SvrList return:0
+2013-11-30 11:00:06 197  KCs3::LoadChannelList return:0
+2013-11-30 11:00:06 198  KCs3::Cs3VerRequest begin
+2013-11-30 11:00:06 269  KCs3::IsRespondsLogic return:1
+2013-11-30 11:00:06 269  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 11:00:06 269  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 11:00:06 269  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 11:00:06 269  KCs3::RequestCs3Info return 0, costtime:78
+2013-11-30 11:00:06 269  KCs3::Cs3VerRequest return 1
+2013-11-30 11:00:06 269  KCs3::IsNeedUpdate return 1
+2013-11-30 11:00:06 270  KHelper::SetLastRebootTipTime return:1, Time:20131130110006
+2013-11-30 11:00:06 270  KCs3::IsNeedUpdate return 1
+2013-11-30 11:00:06 270  KCs3::IsNeedUpdate return 1
+2013-11-30 11:00:06 270  KCs3::IsNeedUpdateFast return 0
+2013-11-30 11:00:06 270  KDubaUpdate::CheckDiskSize diskSpace:46645 MB
+2013-11-30 11:00:06 270  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 11:00:06 270  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 11:00:06 270  KUpdateInst::CreateChannels return:0
+2013-11-30 11:00:06 270  KUpdateInst::Create return:0
+2013-11-30 11:00:06 270  KUpdateInst::DownloadIndex ...
+2013-11-30 11:00:06 270  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 11:00:06 394  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 11:00:06 670  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 11:00:06 670  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 11:00:06 790  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 11:00:06 871  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 11:00:06 871  KUpdateInst::DownloadIndex return:0
+2013-11-30 11:00:06 871  KUpdateInst::ParseIndex ...
+2013-11-30 11:00:06 872  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 11:00:30 635  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 11:00:30 706  KUpdateInst::ParseIndex return:0
+2013-11-30 11:00:30 706  KUpdateInst::GetTotalSize return:0
+2013-11-30 11:00:30 706  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 11:00:30 706  KUpdateInst::ExecHotfix return:0
+2013-11-30 11:00:30 706  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 11:00:30 706  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 11:00:30 785  KUpdateInst::Clean return:0
+2013-11-30 11:00:30 785  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 11:00:30 785  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 11:00:31 205  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 12:05:11 807  ---------------------------------------------------------------------
+2013-11-30 12:05:11 809  KHelper::SetUpdateTime:2, return:1
+2013-11-30 12:05:11 877  KHelper::IsReupdateForceReboot return:0
+2013-11-30 12:05:11 877  Auto Clean:1
+2013-11-30 12:05:11 879  ParseCommandLine: silent
+2013-11-30 12:05:11 880  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 12:05:11 881  TryNo:4360
+2013-11-30 12:05:11 881  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 12:05:11 881  KUpdateInst::Init return:0
+2013-11-30 12:05:11 881  KCs3::LoadCs3SvrList return:0
+2013-11-30 12:05:11 882  KCs3::LoadChannelList return:0
+2013-11-30 12:05:11 882  KCs3::Cs3VerRequest begin
+2013-11-30 12:05:11 949  KCs3::IsRespondsLogic return:1
+2013-11-30 12:05:11 949  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 12:05:11 949  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 12:05:11 949  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 12:05:11 949  KCs3::RequestCs3Info return 0, costtime:63
+2013-11-30 12:05:11 949  KCs3::Cs3VerRequest return 1
+2013-11-30 12:05:11 949  KCs3::IsNeedUpdate return 1
+2013-11-30 12:05:11 950  KHelper::SetLastRebootTipTime return:1, Time:20131130120511
+2013-11-30 12:05:11 950  KCs3::IsNeedUpdate return 1
+2013-11-30 12:05:11 950  KCs3::IsNeedUpdate return 1
+2013-11-30 12:05:11 950  KCs3::IsNeedUpdateFast return 0
+2013-11-30 12:05:11 950  KDubaUpdate::CheckDiskSize diskSpace:46621 MB
+2013-11-30 12:05:11 950  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 12:05:11 950  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 12:05:11 950  KUpdateInst::CreateChannels return:0
+2013-11-30 12:05:11 950  KUpdateInst::Create return:0
+2013-11-30 12:05:11 950  KUpdateInst::DownloadIndex ...
+2013-11-30 12:05:11 950  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 12:05:12 072  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 12:05:12 353  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 12:05:12 353  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 12:05:12 482  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 12:05:12 566  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 12:05:12 567  KUpdateInst::DownloadIndex return:0
+2013-11-30 12:05:12 568  KUpdateInst::ParseIndex ...
+2013-11-30 12:05:12 568  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 12:05:36 513  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 12:05:36 585  KUpdateInst::ParseIndex return:0
+2013-11-30 12:05:36 585  KUpdateInst::GetTotalSize return:0
+2013-11-30 12:05:36 585  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 12:05:36 585  KUpdateInst::ExecHotfix return:0
+2013-11-30 12:05:36 585  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 12:05:36 585  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 12:05:36 685  KUpdateInst::Clean return:0
+2013-11-30 12:05:36 685  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 12:05:36 685  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 12:05:36 814  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 13:08:13 485  ---------------------------------------------------------------------
+2013-11-30 13:08:13 486  KHelper::SetUpdateTime:2, return:1
+2013-11-30 13:08:13 487  KHelper::IsReupdateForceReboot return:0
+2013-11-30 13:08:13 487  Auto Clean:1
+2013-11-30 13:08:13 487  ParseCommandLine: silent
+2013-11-30 13:08:13 488  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 13:08:13 489  TryNo:4360
+2013-11-30 13:08:13 489  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 13:08:13 489  KUpdateInst::Init return:0
+2013-11-30 13:08:13 489  KCs3::LoadCs3SvrList return:0
+2013-11-30 13:08:13 489  KCs3::LoadChannelList return:0
+2013-11-30 13:08:13 490  KCs3::Cs3VerRequest begin
+2013-11-30 13:08:13 887  KCs3::IsRespondsLogic return:1
+2013-11-30 13:08:13 887  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 13:08:13 887  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 13:08:13 887  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 13:08:13 887  KCs3::RequestCs3Info return 0, costtime:406
+2013-11-30 13:08:13 887  KCs3::Cs3VerRequest return 1
+2013-11-30 13:08:13 887  KCs3::IsNeedUpdate return 1
+2013-11-30 13:08:13 888  KHelper::SetLastRebootTipTime return:1, Time:20131130130813
+2013-11-30 13:08:13 888  KCs3::IsNeedUpdate return 1
+2013-11-30 13:08:13 888  KCs3::IsNeedUpdate return 1
+2013-11-30 13:08:13 888  KCs3::IsNeedUpdateFast return 0
+2013-11-30 13:08:13 888  KDubaUpdate::CheckDiskSize diskSpace:46635 MB
+2013-11-30 13:08:13 888  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 13:08:13 888  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 13:08:13 888  KUpdateInst::CreateChannels return:0
+2013-11-30 13:08:13 888  KUpdateInst::Create return:0
+2013-11-30 13:08:13 888  KUpdateInst::DownloadIndex ...
+2013-11-30 13:08:13 888  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 13:08:14 008  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 13:08:14 284  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 13:08:14 284  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 13:08:14 405  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 13:08:14 485  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 13:08:14 485  KUpdateInst::DownloadIndex return:0
+2013-11-30 13:08:14 485  KUpdateInst::ParseIndex ...
+2013-11-30 13:08:14 485  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 13:08:37 523  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 13:08:37 595  KUpdateInst::ParseIndex return:0
+2013-11-30 13:08:37 595  KUpdateInst::GetTotalSize return:0
+2013-11-30 13:08:37 595  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 13:08:37 595  KUpdateInst::ExecHotfix return:0
+2013-11-30 13:08:37 595  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 13:08:37 595  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 13:08:37 597  KUpdateInst::Clean return:0
+2013-11-30 13:08:37 597  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 13:08:37 597  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 13:08:37 651  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 14:13:40 802  ---------------------------------------------------------------------
+2013-11-30 14:13:40 802  KHelper::SetUpdateTime:2, return:1
+2013-11-30 14:13:40 802  KHelper::IsReupdateForceReboot return:0
+2013-11-30 14:13:40 802  Auto Clean:1
+2013-11-30 14:13:40 802  ParseCommandLine: silent
+2013-11-30 14:13:40 802  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 14:13:40 802  TryNo:4360
+2013-11-30 14:13:40 802  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 14:13:40 802  KUpdateInst::Init return:0
+2013-11-30 14:13:40 802  KCs3::LoadCs3SvrList return:0
+2013-11-30 14:13:40 802  KCs3::LoadChannelList return:0
+2013-11-30 14:13:40 802  KCs3::Cs3VerRequest begin
+2013-11-30 14:13:40 989  KCs3::IsRespondsLogic return:1
+2013-11-30 14:13:40 989  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 14:13:40 989  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 14:13:40 989  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 14:13:40 989  KCs3::RequestCs3Info return 0, costtime:188
+2013-11-30 14:13:40 989  KCs3::Cs3VerRequest return 1
+2013-11-30 14:13:40 989  KCs3::IsNeedUpdate return 1
+2013-11-30 14:13:40 989  KHelper::SetLastRebootTipTime return:1, Time:20131130141340
+2013-11-30 14:13:40 989  KCs3::IsNeedUpdate return 1
+2013-11-30 14:13:40 989  KCs3::IsNeedUpdate return 1
+2013-11-30 14:13:40 989  KCs3::IsNeedUpdateFast return 0
+2013-11-30 14:13:40 989  KDubaUpdate::CheckDiskSize diskSpace:46635 MB
+2013-11-30 14:13:40 989  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 14:13:40 989  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 14:13:40 989  KUpdateInst::CreateChannels return:0
+2013-11-30 14:13:40 989  KUpdateInst::Create return:0
+2013-11-30 14:13:40 989  KUpdateInst::DownloadIndex ...
+2013-11-30 14:13:40 989  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 14:13:41 177  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 14:13:41 551  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 14:13:41 551  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 14:13:41 738  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 14:13:41 863  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 14:13:41 863  KUpdateInst::DownloadIndex return:0
+2013-11-30 14:13:41 863  KUpdateInst::ParseIndex ...
+2013-11-30 14:13:41 863  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 14:14:13 749  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 14:14:13 859  KUpdateInst::ParseIndex return:0
+2013-11-30 14:14:13 859  KUpdateInst::GetTotalSize return:0
+2013-11-30 14:14:13 859  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 14:14:13 859  KUpdateInst::ExecHotfix return:0
+2013-11-30 14:14:13 859  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 14:14:13 859  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 14:14:13 859  KUpdateInst::Clean return:0
+2013-11-30 14:14:13 859  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 14:14:13 859  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 14:14:13 937  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 15:20:38 958  ---------------------------------------------------------------------
+2013-11-30 15:20:38 960  KHelper::SetUpdateTime:2, return:1
+2013-11-30 15:20:38 961  KHelper::IsReupdateForceReboot return:0
+2013-11-30 15:20:38 961  Auto Clean:1
+2013-11-30 15:20:38 961  ParseCommandLine: silent
+2013-11-30 15:20:38 962  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 15:20:38 962  TryNo:4360
+2013-11-30 15:20:38 963  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 15:20:38 963  KUpdateInst::Init return:0
+2013-11-30 15:20:38 963  KCs3::LoadCs3SvrList return:0
+2013-11-30 15:20:38 963  KCs3::LoadChannelList return:0
+2013-11-30 15:20:38 964  KCs3::Cs3VerRequest begin
+2013-11-30 15:20:39 043  KCs3::IsRespondsLogic return:1
+2013-11-30 15:20:39 043  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 15:20:39 043  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 15:20:39 043  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 15:20:39 043  KCs3::RequestCs3Info return 0, costtime:78
+2013-11-30 15:20:39 043  KCs3::Cs3VerRequest return 1
+2013-11-30 15:20:39 044  KCs3::IsNeedUpdate return 1
+2013-11-30 15:20:39 044  KHelper::SetLastRebootTipTime return:1, Time:20131130152039
+2013-11-30 15:20:39 044  KCs3::IsNeedUpdate return 1
+2013-11-30 15:20:39 044  KCs3::IsNeedUpdate return 1
+2013-11-30 15:20:39 044  KCs3::IsNeedUpdateFast return 0
+2013-11-30 15:20:39 044  KDubaUpdate::CheckDiskSize diskSpace:46633 MB
+2013-11-30 15:20:39 044  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 15:20:39 044  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 15:20:39 044  KUpdateInst::CreateChannels return:0
+2013-11-30 15:20:39 044  KUpdateInst::Create return:0
+2013-11-30 15:20:39 044  KUpdateInst::DownloadIndex ...
+2013-11-30 15:20:39 044  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 15:20:39 164  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 15:20:39 525  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 15:20:39 526  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 15:20:39 648  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 15:20:39 729  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 15:20:39 729  KUpdateInst::DownloadIndex return:0
+2013-11-30 15:20:39 729  KUpdateInst::ParseIndex ...
+2013-11-30 15:20:39 729  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 15:21:02 909  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 15:21:02 980  KUpdateInst::ParseIndex return:0
+2013-11-30 15:21:02 980  KUpdateInst::GetTotalSize return:0
+2013-11-30 15:21:02 980  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 15:21:02 980  KUpdateInst::ExecHotfix return:0
+2013-11-30 15:21:02 980  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 15:21:02 980  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 15:21:03 137  KUpdateInst::Clean return:0
+2013-11-30 15:21:03 137  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 15:21:03 137  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 15:21:03 195  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 16:28:10 881  ---------------------------------------------------------------------
+2013-11-30 16:28:10 881  KHelper::SetUpdateTime:2, return:1
+2013-11-30 16:28:10 881  KHelper::IsReupdateForceReboot return:0
+2013-11-30 16:28:10 881  Auto Clean:1
+2013-11-30 16:28:10 881  ParseCommandLine: silent
+2013-11-30 16:28:10 881  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 16:28:10 881  TryNo:4360
+2013-11-30 16:28:10 881  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 16:28:10 881  KUpdateInst::Init return:0
+2013-11-30 16:28:10 881  KCs3::LoadCs3SvrList return:0
+2013-11-30 16:28:10 881  KCs3::LoadChannelList return:0
+2013-11-30 16:28:10 881  KCs3::Cs3VerRequest begin
+2013-11-30 16:28:10 961  KCs3::IsRespondsLogic return:1
+2013-11-30 16:28:10 961  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 16:28:10 961  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 16:28:10 961  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 16:28:10 961  KCs3::RequestCs3Info return 0, costtime:78
+2013-11-30 16:28:10 961  KCs3::Cs3VerRequest return 1
+2013-11-30 16:28:10 961  KCs3::IsNeedUpdate return 1
+2013-11-30 16:28:10 961  KHelper::SetLastRebootTipTime return:1, Time:20131130162810
+2013-11-30 16:28:10 961  KCs3::IsNeedUpdate return 1
+2013-11-30 16:28:10 961  KCs3::IsNeedUpdate return 1
+2013-11-30 16:28:10 961  KCs3::IsNeedUpdateFast return 0
+2013-11-30 16:28:10 961  KDubaUpdate::CheckDiskSize diskSpace:46622 MB
+2013-11-30 16:28:10 961  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 16:28:10 961  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 16:28:10 961  KUpdateInst::CreateChannels return:0
+2013-11-30 16:28:10 961  KUpdateInst::Create return:0
+2013-11-30 16:28:10 961  KUpdateInst::DownloadIndex ...
+2013-11-30 16:28:10 961  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 16:28:11 081  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 16:28:11 381  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 16:28:11 381  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 16:28:11 501  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 16:28:11 581  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 16:28:11 581  KUpdateInst::DownloadIndex return:0
+2013-11-30 16:28:11 581  KUpdateInst::ParseIndex ...
+2013-11-30 16:28:11 581  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 16:28:33 641  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 16:28:33 711  KUpdateInst::ParseIndex return:0
+2013-11-30 16:28:33 711  KUpdateInst::GetTotalSize return:0
+2013-11-30 16:28:33 711  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 16:28:33 711  KUpdateInst::ExecHotfix return:0
+2013-11-30 16:28:33 711  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 16:28:33 711  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 16:28:33 871  KUpdateInst::Clean return:0
+2013-11-30 16:28:33 871  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 16:28:33 871  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 16:28:33 931  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 17:34:47 331  ---------------------------------------------------------------------
+2013-11-30 17:34:47 331  KHelper::SetUpdateTime:2, return:1
+2013-11-30 17:34:47 331  KHelper::IsReupdateForceReboot return:0
+2013-11-30 17:34:47 331  Auto Clean:1
+2013-11-30 17:34:47 331  ParseCommandLine: silent
+2013-11-30 17:34:47 331  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 17:34:47 331  TryNo:4360
+2013-11-30 17:34:47 331  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 17:34:47 331  KUpdateInst::Init return:0
+2013-11-30 17:34:47 331  KCs3::LoadCs3SvrList return:0
+2013-11-30 17:34:47 331  KCs3::LoadChannelList return:0
+2013-11-30 17:34:47 331  KCs3::Cs3VerRequest begin
+2013-11-30 17:34:47 881  KCs3::IsRespondsLogic return:1
+2013-11-30 17:34:47 881  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 17:34:47 881  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28bb2f crc:2b7f918f
+2013-11-30 17:34:47 881  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 17:34:47 881  KCs3::RequestCs3Info return 0, costtime:546
+2013-11-30 17:34:47 881  KCs3::Cs3VerRequest return 1
+2013-11-30 17:34:47 881  KCs3::IsNeedUpdate return 1
+2013-11-30 17:34:47 891  KHelper::SetLastRebootTipTime return:1, Time:20131130173447
+2013-11-30 17:34:47 891  KCs3::IsNeedUpdate return 1
+2013-11-30 17:34:47 891  KCs3::IsNeedUpdate return 1
+2013-11-30 17:34:47 891  KCs3::IsNeedUpdateFast return 0
+2013-11-30 17:34:47 891  KDubaUpdate::CheckDiskSize diskSpace:46611 MB
+2013-11-30 17:34:47 891  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 17:34:47 891  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 17:34:47 891  KUpdateInst::CreateChannels return:0
+2013-11-30 17:34:47 891  KUpdateInst::Create return:0
+2013-11-30 17:34:47 891  KUpdateInst::DownloadIndex ...
+2013-11-30 17:34:47 891  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28bb2f.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 17:34:48 011  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/b14a8f9c3c518ae94a533b0e98362e48 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 17:34:48 271  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 17:34:48 271  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 17:34:48 391  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 17:34:48 471  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 17:34:48 471  KUpdateInst::DownloadIndex return:0
+2013-11-30 17:34:48 471  KUpdateInst::ParseIndex ...
+2013-11-30 17:34:48 471  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 17:35:11 371  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 17:35:11 441  KUpdateInst::ParseIndex return:0
+2013-11-30 17:35:11 441  KUpdateInst::GetTotalSize return:0
+2013-11-30 17:35:11 441  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 17:35:11 441  KUpdateInst::ExecHotfix return:0
+2013-11-30 17:35:11 441  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 17:35:11 441  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 17:35:11 451  KUpdateInst::Clean return:0
+2013-11-30 17:35:11 451  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 17:35:11 451  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 17:35:11 601  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 18:42:05 845  ---------------------------------------------------------------------
+2013-11-30 18:42:05 847  KHelper::SetUpdateTime:2, return:1
+2013-11-30 18:42:05 847  KHelper::IsReupdateForceReboot return:0
+2013-11-30 18:42:05 847  Auto Clean:1
+2013-11-30 18:42:05 848  ParseCommandLine: silent
+2013-11-30 18:42:05 849  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 18:42:05 849  TryNo:4360
+2013-11-30 18:42:05 849  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 18:42:05 849  KUpdateInst::Init return:0
+2013-11-30 18:42:05 849  KCs3::LoadCs3SvrList return:0
+2013-11-30 18:42:05 850  KCs3::LoadChannelList return:0
+2013-11-30 18:42:05 850  KCs3::Cs3VerRequest begin
+2013-11-30 18:42:05 976  KCs3::IsRespondsLogic return:1
+2013-11-30 18:42:05 976  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 18:42:05 976  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28e0c6 crc:6d4c3b4d
+2013-11-30 18:42:05 976  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 18:42:05 976  KCs3::RequestCs3Info return 0, costtime:125
+2013-11-30 18:42:05 976  KCs3::Cs3VerRequest return 1
+2013-11-30 18:42:05 976  KCs3::IsNeedUpdate return 1
+2013-11-30 18:42:05 977  KHelper::SetLastRebootTipTime return:1, Time:20131130184205
+2013-11-30 18:42:05 977  KCs3::IsNeedUpdate return 1
+2013-11-30 18:42:05 977  KCs3::IsNeedUpdate return 1
+2013-11-30 18:42:05 977  KCs3::IsNeedUpdateFast return 0
+2013-11-30 18:42:05 977  KDubaUpdate::CheckDiskSize diskSpace:46618 MB
+2013-11-30 18:42:05 977  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 18:42:05 977  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 18:42:05 977  KUpdateInst::CreateChannels return:0
+2013-11-30 18:42:05 977  KUpdateInst::Create return:0
+2013-11-30 18:42:05 977  KUpdateInst::DownloadIndex ...
+2013-11-30 18:42:05 977  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28e0c6.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 18:42:06 196  DownloadFileAndDecompressCrcDat return:0, cost time:156, url:http://update.drivergenius.com/update/duba/2013/4360/4e28e0c6.dat, path:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 18:42:06 196  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/d8fe6c0b85ce5d501c30dae0f5e42836 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 18:42:06 830  DownloadFileAndDecompress return:0, cost time:374, url:http://update.drivergenius.com/update/duba/2013/4360/main/d8fe6c0b85ce5d501c30dae0f5e42836, path:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 18:42:06 834  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 18:42:06 835  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 18:42:06 956  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 18:42:07 036  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 18:42:07 036  KUpdateInst::DownloadIndex return:0
+2013-11-30 18:42:07 036  KUpdateInst::ParseIndex ...
+2013-11-30 18:42:07 037  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 18:42:15 588  IsItemDiffFromFile File Size, local:1428, server:1440, path:f:\myapp\DriverGenius2013\hmpgconfig.ini
+2013-11-30 18:42:30 469  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 18:42:30 540  KUpdateInst::ParseIndex return:0
+2013-11-30 18:42:30 540  KUpdateInst::GetTotalSize return:524
+2013-11-30 18:42:30 540  KUpdateInst::DownloadFiles ...
+2013-11-30 18:42:30 540  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/e712f3c3486ca80a31a7c8666cecd3af file:f:\myapp\DriverGenius2013\update\kav\main\hmpgconfig.ini
+2013-11-30 18:42:30 756  DownloadFileAndDecompressCrc return:0, cost time:219, url:http://update.drivergenius.com/update/duba/2013/4360/main/e712f3c3486ca80a31a7c8666cecd3af, path:f:\myapp\DriverGenius2013\update\kav\main\hmpgconfig.ini
+2013-11-30 18:42:30 766  KUpdateInst::DownloadFiles return:0
+2013-11-30 18:42:30 768  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:hmpgconfig.ini
+2013-11-30 18:42:30 800  KRebootConfigWritter::AddRebootFile Save config file return:1
+2013-11-30 18:42:30 800  KRebootConfigWritter::SaveRebootBackConfig end
+2013-11-30 18:42:30 806  KHelper::LoadUpdateConfig bAlertReboot:0, groupupdate:0, ReupdateForceReboot:0, AutoReupdateDelayTime:0s
+2013-11-30 18:42:30 807  KUpdateInst::Update ...
+2013-11-30 18:42:30 809  KRebootConfigWritter::AddUpdateSucFile add reboot file:hmpgconfig.ini
+2013-11-30 18:42:30 809  UpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\hmpgconfig.ini, dst:f:\myapp\DriverGenius2013\hmpgconfig.ini
+2013-11-30 18:42:30 809  KUpdateInst::Update return:0
+2013-11-30 18:42:30 811  KRebootConfigWritter::SetDonotNeedRebootUpdate delete all back files
+2013-11-30 18:42:30 812  KReupdate::ReadConfig return:-1, file count:0
+2013-11-30 18:42:30 812  KReupdate::Init return:-1
+2013-11-30 18:42:30 812  KReupdate::ReupdateSilent Init return:-1
+2013-11-30 18:42:30 812  KReupdate::ReupdateSilent m_bExitTray:0 return:-1
+2013-11-30 18:42:30 812  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 18:42:30 812  KUpdateInst::ExecHotfix return:0
+2013-11-30 18:42:30 812  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 18:42:30 812  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 18:42:30 813  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 18:42:30 820  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 18:42:30 823  KUpdateInst::BackupIndex return:0
+2013-11-30 18:42:30 847  KUpdateInst::Clean return:0
+2013-11-30 18:42:30 847  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 18:42:30 847  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 18:42:30 903  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=1
+2013-11-30 19:50:02 167  ---------------------------------------------------------------------
+2013-11-30 19:50:02 169  KHelper::SetUpdateTime:2, return:1
+2013-11-30 19:50:02 169  KHelper::IsReupdateForceReboot return:0
+2013-11-30 19:50:02 169  Auto Clean:1
+2013-11-30 19:50:02 170  ParseCommandLine: silent
+2013-11-30 19:50:02 171  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 19:50:02 171  TryNo:4360
+2013-11-30 19:50:02 171  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 19:50:02 171  KUpdateInst::Init return:0
+2013-11-30 19:50:02 171  KCs3::LoadCs3SvrList return:0
+2013-11-30 19:50:02 172  KCs3::LoadChannelList return:0
+2013-11-30 19:50:02 173  KCs3::Cs3VerRequest begin
+2013-11-30 19:50:02 329  KCs3::IsRespondsLogic return:1
+2013-11-30 19:50:02 329  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 19:50:02 329  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28e0c6 crc:6d4c3b4d
+2013-11-30 19:50:02 329  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 19:50:02 329  KCs3::RequestCs3Info return 0, costtime:156
+2013-11-30 19:50:02 329  KCs3::Cs3VerRequest return 1
+2013-11-30 19:50:02 329  KCs3::IsNeedUpdate return 1
+2013-11-30 19:50:02 329  KHelper::SetLastRebootTipTime return:1, Time:20131130195002
+2013-11-30 19:50:02 329  KCs3::IsNeedUpdate return 1
+2013-11-30 19:50:02 329  KCs3::IsNeedUpdate return 1
+2013-11-30 19:50:02 329  KCs3::IsNeedUpdateFast return 0
+2013-11-30 19:50:02 329  KDubaUpdate::CheckDiskSize diskSpace:46618 MB
+2013-11-30 19:50:02 329  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 19:50:02 329  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 19:50:02 329  KUpdateInst::CreateChannels return:0
+2013-11-30 19:50:02 329  KUpdateInst::Create return:0
+2013-11-30 19:50:02 329  KUpdateInst::DownloadIndex ...
+2013-11-30 19:50:02 329  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28e0c6.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 19:50:02 450  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/d8fe6c0b85ce5d501c30dae0f5e42836 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 19:50:02 718  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 19:50:02 719  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 19:50:02 839  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 19:50:02 920  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 19:50:02 920  KUpdateInst::DownloadIndex return:0
+2013-11-30 19:50:02 920  KUpdateInst::ParseIndex ...
+2013-11-30 19:50:02 920  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 19:50:25 843  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 19:50:25 914  KUpdateInst::ParseIndex return:0
+2013-11-30 19:50:25 914  KUpdateInst::GetTotalSize return:0
+2013-11-30 19:50:25 914  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 19:50:25 914  KUpdateInst::ExecHotfix return:0
+2013-11-30 19:50:25 914  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 19:50:25 914  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 19:50:26 103  KUpdateInst::Clean return:0
+2013-11-30 19:50:26 103  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 19:50:26 103  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 19:50:26 155  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 20:58:03 355  ---------------------------------------------------------------------
+2013-11-30 20:58:03 356  KHelper::SetUpdateTime:2, return:1
+2013-11-30 20:58:03 357  KHelper::IsReupdateForceReboot return:0
+2013-11-30 20:58:03 357  Auto Clean:1
+2013-11-30 20:58:03 357  ParseCommandLine: silent
+2013-11-30 20:58:03 358  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 20:58:03 359  TryNo:4360
+2013-11-30 20:58:03 359  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 20:58:03 359  KUpdateInst::Init return:0
+2013-11-30 20:58:03 359  KCs3::LoadCs3SvrList return:0
+2013-11-30 20:58:03 360  KCs3::LoadChannelList return:0
+2013-11-30 20:58:03 360  KCs3::Cs3VerRequest begin
+2013-11-30 20:58:03 438  KCs3::IsRespondsLogic return:1
+2013-11-30 20:58:03 438  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 20:58:03 438  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28e185 crc:82778e85
+2013-11-30 20:58:03 438  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 20:58:03 438  KCs3::RequestCs3Info return 0, costtime:78
+2013-11-30 20:58:03 438  KCs3::Cs3VerRequest return 1
+2013-11-30 20:58:03 439  KCs3::IsNeedUpdate return 1
+2013-11-30 20:58:03 439  KHelper::SetLastRebootTipTime return:1, Time:20131130205803
+2013-11-30 20:58:03 439  KCs3::IsNeedUpdate return 1
+2013-11-30 20:58:03 439  KCs3::IsNeedUpdate return 1
+2013-11-30 20:58:03 439  KCs3::IsNeedUpdateFast return 0
+2013-11-30 20:58:03 439  KDubaUpdate::CheckDiskSize diskSpace:46618 MB
+2013-11-30 20:58:03 439  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 20:58:03 439  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 20:58:03 439  KUpdateInst::CreateChannels return:0
+2013-11-30 20:58:03 439  KUpdateInst::Create return:0
+2013-11-30 20:58:03 439  KUpdateInst::DownloadIndex ...
+2013-11-30 20:58:03 439  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28e185.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 20:58:03 665  DownloadFileAndDecompressCrcDat return:0, cost time:171, url:http://update.drivergenius.com/update/duba/2013/4360/4e28e185.dat, path:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 20:58:03 665  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/a4be40853e4237bd7667ad94b208dd01 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 20:58:04 275  DownloadFileAndDecompress return:0, cost time:344, url:http://update.drivergenius.com/update/duba/2013/4360/main/a4be40853e4237bd7667ad94b208dd01, path:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 20:58:04 280  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 20:58:04 280  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 20:58:04 401  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 20:58:04 482  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 20:58:04 483  KUpdateInst::DownloadIndex return:0
+2013-11-30 20:58:04 483  KUpdateInst::ParseIndex ...
+2013-11-30 20:58:04 483  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 20:58:13 115  IsItemDiffFromFile File Size, local:1440, server:1452, path:f:\myapp\DriverGenius2013\hmpgconfig.ini
+2013-11-30 20:58:27 358  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 20:58:27 430  KUpdateInst::ParseIndex return:0
+2013-11-30 20:58:27 430  KUpdateInst::GetTotalSize return:527
+2013-11-30 20:58:27 430  KUpdateInst::DownloadFiles ...
+2013-11-30 20:58:27 430  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/c10bc41776793c50c3ec22a0b576a4e0 file:f:\myapp\DriverGenius2013\update\kav\main\hmpgconfig.ini
+2013-11-30 20:58:27 592  DownloadFileAndDecompressCrc return:0, cost time:172, url:http://update.drivergenius.com/update/duba/2013/4360/main/c10bc41776793c50c3ec22a0b576a4e0, path:f:\myapp\DriverGenius2013\update\kav\main\hmpgconfig.ini
+2013-11-30 20:58:27 603  KUpdateInst::DownloadFiles return:0
+2013-11-30 20:58:27 606  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:hmpgconfig.ini
+2013-11-30 20:58:27 606  KRebootConfigWritter::AddRebootFile Save config file return:1
+2013-11-30 20:58:27 607  KRebootConfigWritter::SaveRebootBackConfig end
+2013-11-30 20:58:27 607  KHelper::LoadUpdateConfig bAlertReboot:0, groupupdate:0, ReupdateForceReboot:0, AutoReupdateDelayTime:0s
+2013-11-30 20:58:27 607  KUpdateInst::Update ...
+2013-11-30 20:58:27 609  KRebootConfigWritter::AddUpdateSucFile add reboot file:hmpgconfig.ini
+2013-11-30 20:58:27 609  UpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\hmpgconfig.ini, dst:f:\myapp\DriverGenius2013\hmpgconfig.ini
+2013-11-30 20:58:27 609  KUpdateInst::Update return:0
+2013-11-30 20:58:27 611  KRebootConfigWritter::SetDonotNeedRebootUpdate delete all back files
+2013-11-30 20:58:27 612  KReupdate::ReadConfig return:-1, file count:0
+2013-11-30 20:58:27 612  KReupdate::Init return:-1
+2013-11-30 20:58:27 612  KReupdate::ReupdateSilent Init return:-1
+2013-11-30 20:58:27 612  KReupdate::ReupdateSilent m_bExitTray:0 return:-1
+2013-11-30 20:58:27 612  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 20:58:27 612  KUpdateInst::ExecHotfix return:0
+2013-11-30 20:58:27 613  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 20:58:27 613  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 20:58:27 613  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 20:58:27 622  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 20:58:27 625  KUpdateInst::BackupIndex return:0
+2013-11-30 20:58:27 628  KUpdateInst::Clean return:0
+2013-11-30 20:58:27 628  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 20:58:27 628  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 20:58:27 674  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=1
+2013-11-30 22:06:05 799  ---------------------------------------------------------------------
+2013-11-30 22:06:05 801  KHelper::SetUpdateTime:2, return:1
+2013-11-30 22:06:05 801  KHelper::IsReupdateForceReboot return:0
+2013-11-30 22:06:05 801  Auto Clean:1
+2013-11-30 22:06:05 802  ParseCommandLine: silent
+2013-11-30 22:06:05 803  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 22:06:05 803  TryNo:4360
+2013-11-30 22:06:05 803  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 22:06:05 803  KUpdateInst::Init return:0
+2013-11-30 22:06:05 803  KCs3::LoadCs3SvrList return:0
+2013-11-30 22:06:05 804  KCs3::LoadChannelList return:0
+2013-11-30 22:06:05 804  KCs3::Cs3VerRequest begin
+2013-11-30 22:06:05 879  KCs3::IsRespondsLogic return:1
+2013-11-30 22:06:05 879  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 22:06:05 879  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28e185 crc:82778e85
+2013-11-30 22:06:05 879  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 22:06:05 879  KCs3::RequestCs3Info return 0, costtime:78
+2013-11-30 22:06:05 879  KCs3::Cs3VerRequest return 1
+2013-11-30 22:06:05 879  KCs3::IsNeedUpdate return 1
+2013-11-30 22:06:05 879  KHelper::SetLastRebootTipTime return:1, Time:20131130220605
+2013-11-30 22:06:05 879  KCs3::IsNeedUpdate return 1
+2013-11-30 22:06:05 879  KCs3::IsNeedUpdate return 1
+2013-11-30 22:06:05 879  KCs3::IsNeedUpdateFast return 0
+2013-11-30 22:06:05 879  KDubaUpdate::CheckDiskSize diskSpace:46618 MB
+2013-11-30 22:06:05 879  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 22:06:05 879  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 22:06:05 879  KUpdateInst::CreateChannels return:0
+2013-11-30 22:06:05 879  KUpdateInst::Create return:0
+2013-11-30 22:06:05 879  KUpdateInst::DownloadIndex ...
+2013-11-30 22:06:05 879  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28e185.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 22:06:06 001  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/a4be40853e4237bd7667ad94b208dd01 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 22:06:06 275  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 22:06:06 275  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 22:06:06 395  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 22:06:06 476  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 22:06:06 476  KUpdateInst::DownloadIndex return:0
+2013-11-30 22:06:06 476  KUpdateInst::ParseIndex ...
+2013-11-30 22:06:06 476  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 22:06:32 830  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 22:06:32 902  KUpdateInst::ParseIndex return:0
+2013-11-30 22:06:32 902  KUpdateInst::GetTotalSize return:0
+2013-11-30 22:06:32 902  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 22:06:32 902  KUpdateInst::ExecHotfix return:0
+2013-11-30 22:06:32 902  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 22:06:32 902  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 22:06:33 027  KUpdateInst::Clean return:0
+2013-11-30 22:06:33 027  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 22:06:33 027  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 22:06:33 183  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-11-30 23:13:05 873  ---------------------------------------------------------------------
+2013-11-30 23:13:05 873  KHelper::SetUpdateTime:2, return:1
+2013-11-30 23:13:05 873  KHelper::IsReupdateForceReboot return:0
+2013-11-30 23:13:05 873  Auto Clean:1
+2013-11-30 23:13:05 873  ParseCommandLine: silent
+2013-11-30 23:13:05 888  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-11-30 23:13:05 888  TryNo:4360
+2013-11-30 23:13:05 888  KUpdateInst::ReadSvrConfig return:0
+2013-11-30 23:13:05 888  KUpdateInst::Init return:0
+2013-11-30 23:13:05 888  KCs3::LoadCs3SvrList return:0
+2013-11-30 23:13:05 888  KCs3::LoadChannelList return:0
+2013-11-30 23:13:05 888  KCs3::Cs3VerRequest begin
+2013-11-30 23:13:06 060  KCs3::IsRespondsLogic return:1
+2013-11-30 23:13:06 060  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-11-30 23:13:06 060  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28e185 crc:82778e85
+2013-11-30 23:13:06 060  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-11-30 23:13:06 060  KCs3::RequestCs3Info return 0, costtime:172
+2013-11-30 23:13:06 060  KCs3::Cs3VerRequest return 1
+2013-11-30 23:13:06 060  KCs3::IsNeedUpdate return 1
+2013-11-30 23:13:06 060  KHelper::SetLastRebootTipTime return:1, Time:20131130231306
+2013-11-30 23:13:06 060  KCs3::IsNeedUpdate return 1
+2013-11-30 23:13:06 060  KCs3::IsNeedUpdate return 1
+2013-11-30 23:13:06 060  KCs3::IsNeedUpdateFast return 0
+2013-11-30 23:13:06 060  KDubaUpdate::CheckDiskSize diskSpace:46616 MB
+2013-11-30 23:13:06 060  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-11-30 23:13:06 060  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-11-30 23:13:06 060  KUpdateInst::CreateChannels return:0
+2013-11-30 23:13:06 060  KUpdateInst::Create return:0
+2013-11-30 23:13:06 060  KUpdateInst::DownloadIndex ...
+2013-11-30 23:13:06 060  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28e185.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-11-30 23:13:06 247  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/a4be40853e4237bd7667ad94b208dd01 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-11-30 23:13:06 622  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-11-30 23:13:06 622  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-11-30 23:13:06 809  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-11-30 23:13:06 934  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-11-30 23:13:06 934  KUpdateInst::DownloadIndex return:0
+2013-11-30 23:13:06 934  KUpdateInst::ParseIndex ...
+2013-11-30 23:13:06 934  KChannel::IsScrollBack name:indexmain return:0
+2013-11-30 23:13:40 536  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-11-30 23:13:40 645  KUpdateInst::ParseIndex return:0
+2013-11-30 23:13:40 645  KUpdateInst::GetTotalSize return:0
+2013-11-30 23:13:40 645  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-11-30 23:13:40 645  KUpdateInst::ExecHotfix return:0
+2013-11-30 23:13:40 645  KUpdater::SaveVersionToReg return 0, version:
+2013-11-30 23:13:40 645  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-11-30 23:13:40 739  KUpdateInst::Clean return:0
+2013-11-30 23:13:40 739  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-11-30 23:13:40 739  KUpdater::ProcessReupdateInfo return -1
+2013-11-30 23:13:40 817  KUpInfoc::infoc result=0&silent=1&restart=0&net=1&havefile=0
+2013-12-1 12:25:25 083  ---------------------------------------------------------------------
+2013-12-1 12:25:25 085  KHelper::SetUpdateTime:2, return:1
+2013-12-1 12:25:25 085  KHelper::IsReupdateForceReboot return:0
+2013-12-1 12:25:25 085  Auto Clean:1
+2013-12-1 12:25:25 189  ParseCommandLine: silent
+2013-12-1 12:25:25 190  KRebootConfigWritter::Init m_bUseBackPath:0
+2013-12-1 12:25:25 190  TryNo:4360
+2013-12-1 12:25:25 190  KUpdateInst::ReadSvrConfig return:0
+2013-12-1 12:25:25 190  KUpdateInst::Init return:0
+2013-12-1 12:25:25 190  KCs3::LoadCs3SvrList return:0
+2013-12-1 12:25:25 191  KCs3::LoadChannelList return:0
+2013-12-1 12:25:25 191  KCs3::Cs3VerRequest begin
+2013-12-1 12:25:25 305  KCs3::IsRespondsLogic return:1
+2013-12-1 12:25:25 305  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-12-1 12:25:25 305  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28e2d2 crc:cc3d1f4b
+2013-12-1 12:25:25 305  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-12-1 12:25:25 305  KCs3::RequestCs3Info return 0, costtime:109
+2013-12-1 12:25:25 305  KCs3::Cs3VerRequest return 1
+2013-12-1 12:25:25 305  KCs3::IsNeedUpdate return 1
+2013-12-1 12:25:25 305  KHelper::SetLastRebootTipTime return:1, Time:20131201122525
+2013-12-1 12:25:25 305  KCs3::IsNeedUpdate return 1
+2013-12-1 12:25:25 305  KCs3::IsNeedUpdate return 1
+2013-12-1 12:25:25 305  KCs3::IsNeedUpdateFast return 0
+2013-12-1 12:25:25 306  KDubaUpdate::CheckDiskSize diskSpace:46611 MB
+2013-12-1 12:25:25 306  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-12-1 12:25:25 306  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-12-1 12:25:25 306  KUpdateInst::CreateChannels return:0
+2013-12-1 12:25:25 306  KUpdateInst::Create return:0
+2013-12-1 12:25:25 306  KUpdateInst::DownloadIndex ...
+2013-12-1 12:25:25 306  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28e2d2.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-12-1 12:25:25 512  DownloadFileAndDecompressCrcDat return:0, cost time:156, url:http://update.drivergenius.com/update/duba/2013/4360/4e28e2d2.dat, path:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-12-1 12:25:25 512  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/8d88ae1bd36c8fadfa4b7e98e9697017 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-12-1 12:25:27 201  DownloadFileAndDecompress return:0, cost time:1341, url:http://update.drivergenius.com/update/duba/2013/4360/main/8d88ae1bd36c8fadfa4b7e98e9697017, path:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-12-1 12:25:27 206  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-12-1 12:25:27 206  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-12-1 12:25:27 326  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-12-1 12:25:27 406  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-12-1 12:25:27 406  KUpdateInst::DownloadIndex return:0
+2013-12-1 12:25:27 406  KUpdateInst::ParseIndex ...
+2013-12-1 12:25:27 406  KChannel::IsScrollBack name:indexmain return:0
+2013-12-1 12:25:29 912  IsItemDiffFromFile Version, local:7.0.1129.1512, server:7.0.1130.1513, path:f:\myapp\DriverGenius2013\dgfixer.dll
+2013-12-1 12:25:38 096  IsItemDiffFromFile File Size, local:1452, server:1410, path:f:\myapp\DriverGenius2013\hmpgconfig.ini
+2013-12-1 12:25:53 330  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-12-1 12:25:53 401  KUpdateInst::ParseIndex return:0
+2013-12-1 12:25:53 401  KUpdateInst::GetTotalSize return:39255
+2013-12-1 12:25:53 401  KUpdateInst::DownloadFiles ...
+2013-12-1 12:25:53 401  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/4e44bbf99bf0f3fd32a8bebe6679194c file:f:\myapp\DriverGenius2013\update\kav\main\dgfixer.dll
+2013-12-1 12:25:54 567  DownloadFileAndDecompressCrc return:0, cost time:1170, url:http://update.drivergenius.com/update/duba/2013/4360/main/4e44bbf99bf0f3fd32a8bebe6679194c, path:f:\myapp\DriverGenius2013\update\kav\main\dgfixer.dll
+2013-12-1 12:25:54 577  KHelper::DownloadFileAndDecompressCrc url:http://update.drivergenius.com/update/duba/2013/4360/main/c5c277df4ff43189951d7df5a880b1c0 file:f:\myapp\DriverGenius2013\update\kav\main\hmpgconfig.ini
+2013-12-1 12:25:54 729  DownloadFileAndDecompressCrc return:0, cost time:156, url:http://update.drivergenius.com/update/duba/2013/4360/main/c5c277df4ff43189951d7df5a880b1c0, path:f:\myapp\DriverGenius2013\update\kav\main\hmpgconfig.ini
+2013-12-1 12:25:54 740  KUpdateInst::DownloadFiles return:0
+2013-12-1 12:25:54 743  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:dgfixer.dll
+2013-12-1 12:25:54 757  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:hmpgconfig.ini
+2013-12-1 12:25:54 765  KRebootConfigWritter::AddRebootFile Save config file return:1
+2013-12-1 12:25:54 765  KRebootConfigWritter::SaveRebootBackConfig end
+2013-12-1 12:25:54 792  KHelper::LoadUpdateConfig bAlertReboot:0, groupupdate:0, ReupdateForceReboot:0, AutoReupdateDelayTime:0s
+2013-12-1 12:25:54 792  KUpdateInst::Update ...
+2013-12-1 12:25:54 838  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\dgfixer.dll, dst:f:\myapp\DriverGenius2013\dgfixer.dll errorcode:0
+2013-12-1 12:25:54 838  UpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\dgfixer.dll, dst:f:\myapp\DriverGenius2013\dgfixer.dll
+2013-12-1 12:25:54 840  KRebootConfigWritter::AddUpdateSucFile add reboot file:hmpgconfig.ini
+2013-12-1 12:25:54 840  UpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\hmpgconfig.ini, dst:f:\myapp\DriverGenius2013\hmpgconfig.ini
+2013-12-1 12:25:54 840  KUpdateInst::Update return:0
+2013-12-1 12:25:54 842  KRebootConfigWritter::SaveRebootConfig end
+2013-12-1 12:25:54 842  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\dgfixer.dll
+2013-12-1 12:25:54 842  KReupdate::ReadConfig return:0, file count:1
+2013-12-1 12:25:54 842  KReupdate::Init return:0
+2013-12-1 12:25:54 842  KReupdate::ReupdateSilent Init return:0
+2013-12-1 12:25:54 863  KReupdate::IsOccupeModule detect:f:\myapp\drivergenius2013\dgfixer.dll
+2013-12-1 12:25:54 863  KReupdate::IsHasOtherProcess need restart:svchost.exe
+2013-12-1 12:25:54 863  KReupdate::IsHasOtherProcess return:1
+2013-12-1 12:25:54 863  KReupdate::IsNeedReboot return 1
+2013-12-1 12:25:54 863  KReupdate::ReupdateSilent IsNeedReboot return TRUE
+2013-12-1 12:25:54 863  KReupdate::ReupdateSilent m_bExitTray:0 return:-1
+2013-12-1 12:25:54 864  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-12-1 12:25:54 864  KUpdateInst::ExecHotfix return:0
+2013-12-1 12:25:54 864  KUpdater::SaveVersionToReg return 0, version:
+2013-12-1 12:25:54 864  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-12-1 12:25:54 864  KChannel::IsScrollBack name:indexmain return:0
+2013-12-1 12:25:54 871  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-12-1 12:25:54 874  KUpdateInst::BackupIndex return:0
+2013-12-1 12:25:54 874  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-12-1 12:25:54 874  KUpdater::ProcessReupdateInfo return -1
+2013-12-1 12:25:54 910  KUpInfoc::infoc result=0&silent=1&restart=1&net=1&havefile=2
+2013-12-1 13:31:42 666  ---------------------------------------------------------------------
+2013-12-1 13:31:42 715  KHelper::SetUpdateTime:2, return:1
+2013-12-1 13:31:42 716  KHelper::IsReupdateForceReboot return:0
+2013-12-1 13:31:42 716  Auto Clean:1
+2013-12-1 13:31:42 716  ParseCommandLine: silent
+2013-12-1 13:31:42 717  KRebootConfigWritter::Init m_bUseBackPath:1
+2013-12-1 13:31:42 718  TryNo:4360
+2013-12-1 13:31:42 718  KUpdateInst::ReadSvrConfig return:0
+2013-12-1 13:31:42 718  KUpdateInst::Init return:0
+2013-12-1 13:31:42 718  KCs3::LoadCs3SvrList return:0
+2013-12-1 13:31:42 719  KCs3::LoadChannelList return:0
+2013-12-1 13:31:42 719  KCs3::Cs3VerRequest begin
+2013-12-1 13:31:42 798  KCs3::IsRespondsLogic return:1
+2013-12-1 13:31:42 799  KCs3::ReadCs3VersionInfo Channel:indexkcom_commonfile newversion:4dae310e crc:d6abfa94
+2013-12-1 13:31:42 799  KCs3::ReadCs3VersionInfo Channel:indexmain newversion:4e28e2d2 crc:cc3d1f4b
+2013-12-1 13:31:42 799  KCs3::ReadCs3VersionInfo patch:1 m_bSwitchOn:1 Odd:1.000000 oddresult:1 FastOdd:0.005000 fastoddresult:0
+2013-12-1 13:31:42 799  KCs3::RequestCs3Info return 0, costtime:78
+2013-12-1 13:31:42 799  KCs3::Cs3VerRequest return 1
+2013-12-1 13:31:42 799  KCs3::IsNeedUpdate return 1
+2013-12-1 13:31:42 799  KHelper::SetLastRebootTipTime return:1, Time:20131201133142
+2013-12-1 13:31:42 799  KCs3::IsNeedUpdate return 1
+2013-12-1 13:31:42 799  KCs3::IsNeedUpdate return 1
+2013-12-1 13:31:42 799  KCs3::IsNeedUpdateFast return 0
+2013-12-1 13:31:42 799  KDubaUpdate::CheckDiskSize diskSpace:45536 MB
+2013-12-1 13:31:42 799  KUpdateInst::CreateChannels Add Update Channel, name:indexmain, checkfile:
+2013-12-1 13:31:42 799  KUpdateInst::CreateChannels Add Update Channel, name:indexkcom_commonfile, checkfile:
+2013-12-1 13:31:42 799  KUpdateInst::CreateChannels return:0
+2013-12-1 13:31:42 799  KUpdateInst::Create return:0
+2013-12-1 13:31:42 799  KUpdateInst::DownloadIndex ...
+2013-12-1 13:31:42 799  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/4360/4e28e2d2.dat file:f:\myapp\DriverGenius2013\update\kav\indexmain.txt
+2013-12-1 13:31:42 919  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/4360/main/8d88ae1bd36c8fadfa4b7e98e9697017 file:f:\myapp\DriverGenius2013\update\kav\main\index.txt
+2013-12-1 13:31:43 181  KChannel::UpdateIndex return:0, indexname:indexmain
+2013-12-1 13:31:43 181  KHelper::DownloadFileAndDecompressCrcDat url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/4dae310e.dat file:f:\myapp\DriverGenius2013\update\kav\indexkcom_commonfile.txt
+2013-12-1 13:31:43 303  KHelper::DownloadFileAndDecompress url:http://update.drivergenius.com/update/duba/2013/kcomponent/kcom_commonfile/kcom_commonfile/5ca56b2f3774ea61dbbe3b2887ca3598 file:f:\myapp\DriverGenius2013\update\kav\kcom_commonfile\index.txt
+2013-12-1 13:31:43 383  KChannel::UpdateIndex return:0, indexname:indexkcom_commonfile
+2013-12-1 13:31:43 383  KUpdateInst::DownloadIndex return:0
+2013-12-1 13:31:43 383  KUpdateInst::ParseIndex ...
+2013-12-1 13:31:43 383  KChannel::IsScrollBack name:indexmain return:0
+2013-12-1 13:31:45 493  IsItemDiffFromFile Version, local:7.0.1129.1512, server:7.0.1130.1513, path:f:\myapp\DriverGenius2013\dgfixer.dll
+2013-12-1 13:32:07 065  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-12-1 13:32:07 136  KUpdateInst::ParseIndex return:0
+2013-12-1 13:32:07 136  KUpdateInst::GetTotalSize return:38742
+2013-12-1 13:32:07 136  KUpdateInst::DownloadFiles ...
+2013-12-1 13:32:07 377  KUpdateInst::DownloadFiles return:0
+2013-12-1 13:32:07 381  KRebootConfigWritter::AddRebootBackFile CopyFile return:1, errorcode:0, relate path:dgfixer.dll
+2013-12-1 13:32:07 417  KRebootConfigWritter::AddRebootFile Save config file return:1
+2013-12-1 13:32:07 417  KRebootConfigWritter::SaveRebootBackConfig end
+2013-12-1 13:32:07 427  KHelper::LoadUpdateConfig bAlertReboot:0, groupupdate:0, ReupdateForceReboot:0, AutoReupdateDelayTime:0s
+2013-12-1 13:32:07 427  KUpdateInst::Update ...
+2013-12-1 13:32:07 461  RebootUpdate return:0, src:f:\myapp\DriverGenius2013\update\kav\main\dgfixer.dll, dst:f:\myapp\DriverGenius2013\dgfixer.dll errorcode:0
+2013-12-1 13:32:07 461  UpdateFile return:0, src:f:\myapp\DriverGenius2013\update\kav\main\dgfixer.dll, dst:f:\myapp\DriverGenius2013\dgfixer.dll
+2013-12-1 13:32:07 461  KUpdateInst::Update return:0
+2013-12-1 13:32:07 462  KRebootConfigWritter::SaveRebootConfig end
+2013-12-1 13:32:07 463  KReupdate::ReadConfig Addfile:f:\myapp\drivergenius2013\dgfixer.dll
+2013-12-1 13:32:07 463  KReupdate::ReadConfig return:0, file count:1
+2013-12-1 13:32:07 463  KReupdate::Init return:0
+2013-12-1 13:32:07 463  KReupdate::ReupdateSilent Init return:0
+2013-12-1 13:32:07 527  KReupdate::IsOccupeModule detect:f:\myapp\drivergenius2013\dgfixer.dll
+2013-12-1 13:32:07 527  KReupdate::IsHasOtherProcess need restart:svchost.exe
+2013-12-1 13:32:07 527  KReupdate::IsHasOtherProcess return:1
+2013-12-1 13:32:07 527  KReupdate::IsNeedReboot return 1
+2013-12-1 13:32:07 527  KReupdate::ReupdateSilent IsNeedReboot return TRUE
+2013-12-1 13:32:07 527  KReupdate::ReupdateSilent m_bExitTray:0 return:-1
+2013-12-1 13:32:07 527  no hotfix file exist path:f:\myapp\DriverGenius2013\hotfix.htf
+2013-12-1 13:32:07 527  KUpdateInst::ExecHotfix return:0
+2013-12-1 13:32:07 527  KUpdater::SaveVersionToReg return 0, version:
+2013-12-1 13:32:07 528  KUpdateInst::CheckTryNoChanged newTryNo:4360 oldTryNo:4360
+2013-12-1 13:32:07 528  KChannel::IsScrollBack name:indexmain return:0
+2013-12-1 13:32:07 535  KChannel::IsScrollBack name:indexkcom_commonfile return:0
+2013-12-1 13:32:07 537  KUpdateInst::BackupIndex return:0
+2013-12-1 13:32:07 537  KUpdater::ProcessReupdateInfo is silentmode skip detect kislive module
+2013-12-1 13:32:07 537  KUpdater::ProcessReupdateInfo return -1
+2013-12-1 13:32:07 627  KUpInfoc::infoc result=0&silent=1&restart=1&net=1&havefile=1

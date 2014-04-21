@@ -1,0 +1,25 @@
+DEBUG  2009-07-22  10:40:47  NetSignServer API has been Init
+DEBUG  2009-07-22  10:40:57  NetSignSignVerify Invalid Sign Message :Sign Message is null
+DEBUG  2009-07-22  10:53:32  NetSignServer API has been Init
+DEBUG  2009-07-22  10:53:35  begin to do with NetSignSignVerifyWed Jul 22 10:53:35 CST 2009
+DEBUG  2009-07-22  10:53:56  NetSignSignVerify SendAndRecv :null
+DEBUG  2009-07-22  10:56:42  begin to do with NetSignSignVerifyWed Jul 22 10:56:42 CST 2009
+DEBUG  2009-07-22  10:57:03  NetSignSignVerify SendAndRecv :null
+DEBUG  2009-07-22  10:57:03  begin to do with NetSignSignVerifyWed Jul 22 10:57:03 CST 2009
+DEBUG  2009-07-22  10:57:24  NetSignSignVerify SendAndRecv :null
+DEBUG  2009-07-22  10:57:24  begin to do with NetSignSignVerifyWed Jul 22 10:57:24 CST 2009
+DEBUG  2009-07-22  10:57:45  NetSignSignVerify SendAndRecv :null
+DEBUG  2009-07-22  10:57:45  begin to do with NetSignSignVerifyWed Jul 22 10:57:45 CST 2009
+DEBUG  2009-07-22  10:58:06  NetSignSignVerify SendAndRecv :null
+DEBUG  2009-07-22  10:58:06  begin to do with NetSignSignVerifyWed Jul 22 10:58:06 CST 2009
+DEBUG  2009-07-22  10:58:27  NetSignSignVerify SendAndRecv :null
+DEBUG  2009-07-22  10:58:27  begin to do with NetSignSignVerifyWed Jul 22 10:58:27 CST 2009
+DEBUG  2009-07-22  10:58:48  NetSignSignVerify SendAndRecv :null
+DEBUG  2009-07-22  10:58:48  begin to do with NetSignSignVerifyWed Jul 22 10:58:48 CST 2009
+DEBUG  2009-07-22  10:59:09  NetSignSignVerify SendAndRecv :null
+DEBUG  2009-07-22  10:59:09  begin to do with NetSignSignVerifyWed Jul 22 10:59:09 CST 2009
+DEBUG  2009-07-22  10:59:30  NetSignSignVerify SendAndRecv :null
+DEBUG  2009-07-22  10:59:30  begin to do with NetSignSignVerifyWed Jul 22 10:59:30 CST 2009
+DEBUG  2009-07-22  10:59:51  NetSignSignVerify SendAndRecv :null
+DEBUG  2009-07-22  10:59:51  begin to do with NetSignSignVerifyWed Jul 22 10:59:51 CST 2009
+DEBUG  2009-07-22  11:00:12  NetSignSignVerify SendAndRecv :null

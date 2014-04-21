@@ -1,0 +1,35 @@
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:445             0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:993             0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:995             0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:902             0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:12615           0.0.0.0:*               LISTEN      6005/java       
+tcp        0      0 0.0.0.0:3306            0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:6379            0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:139             0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:110             0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:143             0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      -               
+tcp        0      0 192.168.122.1:53        0.0.0.0:*               LISTEN      -               
+tcp        0      0 10.1.1.227:53           0.0.0.0:*               LISTEN      -               
+tcp        0      0 127.0.0.1:53            0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:21              0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      -               
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:5559            0.0.0.0:*               LISTEN      6006/java       
+tcp        0      0 0.0.0.0:23              0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:5560            0.0.0.0:*               LISTEN      6006/java       
+tcp        0      0 0.0.0.0:5561            0.0.0.0:*               LISTEN      6006/java       
+tcp        0      0 127.0.0.1:953           0.0.0.0:*               LISTEN      -               
+tcp6       0      0 :::993                  :::*                    LISTEN      -               
+tcp6       0      0 :::995                  :::*                    LISTEN      -               
+tcp6       0      0 127.0.0.1:8005          :::*                    LISTEN      2874/java       
+tcp6       0      0 :::8009                 :::*                    LISTEN      2874/java       
+tcp6       0      0 :::110                  :::*                    LISTEN      -               
+tcp6       0      0 :::143                  :::*                    LISTEN      -               
+tcp6       0      0 :::8181                 :::*                    LISTEN      2874/java       
+tcp6       0      0 :::53                   :::*                    LISTEN      -               
+tcp6       0      0 :::22                   :::*                    LISTEN      -               
+tcp6       0      0 ::1:631                 :::*                    LISTEN      -               
+tcp6       0      0 ::1:953                 :::*                    LISTEN      -               

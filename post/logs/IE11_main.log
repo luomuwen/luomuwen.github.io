@@ -1,0 +1,77 @@
+00:00.000: ====================================================================
+00:00.202: Started: 2013/11/26 (Y/M/D) 18:04:26.896 (local)
+00:00.265: Time Format in this log: MM:ss.mmm (minutes:seconds.milliseconds)
+00:00.312: Command line: "C:\Windows\SoftwareDistribution\Download\Install\IE11-Windows6.1-x86-en-us.exe" /WSUS
+00:00.327: INFO:    Setup installer for Internet Explorer: 11.0.9600.16428
+00:00.374: INFO:    Previous version of Internet Explorer: 10.0.9200.16736
+00:00.405: INFO:    Checking if iexplore.exe's current version is between 11.0.9600.0...
+00:00.452: INFO:    ...and 11.1.0.0...
+00:00.483: INFO:    Maximum version on which to run IEAK branding is: 11.1.0.0...
+00:00.499: INFO:    iexplore.exe version check success. Install can proceed.
+00:00.546: INFO:    Operating System: Windows Workstation: 6.1.7601 (Service Pack 1)
+00:00.608: INFO:    Trying to extract ID: SetupDownloadList.txt (0) as "SetupDownloadList.txt"
+00:00.639: INFO:    Trying to extract ID: HardwareBlockingList.xml (0) as "HardwareBlockingList.xml"
+00:00.670: INFO:    Trying to extract ID: 6006 (0) as "IE11-neutral.Extracted.cab"
+00:00.998: ERROR:   Failed to extract a language pack for a non-english OS.
+
+00:01.107: INFO:    This is an English only package, so installation will continue on this non-English OS.
+00:01.185: INFO:    Trying to extract ID: 5501 (1033) as "Spelling_en.msu"
+00:01.279: INFO:    Extracted Spelling dictionary for en to C:\Windows\TEMP\IE15182.tmp\Spelling_en.msu.
+00:01.341: INFO:    Trying to extract ID: 5502 (1033) as "Hyphenation_en.msu"
+00:01.404: INFO:    Extracted Hyphenation dictionary for en to C:\Windows\TEMP\IE15182.tmp\Hyphenation_en.msu.
+00:01.466: INFO:    Trying to extract ID: 6128 (2052) as "IE11-support.cab"
+00:01.544: ERROR:   === FindResource (6128,"IE11-support.cab") failed with 0x717
+
+00:01.591: INFO:    Trying to extract ID: 6128 (1033) as "IE11-support.cab"
+00:03.369: INFO:    Launched program to check hardware: "C:\Windows\TEMP\IE15182.tmp\IE11-SUPPORT\IEXPLORE.EXE" /CheckHardware "C:\Windows\TEMP\IE15182.tmp\HardwareBlockingList.xml"
+00:04.056: INFO:    Hardware support check succeeded. Installation will continue.
+00:04.321: INFO:    Windows 7 operating system detected.
+00:04.726: INFO:    Service pack major: 1
+00:04.836: INFO:    Service pack minor: 0
+00:04.914: INFO:    Service pack name:  Service Pack 1
+00:04.992: INFO:    Version Check for (KB2834140) of C:\Windows\System32\d3d11.dll: 6.2.9200.16570 >= 6.2.9200.16570 (True)
+00:05.023: INFO:    Version Check for (KB2670838) of C:\Windows\System32\api-ms-win-downlevel-user32-l1-1-0.dll: 6.2.9200.16492 >= 6.2.9200.16426 (True)
+00:05.038: INFO:    Version Check for (KB2639308) of C:\Windows\System32\Ntoskrnl.exe: 6.1.7601.18247 >= 6.1.7601.17727 (True)
+00:05.070: INFO:    Version Check for (KB2533623) of C:\Windows\System32\api-ms-win-security-base-l1-1-0.dll: 6.1.7601.18229 >= 6.1.7601.17617 (True)
+00:05.085: INFO:    Version Check for (KB2731771) of C:\Windows\System32\conhost.exe: 6.1.7601.18229 >= 6.1.7601.17888 (True)
+00:05.116: INFO:    Checking for correct version of C:\Windows\Fonts\segoeui.ttf.
+00:05.148: INFO:    Version Check for (KB2786081) of C:\Windows\System32\taskhost.exe: 6.1.7601.18010 >= 6.1.7601.18010 (True)
+00:05.288: INFO:    Version Check for (KB2888049) of C:\Windows\System32\drivers\tcpip.sys: 6.1.7601.18254 >= 6.1.7601.18254 (True)
+00:05.335: INFO:    Version Check for (KB2882822) of C:\Windows\System32\tdh.dll: 6.1.7601.18247 >= 6.1.7601.18247 (True)
+00:20.951: INFO:    IE Setup Language pack included: C:\Windows\TEMP\IE15182.tmp\Windows6.1-KB2841134-x86-zh-CN.cab
+00:20.997: INFO:    IE Setup Language pack included: C:\Windows\TEMP\IE15182.tmp\IE-Spelling-en.cab
+00:21.029: INFO:    IE Setup Language pack included: C:\Windows\TEMP\IE15182.tmp\IE-Hyphenation-en.cab
+00:21.044: INFO:    Waiting for 0 prerequisite downloads.
+00:21.138: INFO:    The neutral pack was not successfully downloaded from the internet. Installation will continue using the extracted package.
+00:21.169: INFO:    Waiting for 0 language pack downloads.
+00:21.200: INFO:    Language pack downloads completed. (exit code = 0xffffffff (4294967295)).
+00:21.278: INFO:    No reboot logic message NrApiStart(0), lParam=0x00282b10 returned 0x00000000.
+00:22.214: INFO:    No reboot logic message NrApiScan(1), lParam=0x00000001 returned 0x00000000.
+00:22.245: INFO:    No reboot logic message NrApiStartInstall(4), lParam=0x00000001 returned 0x00000014.
+00:22.261: INFO:    Installing with the extracted package. C:\Windows\TEMP\IE15182.tmp\IE11-neutral.Extracted.cab
+00:22.464: INFO:    Launched package installation: C:\Windows\System32\dism.exe /online /add-package /packagepath:C:\Windows\TEMP\IE15182.tmp\IE11-neutral.Extracted.cab /quiet /norestart
+01:30.870: INFO:    Process exit code 0x00000BC2 (3010) [The requested operation is successful. Changes will not be effective until the system is rebooted. ]
+01:30.901: INFO:    Setting registry to check if Internet Explorer is the default browser on first run: SUCCESS.
+01:30.933: INFO:    Preparing to install Spelling_en.msu using C:\Windows\TEMP\IE15182.tmp\Spelling_en.msu
+01:30.964: INFO:    Launched package installation: C:\Windows\System32\dism.exe /online /add-package /packagepath:C:\Windows\TEMP\IE15182.tmp\Spelling_en\Windows6.3-KB2849696-x86.cab /quiet /norestart
+01:48.374: INFO:    Process exit code 0x00000BC2 (3010) [The requested operation is successful. Changes will not be effective until the system is rebooted. ]
+01:48.405: INFO:    Preparing to install Hyphenation_en.msu using C:\Windows\TEMP\IE15182.tmp\Hyphenation_en.msu
+01:48.452: INFO:    Launched package installation: C:\Windows\System32\dism.exe /online /add-package /packagepath:C:\Windows\TEMP\IE15182.tmp\Hyphenation_en\Windows6.3-KB2849697-x86.cab /quiet /norestart
+02:06.048: INFO:    Process exit code 0x00000BC2 (3010) [The requested operation is successful. Changes will not be effective until the system is rebooted. ]
+02:06.111: INFO:    Preparing to install Windows6.1-KB2841134-x86-zh-CN.cab using C:\Windows\TEMP\IE15182.tmp\Windows6.1-KB2841134-x86-zh-CN.cab
+02:06.173: INFO:    Launched package installation: C:\Windows\System32\dism.exe /online /add-package /packagepath:C:\Windows\TEMP\IE15182.tmp\Windows6.1-KB2841134-x86-zh-CN.cab /quiet /norestart
+02:30.665: INFO:    Process exit code 0x00000BC2 (3010) [The requested operation is successful. Changes will not be effective until the system is rebooted. ]
+02:30.821: INFO:    Preparing to install IE-Spelling-en.cab using C:\Windows\TEMP\IE15182.tmp\IE-Spelling-en.cab
+02:30.837: INFO:    Launched package installation: C:\Windows\System32\dism.exe /online /add-package /packagepath:C:\Windows\TEMP\IE15182.tmp\IE-Spelling-en.cab /quiet /norestart
+02:37.623: INFO:    Process exit code 0x00000BC2 (3010) [The requested operation is successful. Changes will not be effective until the system is rebooted. ]
+02:37.639: INFO:    Preparing to install IE-Hyphenation-en.cab using C:\Windows\TEMP\IE15182.tmp\IE-Hyphenation-en.cab
+02:37.670: INFO:    Launched package installation: C:\Windows\System32\dism.exe /online /add-package /packagepath:C:\Windows\TEMP\IE15182.tmp\IE-Hyphenation-en.cab /quiet /norestart
+02:43.114: INFO:    Process exit code 0x00000BC2 (3010) [The requested operation is successful. Changes will not be effective until the system is rebooted. ]
+02:43.145: INFO:    No reboot logic message NrApiInstallDone(7), lParam=0x00000bc2 returned 0x00000000.
+02:43.161: INFO:    No reboot logic message NrApiStartFinish(11), lParam=0x00000000 returned 0x00000000.
+02:43.208: INFO:    No reboot logic message NrApiFinish(12), lParam=0x00000000 returned 0x00000016.
+02:43.223: INFO:    Verifying that the Internet Explorer Optional Component is enabled.
+02:43.255: INFO:    Setup exit code: 0x00000BC2 (3010) - Installation Succeeded. Reboot required.
+02:43.411: INFO:    Cleaning up temporary files in: C:\Windows\TEMP\IE15182.tmp
+02:43.489: INFO:    Unable to remove directory C:\Windows\TEMP\IE15182.tmp, marking for deletion on reboot.
+02:43.551: INFO:    Released Internet Explorer Installer Mutex

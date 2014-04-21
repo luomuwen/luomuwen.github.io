@@ -1,0 +1,30 @@
+13/10/18 06:12:17 Started
+13/10/18 06:12:21 em: jsp: init
+13/10/18 06:12:21 em: jobrecv: init
+13/10/18 06:12:21 em: genwallet: init
+13/10/18 06:12:21 em: upload: init
+13/10/18 06:12:22 em: console: init
+13/10/18 06:12:23 em: logon: init
+13/10/18 06:12:23 em: redirect: init
+13/10/18 06:12:27 em: 9.0.4.1.0 Started
+13/10/18 06:21:19 em: genwallet: destroy
+13/10/18 06:21:19 em: jobrecv: destroy
+13/10/18 06:21:19 em: upload: destroy
+13/10/18 06:21:19 em: redirect: destroy
+13/10/18 06:21:19 em: 9.0.4.1.0 Stopped
+13/10/18 06:21:19 Stopped (Shutdown executed by jazn.com/admin from 127.0.0.1 (127.0.0.1))
+13/11/07 01:52:06 Started
+13/11/07 01:52:10 em: jsp: init
+13/11/07 01:52:10 em: jobrecv: init
+13/11/07 01:52:10 em: genwallet: init
+13/11/07 01:52:10 em: upload: init
+13/11/07 01:52:10 em: console: init
+13/11/07 01:52:11 em: logon: init
+13/11/07 01:52:11 em: redirect: init
+13/11/07 01:52:14 em: 9.0.4.1.0 Started
+13/11/07 03:02:22 em: genwallet: destroy
+13/11/07 03:02:22 em: jobrecv: destroy
+13/11/07 03:02:22 em: upload: destroy
+13/11/07 03:02:22 em: redirect: destroy
+13/11/07 03:02:22 em: 9.0.4.1.0 Stopped
+13/11/07 03:02:22 Stopped (JVM termination)
