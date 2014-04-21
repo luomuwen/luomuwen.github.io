@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+</head>
+	<body>
+		<h2><span>那些年我跟他遇到的那些Bugs</span></h2><hr/>
+		<h4>VRouter数据发送存在遗漏 2014年3月19日 (三) 下午 (CST)</h4>
+		<pre>
+	期望功能：收集需要发送的数据到list中，list元素等于10时发送list中的数据。
+	问题现象：代码如下：
+
+		private void sendMsg(ServiceData sd) {
+			synchronized (list) {
+				if (list.size() >= 10) {
+					list.add(sd);
+				} else {
+					ServiceData tSer = new ServiceData();
+					MsgBus mb = MsgBusManager.getInstance().getMsgBus().registerName("临时的Client");
+					List<ServiceData> dest = new ArrayList<ServiceData>(list.size());
+					copy(dest, list);
+					tSer.putList("_value_unit.data.tran.end", dest);
+					TopicMsg tmsg = new TopicMsg("unit.data.tran.end", tSer);
+					mb.publish(tmsg);
+					list.clear();
+				}
+			}
+		}
+
+	问题原因：第11条数据传来时没有add到list中，执行else中的语句将list中的数据发送，再将list清空，而第11条数据就遗漏了。
+	解决办法：数据传进方法后立即add到list中，在进行判断是否发送。代码如下：
+
+		private void sendMsg(ServiceData sd) {
+			synchronized (list) {
+				list.add(sd);
+				if (list.size() >= 10) {
+					MsgBus mb = MsgBusManager.getInstance().getMsgBus().registerName("临时的Client");
+					List<ServiceData> dest = new ArrayList<ServiceData>(list.size());
+					copy(dest, list);
+					tSer.putList("_value_unit.data.tran.end", dest);
+					TopicMsg tmsg = new TopicMsg("unit.data.tran.end", tSer);
+					mb.publish(tmsg);
+					list.clear();
+				}
+			}
+		}
+		</pre>
+		<h4>日志数据解析收集问题 2014年3月12日 (三) 17:14 (CST)</h4>
+		<pre>
+	期望功能：收集到数据进行解析后，将数据put到ServiceData中，再将ServiceData添加到一个List中。每解析一条数据就添加到List中，数据不遗漏。
+	问题现象：解析完文件后，检测List中的数据量少于文件中的数据量。偏少量不确定。
+	问题原因：添加操作没有进行同步
+	解决办法：解析器每解析出一条数据后就写入文件，避免List操作。
+		</pre>
+		<h4>Linux脚本启动无法按照预期运行 2014年3月11日 (二) 13:55 (CST)</h4>
+		<pre>
+	问题原因：在windows环境中默认文件的编码格式是GBK，在Linux中文件的默认编码格式是latin。所以不能正常解析每个文件。
+	解决办法：指定文件的编码格式为GBK。在对应的脚本的-cp属性中加入：-Dfile.encoding=gbk。
+		</pre>
+		<h4>在Linux环境中启动脚本运行时提示配置文件找不到   2014年3月11日 (二) 13:55 (CST)</h4>
+		<pre>
+	问题原因：配置文件都放在config文件夹中，而脚本中没有指定配置文件的路径。所以程序才回无法找到配置文件。
+	解决办法：指定配置文件的路径。在对应的脚本的-cp属性中加入：$mapagenthome/config。其中$mapagenthome是脚本相对于config文件夹的相对路径。
+		</pre>
+	</body>
+</html>

@@ -1,0 +1,109 @@
+/*
+第一个是标签选择器：type selector
+*/
+p{
+	color: #abc;
+	font-size: 20px;
+	text-align: center;
+}
+a{
+	color: red;
+	text-decoration: none;
+}
+/* css for <footer> */ 
+footer { 
+    width: 90%; 
+    float:left; 
+    padding: 1%; 
+    background-color: white; 
+    margin-top: 0em; 
+} 
+/*第二个是类选择器：class selector*/
+.class_selector{
+	color: red;
+	font: 楷体;
+}
+.article{
+    width:78%; 
+    margin: 0px; 
+    padding: 0px; 
+    float: left; 
+    list-style: none; 
+}
+.men{
+    background: url('MX2.jpg');
+}
+.widget-title{
+    color: #eee;
+    /*margin-left: 0.7cm;*/
+    margin: 0.7cm 0px 0px 0.7cm;
+
+}
+/*第三个是id选择器：id selector*/
+#id_selector{
+	text-align: center;
+	font-style: italic;
+	color: #123;
+}
+#how{
+    background: #567;
+}
+#let{
+    background: #f60;
+    background-color: #f60;
+}
+#follow{
+    background: 5674;
+    background-color: 5674;
+    background: rgba(0,0,0,0.5);
+}
+#come{
+    background: #234;
+    background: rgba(0,0,0,0.3);
+}
+#you{
+    background: #098;
+}
+/*第四个是组合选择器*/
+/* css for <aside class='sidebar'> */ 
+aside.sidebar {
+    width: 19%;
+    float:right;
+    background: url('MX2.jpg');
+    border: 3px solid #ffd100;
+    border-radius: 10px;
+} 
+aside.sidebar ul { 
+    float: left; 
+    list-style: none; 
+} 
+aside.sidebar ul li { 
+    margin: 0px 0px 1.77em; 
+    padding: 0px; 
+    float: left; 
+    list-style: none; 
+} 
+aside.sidebar ul li ul li { 
+    margin: 0px 0px 0.2em; 
+    padding: 0px; 
+} 
+aside.sidebar ul li ul li ul li { 
+    margin: 0px; 
+    padding: 0px 0px 0px 1em; 
+    font-size: 0.9em; 
+} 
+aside.sidebar ul li h3.widget-title { 
+    margin: 0px; 
+    padding: 0px; 
+    float: left; 
+    font-size: 1.45em; 
+} 
+body.con{
+	background-color: #ffe;
+}
+
+/*字体格式*/
+h3.widget-title{
+    font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+    color: #fff;
+}

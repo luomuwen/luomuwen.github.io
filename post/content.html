@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<title>小组内容</title>
+	</head>
+	<body>
+		<h3 id="workcontent">工作内容</h3><hr/>
+		<div>数据采集、消息总线开发。</div>
+		
+		<h3 id="teamer">小分队成员</h3><hr/>
+		<div>组长：罗慕文</div>
+		<div>组员：饶亮</div>
+		
+		<h3 id="workwork">工作相关</h3><hr/>
+		<h4 id="profileDesign">配置文件的设计</h4><hr/>
+		下面是配置文件的一个模板:
+		<hr/>
+		<pre>
+	{
+		"datasource": [ # 对数据源的配置
+			{
+				"name": "数据源1", # 定义数据源的名称
+				"type": "str(str|file|mult)", # 指定数据源的类型， 目前支持三种 str file mult
+				"str": "fsdfdasfsa fasdfsafsdfds fdfsdfsdfsdafasd sfdafsadfds sdfsdafads ", # 字符串的名称
+				"encoding": "gbk" # 字符编码
+			},
+			{
+				"name": "数据源2",
+				"type": "file",
+				"file": "/home/monitor/map/tranlog.log",  # 定义file文件路径
+				"encoding": "gbk" # 文件编码
+			},
+			{
+				"name": "数据源3",
+				"type": "mult", 
+				"file": [
+					"/home/monitor/map/tranlog_2014-02-01.log",
+					"/home/monitor/map/tranlog_2014-02-02.log",
+					"/home/monitor/map/tranlog.log"
+				],  # 定义文件多个，按照顺序。
+				"encoding": "gbk" 
+			}
+		],
+		"parser": [
+			{
+				"name": "自定义解析器1",   # 定义解析器名称
+				"datasource": "数据源1",  # 定义解析的数据源，对应上面的数据源的名称
+				"type": "vrouter"        # 定义解析器类型
+			},
+			{
+				"name": "自定义解析器完整版", 
+				"datasource": "数据源2",
+				"type": "vmenu"
+			}
+		],
+		"system": {                      # 系统定义
+			"threadpool": [
+				{
+					"name": "自定义解析器1",
+					"init_pool_size": 1,
+					"max_pool_size": 2,
+					"keep_alive_time": 60000
+				}
+			],
+			"msgbus": {
+				"broker_addr": "10.1.1.227:123456"
+			},
+			"parser_type": [
+				{
+					"name": "vrouter",
+					"start_pattern": "^\\S{12} \\[\\S+\\] \\[\\S+\\] \\[\\S+\\]  \\[(.*),1,(.*),(.*),(.*)\\] .+$\\r{0,1}\\n(((?!^\\S{12} \\[\\S+\\] \\[\\S+\\] \\[\\S+\\] ).+($\\r{0,1}\\n)*)*)",
+					"flags": 2,
+					"creator": "return com.wk.agent.parse.task.VRouterTextParserTask.CREATOR;"
+				},
+				{
+					"name": "vmenu",
+					"start_pattern": "(20\\d{6}) \\|(\\d{6}) \\|(\\d{1,3}) \\|(\\d{6}|.*) \\|(\\d{4}) \\|(\\d{10}) \\|(\\d{6}) \\|(.*)\\|([0-9.]*) \\|(\\w*) \\|(.*\\s+)\\|",
+					"flags": 2,
+					"creator": "return com.wk.agent.parse.task.VMenuTextParserTask.CREATOR;"
+				}
+			]
+		}
+	}
+		</pre>
+		<hr/>
+		<h4 id="agentTestReport">Agent测试报告</h4><hr/>
+		<div><a href="Agent2.0_test_report_1.html" target="show">Agent测试报告1</a>(测试日期：2014年3月18日)</div>
+		<div><a href="Agent2.0_test_report_2.html" target="show">Agent测试报告2</a>(测试日期：2014年3月19日)</div>
+		
+		<hr/>
+		
+		<a href="bugs.html" target="show"><h3 id="bugs">那些年我跟他遇到的那些Bugs</h3></a>
+		<hr/>
+		
+	</body>
+</html>
