@@ -1,0 +1,160 @@
+<html>
+<body>
+<pre>
+
+An unexpected exception has been detected in native code outside the VM.
+Unexpected Signal : EXCEPTION_ACCESS_VIOLATION (0xc0000005) occurred at PC=0x7C819A76
+Function=CreateProcessInternalW+0x2C6
+Library=C:\WINDOWS\system32\kernel32.dll
+
+Current Java thread:
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Unknown Source)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Unknown Source)
+	at net.sf.jadclipse.JadDecompiler.decompile(JadDecompiler.java:160)
+	at net.sf.jadclipse.JadDecompiler.decompileFromArchive(JadDecompiler.java:217)
+	at net.sf.jadclipse.JadclipseSourceMapper.findSource(JadclipseSourceMapper.java:150)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getParameterNames(BinaryMethod.java:149)
+	at org.eclipse.jdt.internal.codeassist.InternalCompletionProposal.findMethodParameterNames(InternalCompletionProposal.java:120)
+	at org.eclipse.jdt.core.CompletionProposal.findParameterNames(CompletionProposal.java:1608)
+	at org.eclipse.jdt.ui.text.java.CompletionProposalLabelProvider.appendUnboundedParameterList(CompletionProposalLabelProvider.java:88)
+	at org.eclipse.jdt.ui.text.java.CompletionProposalLabelProvider.createMethodProposalLabel(CompletionProposalLabelProvider.java:184)
+	at org.eclipse.jdt.ui.text.java.CompletionProposalLabelProvider.createLabel(CompletionProposalLabelProvider.java:424)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.computeDisplayString(LazyJavaCompletionProposal.java:229)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getDisplayString(LazyJavaCompletionProposal.java:219)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.isValidPrefix(AbstractJavaCompletionProposal.java:633)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.isValidPrefix(LazyJavaCompletionProposal.java:342)
+	at org.eclipse.jdt.internal.ui.text.java.JavaMethodCompletionProposal.isValidPrefix(JavaMethodCompletionProposal.java:219)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.validate(AbstractJavaCompletionProposal.java:600)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeFilteredProposals(CompletionProposalPopup.java:1292)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$4(CompletionProposalPopup.java:1256)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:291)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	- locked <0x102d8b88> (a org.eclipse.swt.widgets.RunnableLock)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:977)
+	at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+Dynamic libraries:
+0x00400000 - 0x0040B000 	C:\WINDOWS\system32\javaw.exe
+0x7C920000 - 0x7C9B6000 	C:\WINDOWS\system32\ntdll.dll
+0x7C800000 - 0x7C91E000 	C:\WINDOWS\system32\kernel32.dll
+0x77DA0000 - 0x77E49000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x77E50000 - 0x77EE2000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77FC0000 - 0x77FD1000 	C:\WINDOWS\system32\Secur32.dll
+0x77D10000 - 0x77DA0000 	C:\WINDOWS\system32\USER32.dll
+0x77EF0000 - 0x77F39000 	C:\WINDOWS\system32\GDI32.dll
+0x77BE0000 - 0x77C38000 	C:\WINDOWS\system32\MSVCRT.dll
+0x76300000 - 0x7631D000 	C:\WINDOWS\system32\IMM32.DLL
+0x62C20000 - 0x62C29000 	C:\WINDOWS\system32\LPK.DLL
+0x73FA0000 - 0x7400B000 	C:\WINDOWS\system32\USP10.dll
+0x08000000 - 0x08138000 	C:\Program Files\Java\j2re1.4.2_08\bin\client\jvm.dll
+0x76B10000 - 0x76B3A000 	C:\WINDOWS\system32\WINMM.dll
+0x10000000 - 0x10007000 	C:\Program Files\Java\j2re1.4.2_08\bin\hpi.dll
+0x008A0000 - 0x008AE000 	C:\Program Files\Java\j2re1.4.2_08\bin\verify.dll
+0x008B0000 - 0x008C9000 	C:\Program Files\Java\j2re1.4.2_08\bin\java.dll
+0x008D0000 - 0x008DE000 	C:\Program Files\Java\j2re1.4.2_08\bin\zip.dll
+0x02FA0000 - 0x02FAF000 	C:\Program Files\Java\j2re1.4.2_08\bin\net.dll
+0x71A20000 - 0x71A37000 	C:\WINDOWS\system32\WS2_32.dll
+0x71A10000 - 0x71A18000 	C:\WINDOWS\system32\WS2HELP.dll
+0x02FF0000 - 0x02FF8000 	C:\Program Files\Java\j2re1.4.2_08\bin\nio.dll
+0x034C0000 - 0x03512000 	D:\MyWorkSpace\LianaV3.5Tran\Eclipse-3.2\configuration\org.eclipse.osgi\bundles\209\1\.cp\swt-win32-3232.dll
+0x76990000 - 0x76ACD000 	C:\WINDOWS\system32\ole32.dll
+0x77180000 - 0x77283000 	C:\WINDOWS\WinSxS\X86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\COMCTL32.dll
+0x77F40000 - 0x77FB6000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x76320000 - 0x76367000 	C:\WINDOWS\system32\comdlg32.dll
+0x7D590000 - 0x7DD84000 	C:\WINDOWS\system32\SHELL32.dll
+0x770F0000 - 0x7717B000 	C:\WINDOWS\system32\OLEAUT32.dll
+0x76680000 - 0x76726000 	C:\WINDOWS\system32\WININET.dll
+0x765E0000 - 0x76673000 	C:\WINDOWS\system32\CRYPT32.dll
+0x76DB0000 - 0x76DC2000 	C:\WINDOWS\system32\MSASN1.dll
+0x73B40000 - 0x73B60000 	C:\WINDOWS\system32\MSVFW32.dll
+0x5D170000 - 0x5D20A000 	C:\WINDOWS\system32\comctl32.dll
+0x5ADC0000 - 0x5ADF7000 	C:\WINDOWS\system32\uxtheme.dll
+0x035D0000 - 0x035FF000 	C:\Program Files\360\360Safe\safemon\safemon.dll
+0x76BC0000 - 0x76BCB000 	C:\WINDOWS\system32\PSAPI.DLL
+0x77BD0000 - 0x77BD8000 	C:\WINDOWS\system32\VERSION.dll
+0x7EAE0000 - 0x7EB81000 	C:\WINDOWS\system32\urlmon.dll
+0x74680000 - 0x746CC000 	C:\WINDOWS\system32\MSCTF.dll
+0x73640000 - 0x7366E000 	C:\WINDOWS\system32\msctfime.ime
+0x037F0000 - 0x039FC000 	C:\WINDOWS\system32\SOGOUPY.IME
+0x762F0000 - 0x762F5000 	C:\WINDOWS\system32\MSIMG32.dll
+0x03B90000 - 0x03BC2000 	C:\Program Files\SogouInput\4.2.3.2811\Resource.dll
+0x05670000 - 0x05678000 	D:\MyWorkSpace\LianaV3.5Tran\Eclipse-3.2\configuration\org.eclipse.osgi\bundles\29\1\.cp\os\win32\x86\localfile_1_0_0.dll
+0x74BE0000 - 0x74C0C000 	C:\WINDOWS\system32\oleacc.dll
+0x75FF0000 - 0x76055000 	C:\WINDOWS\system32\MSVCP60.dll
+0x05990000 - 0x059A3000 	D:\MyWorkSpace\LianaV3.5Tran\Eclipse-3.2\configuration\org.eclipse.osgi\bundles\209\1\.cp\swt-gdip-win32-3232.dll
+0x4AE90000 - 0x4B03B000 	C:\WINDOWS\WinSxS\x86_Microsoft.Windows.GdiPlus_6595b64144ccf1df_1.0.6001.22319_x-ww_f0b4c2df\gdiplus.dll
+0x05B90000 - 0x060D9000 	C:\WINDOWS\system32\xpsp2res.dll
+0x76FA0000 - 0x7701F000 	C:\WINDOWS\system32\CLBCATQ.DLL
+0x77020000 - 0x770BA000 	C:\WINDOWS\system32\COMRes.dll
+0x74CF0000 - 0x74D81000 	C:\WINDOWS\system32\mlang.dll
+0x76CB0000 - 0x76CD0000 	C:\WINDOWS\system32\NTMARTA.DLL
+0x71B70000 - 0x71B83000 	C:\WINDOWS\system32\SAMLIB.dll
+0x76F30000 - 0x76F5C000 	C:\WINDOWS\system32\WLDAP32.dll
+0x719C0000 - 0x719FE000 	C:\WINDOWS\system32\mswsock.dll
+0x60FD0000 - 0x61025000 	C:\WINDOWS\system32\hnetcfg.dll
+0x71A00000 - 0x71A08000 	C:\WINDOWS\System32\wshtcpip.dll
+0x76EF0000 - 0x76F17000 	C:\WINDOWS\system32\DNSAPI.dll
+0x76D30000 - 0x76D48000 	C:\WINDOWS\system32\iphlpapi.dll
+0x76F80000 - 0x76F88000 	C:\WINDOWS\System32\winrnr.dll
+0x76F90000 - 0x76F96000 	C:\WINDOWS\system32\rasadhlp.dll
+0x5FDD0000 - 0x5FE25000 	C:\WINDOWS\system32\netapi32.dll
+0x76060000 - 0x761B6000 	C:\WINDOWS\system32\SETUPAPI.dll
+0x76D70000 - 0x76D92000 	C:\WINDOWS\system32\appHelp.dll
+0x7C9C0000 - 0x7CC7C000 	C:\WINDOWS\system32\msi.dll
+0x7E550000 - 0x7E6C3000 	C:\WINDOWS\system32\shdocvw.dll
+0x75430000 - 0x754A1000 	C:\WINDOWS\system32\CRYPTUI.dll
+0x76C00000 - 0x76C2E000 	C:\WINDOWS\system32\WINTRUST.dll
+0x76C60000 - 0x76C88000 	C:\WINDOWS\system32\IMAGEHLP.dll
+0x75E00000 - 0x75EAE000 	C:\WINDOWS\system32\SXS.DLL
+0x71800000 - 0x7187C000 	C:\WINDOWS\system32\shdoclc.dll
+0x7E210000 - 0x7E508000 	C:\WINDOWS\system32\mshtml.dll
+0x74620000 - 0x74647000 	C:\WINDOWS\system32\msls31.dll
+0x72C90000 - 0x72C99000 	C:\WINDOWS\system32\wdmaud.drv
+0x72C80000 - 0x72C88000 	C:\WINDOWS\system32\msacm32.drv
+0x77BB0000 - 0x77BC5000 	C:\WINDOWS\system32\MSACM32.dll
+0x77BA0000 - 0x77BA7000 	C:\WINDOWS\system32\midimap.dll
+0x68D60000 - 0x68E01000 	C:\WINDOWS\system32\DBGHELP.dll
+
+Heap at VM Abort:
+Heap
+ def new generation   total 13440K, used 3118K [0x10010000, 0x10ea0000, 0x113c0000)
+  eden space 11968K,  24% used [0x10010000, 0x102f95c8, 0x10bc0000)
+  from space 1472K,   9% used [0x10bc0000, 0x10be24d8, 0x10d30000)
+  to   space 1472K,   0% used [0x10d30000, 0x10d30000, 0x10ea0000)
+ tenured generation   total 177928K, used 102694K [0x113c0000, 0x1c182000, 0x20010000)
+   the space 177928K,  57% used [0x113c0000, 0x17809b78, 0x17809c00, 0x1c182000)
+ compacting perm gen  total 56320K, used 56065K [0x20010000, 0x23710000, 0x24010000)
+   the space 56320K,  99% used [0x20010000, 0x236d0648, 0x236d0800, 0x23710000)
+
+Local Time = Tue Nov 03 17:33:51 2009
+Elapsed Time = 30983
+#
+# The exception above was detected in native code outside the VM
+#
+# Java VM: Java HotSpot(TM) Client VM (1.4.2_08-b03 mixed mode)
+#
+
+</pre>
+</body>
+</html>

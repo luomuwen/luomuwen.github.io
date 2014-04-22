@@ -1,0 +1,1532 @@
+<html>
+<body>
+<pre>
+2014-01-26 10:21:09,689 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]       Core - Initialize external resource from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/resource.xml ...
+2014-01-26 10:21:09,739 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]       Core - Initialize external resource from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/resource.xml OK!
+2014-01-26 10:21:09,739 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]       Core - Initialize Function define from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/function.xml ...
+2014-01-26 10:21:09,764 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]       Core - Initialize Function define from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/function.xml OK!
+2014-01-26 10:21:09,779 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]       Core - The current GENE Version is null!
+2014-01-26 10:21:09,779 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Server Info: Apache Tomcat/6.0.37
+2014-01-26 10:21:09,779 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Start up servlet perplatServlet from rootPath: I:/java/personbank/szChannel/WebContent/
+2014-01-26 10:21:09,790 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Initialize GENE Flow Context from WEB-INF/bizs/perplat/settings.xml
+2014-01-26 10:21:10,091 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]]    Factory - ComponentFactory [perbankLife]failed to initialize from [I:/java/personbank/szChannel/WebContent/WEB-INF/bizs/perplat/settings.xml]!
+java.lang.Exception: Resource I:/java/personbank/szChannel/WebContent/WEB-INF/bizs/perplat/dataTypeDef.xml not found while load the XML document!
+	at com.ynet.gene.component.xml.XMLDocumentLoader.loadXMLDocument(XMLDocumentLoader.java:137)
+	at com.ynet.gene.component.factory.ComponentFactory.loadXMLDocument(ComponentFactory.java:220)
+	at com.ynet.gene.component.factory.GENEFlowComponentFactory.parseDataTypeDefDocument(GENEFlowComponentFactory.java:426)
+	at com.ynet.gene.component.factory.GENEFlowComponentFactory.initializeComponentFactory(GENEFlowComponentFactory.java:342)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:728)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1385)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:662)
+2014-01-26 10:21:10,091 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Initialize GENE Servlet Context from WEB-INF/mvcs/perplat/geneServletContext.xml
+2014-01-26 10:21:10,116 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]] empSessionMgr - Start up session checker for GENESessionManager [BrowserReqSessionMgr] sessionTimeOut=600000 check interval=60000
+2014-01-26 10:21:10,117 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]] empSessionMgr - Start up session checker for GENESessionManager [BrowserReqSessionMgr] ok!
+2014-01-26 10:21:10,126 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]]   LifeFile - 本地目录--->D:/ebanking/logs/ 不可用
+2014-01-26 10:21:10,128 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]]   LifeFile - 本地目录--->D:/ebanking/logs/ 不可用
+2014-01-26 10:21:10,151 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [taskTree]
+2014-01-26 10:21:10,164 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [000000_fundQueryByPage]
+2014-01-26 10:21:10,167 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [accumulation]
+2014-01-26 10:21:10,169 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [financeServe]
+2014-01-26 10:21:10,173 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [investFinace]
+2014-01-26 10:21:10,177 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [lifeServe]
+2014-01-26 10:21:10,178 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [mobileSign]
+2014-01-26 10:21:10,185 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [mobileSignServer]
+2014-01-26 10:21:10,185 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [myAccount]
+2014-01-26 10:21:10,186 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [personalInfoManage]
+2014-01-26 10:21:10,188 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [public]
+2014-01-26 10:21:10,194 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [queryCode]
+2014-01-26 10:21:10,194 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [queryCstInfo]
+2014-01-26 10:21:10,195 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [test]
+2014-01-26 10:21:10,195 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [transfer]
+2014-01-26 10:21:10,195 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Initialize GENE Servlet Context from WEB-INF/mvcs/perplat/geneServletContext.xml OK!
+2014-01-26 10:21:10,195 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Invoker the Initializer...
+2014-01-26 10:21:10,226 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]]   LifeCore - 资源定义[正常]重复
+2014-01-26 10:21:10,587 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]]   LifeJDBC - [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@875dee caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@875dee caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:113)
+	at com.ynet.life.perplat.base.PBStandard.initialize(PBStandard.java:134)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:111)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1385)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 23 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 27 more
+2014-01-26 10:21:10,587 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]] LifeAction - 初始化信息失败
+com.ynet.life.exception.TranFailException: [error_code:EBLN0000] com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@875dee caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) caused by: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@875dee caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@875dee caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:119)
+	at com.ynet.life.perplat.base.PBStandard.initialize(PBStandard.java:134)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:111)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1385)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@875dee caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:113)
+	... 22 more
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 23 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 27 more
+2014-01-26 10:21:10,675 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]    LifeMsg - attribute mask in node field is omitted when type is not account.
+2014-01-26 10:21:10,675 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]    LifeMsg - Initialize message configs from I:/java/personbank/szChannel/WebContent//WEB-INF/messageConfig.xml OK!
+2014-01-26 10:21:10,678 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]    LifeMsg - Initialize message configs from I:/java/personbank/szChannel/WebContent//WEB-INF/channelLogConfig.xml OK!
+2014-01-26 10:21:10,687 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]]   LifeJDBC - [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@875dee caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@875dee caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:143)
+	at com.ynet.life.channel.error.ErrorMessageJDBC.initializeFrom(ErrorMessageJDBC.java:71)
+	at com.ynet.life.channel.error.ErrorMessageFormatter.initMessageConfig(ErrorMessageFormatter.java:33)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:132)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1385)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 24 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 28 more
+2014-01-26 10:21:10,687 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]]       LOAF - [error_code:EBLN0000] com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@875dee caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) caused by: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@875dee caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+com.ynet.life.exception.TranFailException: [error_code:EBLN0000] com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@875dee caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) caused by: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@875dee caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@875dee caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:149)
+	at com.ynet.life.channel.error.ErrorMessageJDBC.initializeFrom(ErrorMessageJDBC.java:71)
+	at com.ynet.life.channel.error.ErrorMessageFormatter.initMessageConfig(ErrorMessageFormatter.java:33)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:132)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1385)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@875dee caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:143)
+	... 23 more
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 24 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 28 more
+2014-01-26 10:21:10,694 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Initialize GENE Request Servlet from WEB-INF/bizs/perplat/settings.xml OK!
+2014-01-26 10:21:10,694 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Start up servlet perplatServletOK
+2014-01-26 10:21:10,698 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]      TCPIP - Start up  the servlet: LIFETCPIPService
+2014-01-26 10:21:10,698 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]      TCPIP - Share GENE flow Context from: perbankLife
+2014-01-26 10:21:10,698 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]      TCPIP - Initialize GENE Servlet Context from WEB-INF/TCPIPServiceContext.xml
+2014-01-26 10:21:10,884 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]      TCPIP - Initialize GENE Servlet Context from WEB-INF/TCPIPServiceContext.xml OK!
+2014-01-26 10:21:10,884 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]] TCPIPAccess - Initialize GENE TCPIPAccess Servlet from null OK!
+2014-01-26 10:21:10,884 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]      TCPIP - Start up  the servlet: LIFETCPIPService OK!
+2014-01-26 10:21:10,941 INFO  GENE Listen Thread [9888]      TCPIP - Listen thread listen at port: 9888
+2014-01-26 10:21:28,774 INFO  main       Core - Initialize external resource from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/resource.xml ...
+2014-01-26 10:21:28,823 INFO  main       Core - Initialize external resource from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/resource.xml OK!
+2014-01-26 10:21:28,823 INFO  main       Core - Initialize Function define from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/function.xml ...
+2014-01-26 10:21:28,846 INFO  main       Core - Initialize Function define from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/function.xml OK!
+2014-01-26 10:21:28,863 INFO  main       Core - The current GENE Version is null!
+2014-01-26 10:21:28,863 INFO  main        MVC - Server Info: Apache Tomcat/6.0.37
+2014-01-26 10:21:28,863 INFO  main        MVC - Start up servlet perplatServlet from rootPath: I:/java/personbank/szChannel/WebContent/
+2014-01-26 10:21:28,875 INFO  main        MVC - Initialize GENE Flow Context from WEB-INF/bizs/perplat/settings.xml
+2014-01-26 10:21:29,096 ERROR main    Factory - ComponentFactory [perbankLife]failed to initialize from [I:/java/personbank/szChannel/WebContent/WEB-INF/bizs/perplat/settings.xml]!
+java.lang.Exception: Resource I:/java/personbank/szChannel/WebContent/WEB-INF/bizs/perplat/dataTypeDef.xml not found while load the XML document!
+	at com.ynet.gene.component.xml.XMLDocumentLoader.loadXMLDocument(XMLDocumentLoader.java:137)
+	at com.ynet.gene.component.factory.ComponentFactory.loadXMLDocument(ComponentFactory.java:220)
+	at com.ynet.gene.component.factory.GENEFlowComponentFactory.parseDataTypeDefDocument(GENEFlowComponentFactory.java:426)
+	at com.ynet.gene.component.factory.GENEFlowComponentFactory.initializeComponentFactory(GENEFlowComponentFactory.java:342)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:728)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+2014-01-26 10:21:29,097 INFO  main        MVC - Initialize GENE Servlet Context from WEB-INF/mvcs/perplat/geneServletContext.xml
+2014-01-26 10:21:29,127 INFO  main empSessionMgr - Start up session checker for GENESessionManager [BrowserReqSessionMgr] sessionTimeOut=600000 check interval=60000
+2014-01-26 10:21:29,127 INFO  main empSessionMgr - Start up session checker for GENESessionManager [BrowserReqSessionMgr] ok!
+2014-01-26 10:21:29,137 ERROR main   LifeFile - 本地目录--->D:/ebanking/logs/ 不可用
+2014-01-26 10:21:29,139 ERROR main   LifeFile - 本地目录--->D:/ebanking/logs/ 不可用
+2014-01-26 10:21:29,165 INFO  main        MVC - Add new Controller GENERequestController for [taskTree]
+2014-01-26 10:21:29,175 INFO  main        MVC - Add new Controller GENERequestController for [000000_fundQueryByPage]
+2014-01-26 10:21:29,185 INFO  main        MVC - Add new Controller GENERequestController for [accumulation]
+2014-01-26 10:21:29,187 INFO  main        MVC - Add new Controller GENERequestController for [financeServe]
+2014-01-26 10:21:29,194 INFO  main        MVC - Add new Controller GENERequestController for [investFinace]
+2014-01-26 10:21:29,199 INFO  main        MVC - Add new Controller GENERequestController for [lifeServe]
+2014-01-26 10:21:29,201 INFO  main        MVC - Add new Controller GENERequestController for [mobileSign]
+2014-01-26 10:21:29,204 INFO  main        MVC - Add new Controller GENERequestController for [mobileSignServer]
+2014-01-26 10:21:29,205 INFO  main        MVC - Add new Controller GENERequestController for [myAccount]
+2014-01-26 10:21:29,205 INFO  main        MVC - Add new Controller GENERequestController for [personalInfoManage]
+2014-01-26 10:21:29,208 INFO  main        MVC - Add new Controller GENERequestController for [public]
+2014-01-26 10:21:29,211 INFO  main        MVC - Add new Controller GENERequestController for [queryCode]
+2014-01-26 10:21:29,213 INFO  main        MVC - Add new Controller GENERequestController for [queryCstInfo]
+2014-01-26 10:21:29,213 INFO  main        MVC - Add new Controller GENERequestController for [test]
+2014-01-26 10:21:29,214 INFO  main        MVC - Add new Controller GENERequestController for [transfer]
+2014-01-26 10:21:29,214 INFO  main        MVC - Initialize GENE Servlet Context from WEB-INF/mvcs/perplat/geneServletContext.xml OK!
+2014-01-26 10:21:29,214 INFO  main        MVC - Invoker the Initializer...
+2014-01-26 10:21:29,252 ERROR main   LifeCore - 资源定义[正常]重复
+2014-01-26 10:21:29,346 ERROR main   LifeJDBC - [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@d5c653 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@d5c653 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:113)
+	at com.ynet.life.perplat.base.PBStandard.initialize(PBStandard.java:134)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:111)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 31 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 35 more
+2014-01-26 10:21:29,346 ERROR main LifeAction - 初始化信息失败
+com.ynet.life.exception.TranFailException: [error_code:EBLN0000] com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@d5c653 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) caused by: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@d5c653 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@d5c653 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:119)
+	at com.ynet.life.perplat.base.PBStandard.initialize(PBStandard.java:134)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:111)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@d5c653 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:113)
+	... 30 more
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 31 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 35 more
+2014-01-26 10:21:29,421 INFO  main    LifeMsg - attribute mask in node field is omitted when type is not account.
+2014-01-26 10:21:29,421 INFO  main    LifeMsg - Initialize message configs from I:/java/personbank/szChannel/WebContent//WEB-INF/messageConfig.xml OK!
+2014-01-26 10:21:29,424 INFO  main    LifeMsg - Initialize message configs from I:/java/personbank/szChannel/WebContent//WEB-INF/channelLogConfig.xml OK!
+2014-01-26 10:21:29,433 ERROR main   LifeJDBC - [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@d5c653 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@d5c653 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:143)
+	at com.ynet.life.channel.error.ErrorMessageJDBC.initializeFrom(ErrorMessageJDBC.java:71)
+	at com.ynet.life.channel.error.ErrorMessageFormatter.initMessageConfig(ErrorMessageFormatter.java:33)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:132)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 32 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 36 more
+2014-01-26 10:21:29,434 ERROR main       LOAF - [error_code:EBLN0000] com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@d5c653 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) caused by: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@d5c653 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+com.ynet.life.exception.TranFailException: [error_code:EBLN0000] com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@d5c653 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) caused by: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@d5c653 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@d5c653 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:149)
+	at com.ynet.life.channel.error.ErrorMessageJDBC.initializeFrom(ErrorMessageJDBC.java:71)
+	at com.ynet.life.channel.error.ErrorMessageFormatter.initMessageConfig(ErrorMessageFormatter.java:33)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:132)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@d5c653 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:143)
+	... 31 more
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 32 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 36 more
+2014-01-26 10:21:29,437 INFO  main        MVC - Initialize GENE Request Servlet from WEB-INF/bizs/perplat/settings.xml OK!
+2014-01-26 10:21:29,438 INFO  main        MVC - Start up servlet perplatServletOK
+2014-01-26 10:21:29,441 INFO  main      TCPIP - Start up  the servlet: LIFETCPIPService
+2014-01-26 10:21:29,441 INFO  main      TCPIP - Share GENE flow Context from: perbankLife
+2014-01-26 10:21:29,441 INFO  main      TCPIP - Initialize GENE Servlet Context from WEB-INF/TCPIPServiceContext.xml
+2014-01-26 10:21:29,740 INFO  main      TCPIP - Initialize GENE Servlet Context from WEB-INF/TCPIPServiceContext.xml OK!
+2014-01-26 10:21:29,740 INFO  main TCPIPAccess - Initialize GENE TCPIPAccess Servlet from null OK!
+2014-01-26 10:21:29,740 INFO  main      TCPIP - Start up  the servlet: LIFETCPIPService OK!
+2014-01-26 10:21:29,802 INFO  GENE Listen Thread [9888]      TCPIP - Listen thread listen at port: 9888
+2014-01-26 10:22:28,996 DEBUG Thread-5   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:23:01,908 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]] TCPIPAccess - Destory the servlet: LIFETCPIPService
+2014-01-26 10:23:01,909 ERROR GENE Listen Thread [9888]      TCPIP - Exception from ListenThread on port[9888]
+java.net.SocketException: socket closed
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:408)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:462)
+	at java.net.ServerSocket.accept(ServerSocket.java:430)
+	at com.ynet.gene.comm.tcpip.ListenPort.run(ListenPort.java:247)
+	at java.lang.Thread.run(Thread.java:662)
+2014-01-26 10:23:01,910 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Destory the servlet: perplatServlet
+2014-01-26 10:23:01,910 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]] empSessionMgr - Terminate the GENESessionManager [BrowserReqSessionMgr]
+2014-01-26 10:23:01,910 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]   GENEComm - Required to terminate the HTTPResource: com.ynet.gene.comm.http.HttpResource@b481ba
+2014-01-26 10:23:01,910 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]   GENEComm - Required to terminate the HTTPCommService: com.ynet.gene.comm.http.HttpCommService@19fdafc
+2014-01-26 10:23:01,911 DEBUG Thread-5   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:23:02,965 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]       Core - Initialize external resource from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/resource.xml ...
+2014-01-26 10:23:03,007 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]       Core - Initialize external resource from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/resource.xml OK!
+2014-01-26 10:23:03,007 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]       Core - Initialize Function define from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/function.xml ...
+2014-01-26 10:23:03,028 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]       Core - Initialize Function define from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/function.xml OK!
+2014-01-26 10:23:03,043 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]       Core - The current GENE Version is null!
+2014-01-26 10:23:03,043 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Server Info: Apache Tomcat/6.0.37
+2014-01-26 10:23:03,044 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Start up servlet perplatServlet from rootPath: I:/java/personbank/szChannel/WebContent/
+2014-01-26 10:23:03,055 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Initialize GENE Flow Context from WEB-INF/bizs/perplat/settings.xml
+2014-01-26 10:23:03,214 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]]    Factory - ComponentFactory [perbankLife]failed to initialize from [I:/java/personbank/szChannel/WebContent/WEB-INF/bizs/perplat/settings.xml]!
+java.lang.Exception: Resource I:/java/personbank/szChannel/WebContent/WEB-INF/bizs/perplat/dataTypeDef.xml not found while load the XML document!
+	at com.ynet.gene.component.xml.XMLDocumentLoader.loadXMLDocument(XMLDocumentLoader.java:137)
+	at com.ynet.gene.component.factory.ComponentFactory.loadXMLDocument(ComponentFactory.java:220)
+	at com.ynet.gene.component.factory.GENEFlowComponentFactory.parseDataTypeDefDocument(GENEFlowComponentFactory.java:426)
+	at com.ynet.gene.component.factory.GENEFlowComponentFactory.initializeComponentFactory(GENEFlowComponentFactory.java:342)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:728)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3461)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:426)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1361)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:662)
+2014-01-26 10:23:03,214 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Initialize GENE Servlet Context from WEB-INF/mvcs/perplat/geneServletContext.xml
+2014-01-26 10:23:03,248 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]] empSessionMgr - Start up session checker for GENESessionManager [BrowserReqSessionMgr] sessionTimeOut=600000 check interval=60000
+2014-01-26 10:23:03,249 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]] empSessionMgr - Start up session checker for GENESessionManager [BrowserReqSessionMgr] ok!
+2014-01-26 10:23:03,258 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]]   LifeFile - 本地目录--->D:/ebanking/logs/ 不可用
+2014-01-26 10:23:03,260 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]]   LifeFile - 本地目录--->D:/ebanking/logs/ 不可用
+2014-01-26 10:23:03,284 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [taskTree]
+2014-01-26 10:23:03,294 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [000000_fundQueryByPage]
+2014-01-26 10:23:03,296 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [accumulation]
+2014-01-26 10:23:03,298 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [financeServe]
+2014-01-26 10:23:03,303 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [investFinace]
+2014-01-26 10:23:03,308 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [lifeServe]
+2014-01-26 10:23:03,309 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [mobileSign]
+2014-01-26 10:23:03,311 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [mobileSignServer]
+2014-01-26 10:23:03,312 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [myAccount]
+2014-01-26 10:23:03,313 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [personalInfoManage]
+2014-01-26 10:23:03,316 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [public]
+2014-01-26 10:23:03,319 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [queryCode]
+2014-01-26 10:23:03,320 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [queryCstInfo]
+2014-01-26 10:23:03,320 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [test]
+2014-01-26 10:23:03,321 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Add new Controller GENERequestController for [transfer]
+2014-01-26 10:23:03,321 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Initialize GENE Servlet Context from WEB-INF/mvcs/perplat/geneServletContext.xml OK!
+2014-01-26 10:23:03,321 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Invoker the Initializer...
+2014-01-26 10:23:03,350 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]]   LifeCore - 资源定义[正常]重复
+2014-01-26 10:23:03,369 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]]   LifeJDBC - [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e36ec6 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e36ec6 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:113)
+	at com.ynet.life.perplat.base.PBStandard.initialize(PBStandard.java:134)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:111)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3461)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:426)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1361)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 17 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 21 more
+2014-01-26 10:23:03,369 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]] LifeAction - 初始化信息失败
+com.ynet.life.exception.TranFailException: [error_code:EBLN0000] com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e36ec6 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) caused by: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e36ec6 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e36ec6 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:119)
+	at com.ynet.life.perplat.base.PBStandard.initialize(PBStandard.java:134)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:111)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3461)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:426)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1361)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e36ec6 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:113)
+	... 16 more
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 17 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 21 more
+2014-01-26 10:23:03,434 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]    LifeMsg - attribute mask in node field is omitted when type is not account.
+2014-01-26 10:23:03,435 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]    LifeMsg - Initialize message configs from I:/java/personbank/szChannel/WebContent//WEB-INF/messageConfig.xml OK!
+2014-01-26 10:23:03,437 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]    LifeMsg - Initialize message configs from I:/java/personbank/szChannel/WebContent//WEB-INF/channelLogConfig.xml OK!
+2014-01-26 10:23:03,444 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]]   LifeJDBC - [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e36ec6 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e36ec6 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:143)
+	at com.ynet.life.channel.error.ErrorMessageJDBC.initializeFrom(ErrorMessageJDBC.java:71)
+	at com.ynet.life.channel.error.ErrorMessageFormatter.initMessageConfig(ErrorMessageFormatter.java:33)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:132)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3461)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:426)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1361)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 18 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 22 more
+2014-01-26 10:23:03,444 ERROR ContainerBackgroundProcessor[StandardEngine[Catalina]]       LOAF - [error_code:EBLN0000] com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e36ec6 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) caused by: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e36ec6 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+com.ynet.life.exception.TranFailException: [error_code:EBLN0000] com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e36ec6 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) caused by: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e36ec6 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e36ec6 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:149)
+	at com.ynet.life.channel.error.ErrorMessageJDBC.initializeFrom(ErrorMessageJDBC.java:71)
+	at com.ynet.life.channel.error.ErrorMessageFormatter.initMessageConfig(ErrorMessageFormatter.java:33)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:132)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3461)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:426)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1361)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e36ec6 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:143)
+	... 17 more
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 18 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 22 more
+2014-01-26 10:23:03,448 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Initialize GENE Request Servlet from WEB-INF/bizs/perplat/settings.xml OK!
+2014-01-26 10:23:03,448 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]        MVC - Start up servlet perplatServletOK
+2014-01-26 10:23:03,452 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]      TCPIP - Start up  the servlet: LIFETCPIPService
+2014-01-26 10:23:03,452 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]      TCPIP - Share GENE flow Context from: perbankLife
+2014-01-26 10:23:03,452 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]      TCPIP - Initialize GENE Servlet Context from WEB-INF/TCPIPServiceContext.xml
+2014-01-26 10:23:03,639 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]      TCPIP - Initialize GENE Servlet Context from WEB-INF/TCPIPServiceContext.xml OK!
+2014-01-26 10:23:03,639 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]] TCPIPAccess - Initialize GENE TCPIPAccess Servlet from null OK!
+2014-01-26 10:23:03,639 INFO  ContainerBackgroundProcessor[StandardEngine[Catalina]]      TCPIP - Start up  the servlet: LIFETCPIPService OK!
+2014-01-26 10:23:03,700 INFO  GENE Listen Thread [9888]      TCPIP - Listen thread listen at port: 9888
+2014-01-26 10:23:21,673 INFO  main TCPIPAccess - Destory the servlet: LIFETCPIPService
+2014-01-26 10:23:21,674 ERROR GENE Listen Thread [9888]      TCPIP - Exception from ListenThread on port[9888]
+java.net.SocketException: socket closed
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:408)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:462)
+	at java.net.ServerSocket.accept(ServerSocket.java:430)
+	at com.ynet.gene.comm.tcpip.ListenPort.run(ListenPort.java:247)
+	at java.lang.Thread.run(Thread.java:662)
+2014-01-26 10:23:21,675 INFO  main        MVC - Destory the servlet: perplatServlet
+2014-01-26 10:23:21,675 INFO  main empSessionMgr - Terminate the GENESessionManager [BrowserReqSessionMgr]
+2014-01-26 10:23:21,675 INFO  main   GENEComm - Required to terminate the HTTPResource: com.ynet.gene.comm.http.HttpResource@8f5fc2
+2014-01-26 10:23:21,675 INFO  main   GENEComm - Required to terminate the HTTPCommService: com.ynet.gene.comm.http.HttpCommService@d7cf62
+2014-01-26 10:23:21,675 DEBUG Thread-18   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:23:34,900 INFO  main       Core - Initialize external resource from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/resource.xml ...
+2014-01-26 10:23:34,948 INFO  main       Core - Initialize external resource from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/resource.xml OK!
+2014-01-26 10:23:34,948 INFO  main       Core - Initialize Function define from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/function.xml ...
+2014-01-26 10:23:34,970 INFO  main       Core - Initialize Function define from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/function.xml OK!
+2014-01-26 10:23:34,986 INFO  main       Core - The current GENE Version is null!
+2014-01-26 10:23:34,986 INFO  main        MVC - Server Info: Apache Tomcat/6.0.37
+2014-01-26 10:23:34,986 INFO  main        MVC - Start up servlet perplatServlet from rootPath: I:/java/personbank/szChannel/WebContent/
+2014-01-26 10:23:34,998 INFO  main        MVC - Initialize GENE Flow Context from WEB-INF/bizs/perplat/settings.xml
+2014-01-26 10:23:35,169 ERROR main    Factory - ComponentFactory [perbankLife]failed to initialize from [I:/java/personbank/szChannel/WebContent/WEB-INF/bizs/perplat/settings.xml]!
+java.lang.Exception: Resource I:/java/personbank/szChannel/WebContent/WEB-INF/bizs/perplat/dataTypeDef.xml not found while load the XML document!
+	at com.ynet.gene.component.xml.XMLDocumentLoader.loadXMLDocument(XMLDocumentLoader.java:137)
+	at com.ynet.gene.component.factory.ComponentFactory.loadXMLDocument(ComponentFactory.java:220)
+	at com.ynet.gene.component.factory.GENEFlowComponentFactory.parseDataTypeDefDocument(GENEFlowComponentFactory.java:426)
+	at com.ynet.gene.component.factory.GENEFlowComponentFactory.initializeComponentFactory(GENEFlowComponentFactory.java:342)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:728)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+2014-01-26 10:23:35,169 INFO  main        MVC - Initialize GENE Servlet Context from WEB-INF/mvcs/perplat/geneServletContext.xml
+2014-01-26 10:23:35,196 INFO  main empSessionMgr - Start up session checker for GENESessionManager [BrowserReqSessionMgr] sessionTimeOut=600000 check interval=60000
+2014-01-26 10:23:35,196 INFO  main empSessionMgr - Start up session checker for GENESessionManager [BrowserReqSessionMgr] ok!
+2014-01-26 10:23:35,206 ERROR main   LifeFile - 本地目录--->D:/ebanking/logs/ 不可用
+2014-01-26 10:23:35,208 ERROR main   LifeFile - 本地目录--->D:/ebanking/logs/ 不可用
+2014-01-26 10:23:35,284 INFO  main        MVC - Add new Controller GENERequestController for [taskTree]
+2014-01-26 10:26:59,941 INFO  main       Core - Initialize external resource from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/resource.xml ...
+2014-01-26 10:26:59,990 INFO  main       Core - Initialize external resource from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/resource.xml OK!
+2014-01-26 10:26:59,990 INFO  main       Core - Initialize Function define from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/function.xml ...
+2014-01-26 10:27:00,013 INFO  main       Core - Initialize Function define from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/function.xml OK!
+2014-01-26 10:27:00,030 INFO  main       Core - The current GENE Version is null!
+2014-01-26 10:27:00,030 INFO  main        MVC - Server Info: Apache Tomcat/6.0.37
+2014-01-26 10:27:00,030 INFO  main        MVC - Start up servlet perplatServlet from rootPath: I:/java/personbank/szChannel/WebContent/
+2014-01-26 10:27:00,042 INFO  main        MVC - Initialize GENE Flow Context from WEB-INF/bizs/perplat/settings.xml
+2014-01-26 10:27:00,207 ERROR main    Factory - ComponentFactory [perbankLife]failed to initialize from [I:/java/personbank/szChannel/WebContent/WEB-INF/bizs/perplat/settings.xml]!
+java.lang.Exception: Resource I:/java/personbank/szChannel/WebContent/WEB-INF/bizs/perplat/dataTypeDef.xml not found while load the XML document!
+	at com.ynet.gene.component.xml.XMLDocumentLoader.loadXMLDocument(XMLDocumentLoader.java:137)
+	at com.ynet.gene.component.factory.ComponentFactory.loadXMLDocument(ComponentFactory.java:220)
+	at com.ynet.gene.component.factory.GENEFlowComponentFactory.parseDataTypeDefDocument(GENEFlowComponentFactory.java:426)
+	at com.ynet.gene.component.factory.GENEFlowComponentFactory.initializeComponentFactory(GENEFlowComponentFactory.java:342)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:728)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+2014-01-26 10:27:00,208 INFO  main        MVC - Initialize GENE Servlet Context from WEB-INF/mvcs/perplat/geneServletContext.xml
+2014-01-26 10:27:00,233 INFO  main empSessionMgr - Start up session checker for GENESessionManager [BrowserReqSessionMgr] sessionTimeOut=600000 check interval=60000
+2014-01-26 10:27:00,234 INFO  main empSessionMgr - Start up session checker for GENESessionManager [BrowserReqSessionMgr] ok!
+2014-01-26 10:27:00,244 ERROR main   LifeFile - 本地目录--->D:/ebanking/logs/ 不可用
+2014-01-26 10:27:00,246 ERROR main   LifeFile - 本地目录--->D:/ebanking/logs/ 不可用
+2014-01-26 10:27:00,274 INFO  main        MVC - Add new Controller GENERequestController for [taskTree]
+2014-01-26 10:27:00,283 INFO  main        MVC - Add new Controller GENERequestController for [000000_fundQueryByPage]
+2014-01-26 10:27:00,286 INFO  main        MVC - Add new Controller GENERequestController for [accumulation]
+2014-01-26 10:27:00,288 INFO  main        MVC - Add new Controller GENERequestController for [financeServe]
+2014-01-26 10:27:00,298 INFO  main        MVC - Add new Controller GENERequestController for [investFinace]
+2014-01-26 10:27:00,302 INFO  main        MVC - Add new Controller GENERequestController for [lifeServe]
+2014-01-26 10:27:00,303 INFO  main        MVC - Add new Controller GENERequestController for [mobileSign]
+2014-01-26 10:27:00,306 INFO  main        MVC - Add new Controller GENERequestController for [mobileSignServer]
+2014-01-26 10:27:00,307 INFO  main        MVC - Add new Controller GENERequestController for [myAccount]
+2014-01-26 10:27:00,308 INFO  main        MVC - Add new Controller GENERequestController for [personalInfoManage]
+2014-01-26 10:27:00,311 INFO  main        MVC - Add new Controller GENERequestController for [public]
+2014-01-26 10:27:00,315 INFO  main        MVC - Add new Controller GENERequestController for [queryCode]
+2014-01-26 10:27:00,315 INFO  main        MVC - Add new Controller GENERequestController for [queryCstInfo]
+2014-01-26 10:27:00,315 INFO  main        MVC - Add new Controller GENERequestController for [test]
+2014-01-26 10:27:00,316 INFO  main        MVC - Add new Controller GENERequestController for [transfer]
+2014-01-26 10:27:00,316 INFO  main        MVC - Initialize GENE Servlet Context from WEB-INF/mvcs/perplat/geneServletContext.xml OK!
+2014-01-26 10:27:00,316 INFO  main        MVC - Invoker the Initializer...
+2014-01-26 10:27:00,353 ERROR main   LifeCore - 资源定义[正常]重复
+2014-01-26 10:27:00,488 ERROR main   LifeJDBC - [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e45e3 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e45e3 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:113)
+	at com.ynet.life.perplat.base.PBStandard.initialize(PBStandard.java:134)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:111)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 31 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 35 more
+2014-01-26 10:27:00,488 ERROR main LifeAction - 初始化信息失败
+com.ynet.life.exception.TranFailException: [error_code:EBLN0000] com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e45e3 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) caused by: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e45e3 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e45e3 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:119)
+	at com.ynet.life.perplat.base.PBStandard.initialize(PBStandard.java:134)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:111)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e45e3 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:113)
+	... 30 more
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 31 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 35 more
+2014-01-26 10:27:00,545 INFO  main    LifeMsg - attribute mask in node field is omitted when type is not account.
+2014-01-26 10:27:00,545 INFO  main    LifeMsg - Initialize message configs from I:/java/personbank/szChannel/WebContent//WEB-INF/messageConfig.xml OK!
+2014-01-26 10:27:00,548 INFO  main    LifeMsg - Initialize message configs from I:/java/personbank/szChannel/WebContent//WEB-INF/channelLogConfig.xml OK!
+2014-01-26 10:27:00,557 ERROR main   LifeJDBC - [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e45e3 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e45e3 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:143)
+	at com.ynet.life.channel.error.ErrorMessageJDBC.initializeFrom(ErrorMessageJDBC.java:71)
+	at com.ynet.life.channel.error.ErrorMessageFormatter.initMessageConfig(ErrorMessageFormatter.java:33)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:132)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 32 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 36 more
+2014-01-26 10:27:00,557 ERROR main       LOAF - [error_code:EBLN0000] com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e45e3 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) caused by: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e45e3 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+com.ynet.life.exception.TranFailException: [error_code:EBLN0000] com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e45e3 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) caused by: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e45e3 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e45e3 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:149)
+	at com.ynet.life.channel.error.ErrorMessageJDBC.initializeFrom(ErrorMessageJDBC.java:71)
+	at com.ynet.life.channel.error.ErrorMessageFormatter.initMessageConfig(ErrorMessageFormatter.java:33)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:132)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@1e45e3 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:143)
+	... 31 more
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 32 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 36 more
+2014-01-26 10:27:00,565 INFO  main        MVC - Initialize GENE Request Servlet from WEB-INF/bizs/perplat/settings.xml OK!
+2014-01-26 10:27:00,565 INFO  main        MVC - Start up servlet perplatServletOK
+2014-01-26 10:27:00,568 INFO  main      TCPIP - Start up  the servlet: LIFETCPIPService
+2014-01-26 10:27:00,568 INFO  main      TCPIP - Share GENE flow Context from: perbankLife
+2014-01-26 10:27:00,568 INFO  main      TCPIP - Initialize GENE Servlet Context from WEB-INF/TCPIPServiceContext.xml
+2014-01-26 10:27:00,766 INFO  main      TCPIP - Initialize GENE Servlet Context from WEB-INF/TCPIPServiceContext.xml OK!
+2014-01-26 10:27:00,766 INFO  main TCPIPAccess - Initialize GENE TCPIPAccess Servlet from null OK!
+2014-01-26 10:27:00,766 INFO  main      TCPIP - Start up  the servlet: LIFETCPIPService OK!
+2014-01-26 10:27:00,827 INFO  GENE Listen Thread [9888]      TCPIP - Listen thread listen at port: 9888
+2014-01-26 10:28:00,158 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:28:47,973 INFO  main       Core - Initialize external resource from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/resource.xml ...
+2014-01-26 10:28:48,021 INFO  main       Core - Initialize external resource from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/resource.xml OK!
+2014-01-26 10:28:48,021 INFO  main       Core - Initialize Function define from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/function.xml ...
+2014-01-26 10:28:48,045 INFO  main       Core - Initialize Function define from I:/java/personbank/szChannel/WebContent//WEB-INF/commons/function.xml OK!
+2014-01-26 10:28:48,061 INFO  main       Core - The current GENE Version is null!
+2014-01-26 10:28:48,061 INFO  main        MVC - Server Info: Apache Tomcat/6.0.37
+2014-01-26 10:28:48,061 INFO  main        MVC - Start up servlet perplatServlet from rootPath: I:/java/personbank/szChannel/WebContent/
+2014-01-26 10:28:48,072 INFO  main        MVC - Initialize GENE Flow Context from WEB-INF/bizs/perplat/settings.xml
+2014-01-26 10:28:48,240 ERROR main    Factory - ComponentFactory [perbankLife]failed to initialize from [I:/java/personbank/szChannel/WebContent/WEB-INF/bizs/perplat/settings.xml]!
+java.lang.Exception: Resource I:/java/personbank/szChannel/WebContent/WEB-INF/bizs/perplat/dataTypeDef.xml not found while load the XML document!
+	at com.ynet.gene.component.xml.XMLDocumentLoader.loadXMLDocument(XMLDocumentLoader.java:137)
+	at com.ynet.gene.component.factory.ComponentFactory.loadXMLDocument(ComponentFactory.java:220)
+	at com.ynet.gene.component.factory.GENEFlowComponentFactory.parseDataTypeDefDocument(GENEFlowComponentFactory.java:426)
+	at com.ynet.gene.component.factory.GENEFlowComponentFactory.initializeComponentFactory(GENEFlowComponentFactory.java:342)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:728)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+2014-01-26 10:28:48,240 INFO  main        MVC - Initialize GENE Servlet Context from WEB-INF/mvcs/perplat/geneServletContext.xml
+2014-01-26 10:28:48,266 INFO  main empSessionMgr - Start up session checker for GENESessionManager [BrowserReqSessionMgr] sessionTimeOut=600000 check interval=60000
+2014-01-26 10:28:48,267 INFO  main empSessionMgr - Start up session checker for GENESessionManager [BrowserReqSessionMgr] ok!
+2014-01-26 10:28:48,277 ERROR main   LifeFile - 本地目录--->D:/ebanking/logs/ 不可用
+2014-01-26 10:28:48,279 ERROR main   LifeFile - 本地目录--->D:/ebanking/logs/ 不可用
+2014-01-26 10:28:48,305 INFO  main        MVC - Add new Controller GENERequestController for [taskTree]
+2014-01-26 10:28:48,316 INFO  main        MVC - Add new Controller GENERequestController for [000000_fundQueryByPage]
+2014-01-26 10:28:48,318 INFO  main        MVC - Add new Controller GENERequestController for [accumulation]
+2014-01-26 10:28:48,320 INFO  main        MVC - Add new Controller GENERequestController for [financeServe]
+2014-01-26 10:28:48,329 INFO  main        MVC - Add new Controller GENERequestController for [investFinace]
+2014-01-26 10:28:48,333 INFO  main        MVC - Add new Controller GENERequestController for [lifeServe]
+2014-01-26 10:28:48,334 INFO  main        MVC - Add new Controller GENERequestController for [mobileSign]
+2014-01-26 10:28:48,337 INFO  main        MVC - Add new Controller GENERequestController for [mobileSignServer]
+2014-01-26 10:28:48,337 INFO  main        MVC - Add new Controller GENERequestController for [myAccount]
+2014-01-26 10:28:48,338 INFO  main        MVC - Add new Controller GENERequestController for [personalInfoManage]
+2014-01-26 10:28:48,341 INFO  main        MVC - Add new Controller GENERequestController for [public]
+2014-01-26 10:28:48,345 INFO  main        MVC - Add new Controller GENERequestController for [queryCode]
+2014-01-26 10:28:48,346 INFO  main        MVC - Add new Controller GENERequestController for [queryCstInfo]
+2014-01-26 10:28:48,346 INFO  main        MVC - Add new Controller GENERequestController for [test]
+2014-01-26 10:28:48,347 INFO  main        MVC - Add new Controller GENERequestController for [transfer]
+2014-01-26 10:28:48,347 INFO  main        MVC - Initialize GENE Servlet Context from WEB-INF/mvcs/perplat/geneServletContext.xml OK!
+2014-01-26 10:28:48,347 INFO  main        MVC - Invoker the Initializer...
+2014-01-26 10:28:48,384 ERROR main   LifeCore - 资源定义[正常]重复
+2014-01-26 10:28:48,519 ERROR main   LifeJDBC - [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@fa7181 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@fa7181 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:113)
+	at com.ynet.life.perplat.base.PBStandard.initialize(PBStandard.java:134)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:111)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 31 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 35 more
+2014-01-26 10:28:48,519 ERROR main LifeAction - 初始化信息失败
+com.ynet.life.exception.TranFailException: [error_code:EBLN0000] com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@fa7181 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) caused by: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@fa7181 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@fa7181 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:119)
+	at com.ynet.life.perplat.base.PBStandard.initialize(PBStandard.java:134)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:111)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@fa7181 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:113)
+	... 30 more
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 31 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 35 more
+2014-01-26 10:28:48,580 INFO  main    LifeMsg - attribute mask in node field is omitted when type is not account.
+2014-01-26 10:28:48,580 INFO  main    LifeMsg - Initialize message configs from I:/java/personbank/szChannel/WebContent//WEB-INF/messageConfig.xml OK!
+2014-01-26 10:28:48,583 INFO  main    LifeMsg - Initialize message configs from I:/java/personbank/szChannel/WebContent//WEB-INF/channelLogConfig.xml OK!
+2014-01-26 10:28:48,592 ERROR main   LifeJDBC - [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@fa7181 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@fa7181 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:143)
+	at com.ynet.life.channel.error.ErrorMessageJDBC.initializeFrom(ErrorMessageJDBC.java:71)
+	at com.ynet.life.channel.error.ErrorMessageFormatter.initMessageConfig(ErrorMessageFormatter.java:33)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:132)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 32 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 36 more
+2014-01-26 10:28:48,592 ERROR main       LOAF - [error_code:EBLN0000] com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@fa7181 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) caused by: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@fa7181 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+com.ynet.life.exception.TranFailException: [error_code:EBLN0000] com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@fa7181 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) caused by: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@fa7181 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@fa7181 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:149)
+	at com.ynet.life.channel.error.ErrorMessageJDBC.initializeFrom(ErrorMessageJDBC.java:71)
+	at com.ynet.life.channel.error.ErrorMessageFormatter.initMessageConfig(ErrorMessageFormatter.java:33)
+	at com.ynet.life.perplat.base.PBInitializer.initialize(PBInitializer.java:132)
+	at com.ynet.gene.web.servlet.GENERequestServlet.doInit(GENERequestServlet.java:777)
+	at com.ynet.gene.web.servlet.GENERequestServlet.init(GENERequestServlet.java:635)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4421)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4734)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:799)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:601)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:675)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:601)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1317)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:324)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1065)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:840)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1057)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:754)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: com.ynet.gene.jdbc.GetConnectionFailedException: [error_code:20100] Failed to get connection from :com.ynet.gene.jdbc.JNDIDataSource@fa7181 caused by: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection) cause: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:57)
+	at com.ynet.life.base.LifeDBAccess.getConnection(LifeDBAccess.java:143)
+	... 31 more
+Caused by: org.apache.tomcat.dbcp.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at com.ynet.gene.jdbc.JNDIDataSource.getConnection(JNDIDataSource.java:99)
+	at com.ynet.gene.jdbc.ConnectionManager.getConnection(ConnectionManager.java:44)
+	... 32 more
+Caused by: java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.dbcp.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.tomcat.dbcp.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.tomcat.dbcp.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 36 more
+2014-01-26 10:28:48,599 INFO  main        MVC - Initialize GENE Request Servlet from WEB-INF/bizs/perplat/settings.xml OK!
+2014-01-26 10:28:48,599 INFO  main        MVC - Start up servlet perplatServletOK
+2014-01-26 10:28:48,603 INFO  main      TCPIP - Start up  the servlet: LIFETCPIPService
+2014-01-26 10:28:48,603 INFO  main      TCPIP - Share GENE flow Context from: perbankLife
+2014-01-26 10:28:48,603 INFO  main      TCPIP - Initialize GENE Servlet Context from WEB-INF/TCPIPServiceContext.xml
+2014-01-26 10:28:48,795 INFO  main      TCPIP - Initialize GENE Servlet Context from WEB-INF/TCPIPServiceContext.xml OK!
+2014-01-26 10:28:48,795 INFO  main TCPIPAccess - Initialize GENE TCPIPAccess Servlet from null OK!
+2014-01-26 10:28:48,795 INFO  main      TCPIP - Start up  the servlet: LIFETCPIPService OK!
+2014-01-26 10:28:48,862 INFO  GENE Listen Thread [9888]      TCPIP - Listen thread listen at port: 9888
+2014-01-26 10:29:48,191 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:30:48,192 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:31:48,193 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:32:48,194 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:33:48,194 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:34:48,195 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:35:48,196 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:36:48,197 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:37:48,197 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:38:48,198 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:39:48,198 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:40:48,199 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:41:48,199 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:42:48,200 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:43:48,200 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:44:48,201 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:45:48,202 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:46:48,202 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:47:48,203 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:48:48,203 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:49:48,203 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:50:48,204 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:51:48,205 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:52:48,206 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:53:48,206 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:54:48,206 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:55:48,207 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:56:48,207 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:57:48,208 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:58:48,208 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 10:59:48,208 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+2014-01-26 11:00:48,209 DEBUG Thread-2   GENEComm - Begin to Check the HTTPResource alive of: Http2CloudConnectionPool
+
+</pre>
+</body>
+</html>
